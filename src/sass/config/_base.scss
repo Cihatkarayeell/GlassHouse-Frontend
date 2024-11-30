@@ -1,0 +1,53 @@
+html,
+body {
+  width: 100%;
+  min-width: 360px;
+  font-size: 62.5%;
+  position: relative; 
+  &.active{
+    overflow: hidden;
+  }
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  min-height: 100%;
+  &.overflow{
+    overflow: hidden;
+  }
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow-x: hidden;
+  font-family: var(--font);  
+  color: var(--color-text);
+  background-color: var(--color-body);
+  scroll-behavior: smooth;
+  &.disable-scroll {
+    overflow: hidden;
+    touch-action: none;
+    -ms-touch-action: none;
+  }
+}
+
+b,
+strong {
+  font-weight: var(--font-bold);
+}
+
+img,
+svg,
+picture {
+  max-width: 100%;
+}
+
+svg {
+  display: inline;
+}
+

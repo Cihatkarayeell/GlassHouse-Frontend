@@ -1,0 +1,86 @@
+@font-face {
+    font-family: 'Avenir';
+    src: url('../font/AvenirLTStd-Black.otf') format('opentype');
+    font-weight: 900;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'Avenir';
+    src: url('../font/AvenirLTStd-Book.otf') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'Avenir';
+    src: url('../font/AvenirLTStd-Heavy.otf') format('opentype');
+    font-weight: 800;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'Avenir';
+    src: url('../font/AvenirLTStd-Light.otf') format('opentype');
+    font-weight: 300;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'Avenir';
+    src: url('../font/AvenirLTStd-Medium.otf') format('opentype');
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Avenir';
+    src: url('../font/AvenirLTStd-Roman.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  
+
+
+
+@mixin font {
+    font-family: 'Avenir';
+    font-weight: normal;
+    font-style: normal;
+}
+
+@mixin thin {
+    font-weight: 200;
+}
+
+@mixin light {
+    font-weight: 300;
+}
+
+@mixin regular {
+    font-weight: 400;
+}
+
+@mixin medium {
+    font-weight: 500;
+}
+
+@mixin semibold {
+    font-weight: 600;
+}
+
+@mixin bold {
+    font-weight: 700;
+}
+
+@mixin extrabold {
+    font-weight: 800;
+}
+
+@mixin black {
+    font-weight: 900;
+}
+
+
+
