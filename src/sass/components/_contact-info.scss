@@ -1,0 +1,103 @@
+.contact-info{
+    width: 100%;
+    padding-top: 7.8rem;
+    padding-bottom: 10.8rem;
+    .heading-type-one{
+        margin-bottom: 4.2rem;
+        color: #000000;
+    }
+    .heading-1{
+        margin-bottom: 3.6rem;
+    }
+    .mySwiper-contact-info{
+        overflow: visible;
+    }
+    .swiper-wrapper{
+        padding-top: 2rem;
+        align-items: stretch;
+    }
+    .swiper-slide{
+        height: auto;
+        &:hover{
+            .location-card{
+                transform: translateY(-.5rem);
+                box-shadow: 0   0   2rem 0 rgb(0, 0, 0,.1);
+            }
+        }
+    }
+    .location-card{
+        width: 100%;
+        height: 100%;
+        transition: box-shadow 400ms ease, transform 400ms ease;
+        background-color: #F7F9FC;
+        border-radius: 1rem;
+        padding: 2rem 2rem 2rem 3rem;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        max-height: 52rem;
+        .icon{
+            width: 100%;
+            height: 20rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .city{
+            font-size: 2rem;
+            line-height: 2.7rem;
+            color: #00AEEF;
+            @include extrabold;
+            margin-top:2.3rem;
+        }
+        .subtitle{
+            font-size: 1.6rem;
+            line-height: 2.2rem;
+            color: #000000;
+            @include medium;
+            margin-top:1.2rem;
+        }
+        .location-wrap{
+            margin-top: 1.2rem;
+            display: flex;
+            flex-direction: column;
+            .item{
+                display: flex;
+                align-items: flex-start;
+                gap: 0 1rem;
+                .icon{
+                    min-width: 1.6rem;
+                    max-width: 1.6rem;
+                    min-height: 1.6rem;
+                    max-height: 1.6rem;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    height: auto;
+                    margin-top: .8rem;
+                    img{
+                        display: flex;
+                    }
+                }
+                span{
+                    font-size: 1.4rem;
+                    line-height: 3.2rem;
+                    color: #000000;
+                    @include regular;
+                }
+            }
+        }
+    }
+    .btn-layout{
+        display: flex;
+        align-items: center;
+        gap: 0 1.5rem;
+        position: absolute;
+        right: 0;
+        top: 8.9rem;
+        .swiper-button-next-contact-info,
+        .swiper-button-prev-contact-info{
+            cursor: pointer;
+        }
+    }
+}

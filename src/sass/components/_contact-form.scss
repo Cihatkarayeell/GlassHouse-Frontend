@@ -1,0 +1,179 @@
+.contact-form{
+    width: 100%;
+    height: 100%;
+    padding-top: 7.7rem;
+    padding-bottom: 7.7rem;
+    .header{
+        max-width: 29rem;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        @include bigger-than-xl{
+            max-width: 100%;
+        }
+        .heading-type-one{
+            color: #000000;
+        }
+        .title{
+            font-size: 3.2rem ;
+            line-height: 4.4rem;
+            @include font;
+            color: #000000;
+            margin-top: 4.2rem;
+        }
+        .desc{
+            font-size: 1.6rem;
+            line-height: 2.2rem;
+            color: #000000;
+            @include font;
+            margin-top: 2rem;
+        }
+    }
+    form{
+        max-width: 84.3rem;
+        width: 100%;
+        margin-left: auto;
+        --bs-gutter-x:0;
+        --bs-gutter-y:0;
+        &.row{
+            *{
+                margin-top: 0;
+                padding-left: 0;
+                padding-right: 0;
+            }
+            .form-textarea{
+                max-width: 100%;
+            }
+            .form-input,
+            .form-textarea{
+                margin-bottom: 2.4rem;
+                max-width: 40.6rem;
+                &:last-of-type{
+                    margin-bottom: 0;
+                }
+                &:nth-child(even){
+                    margin-left: auto;
+                }
+    
+                input,
+                textarea{
+                    border-color: transparent;
+                    background-color: #E4EAF2;
+                    border-radius: .7rem;
+                    padding: 1.35rem 1.4rem;
+                    padding-right: 1rem;
+                    padding-left: 1.5rem;
+                    font-size: 1.4rem;
+                    line-height: 1.9rem;
+                    color: #000000;
+                    @include font;
+                    &::placeholder{
+                        color: #000000;
+                        opacity:.5;
+                        @include font;                
+                    }
+                    &:focus{
+                        border-color: #00AEEF;
+                        box-shadow: none;
+                    }
+                }
+                textarea{
+                    height: 7.2rem;
+                    resize: none;
+                }
+            }
+            .form-textarea{
+                max-width: 100%;
+            }
+            
+            .form-check{
+                display: flex;
+                align-items: flex-start;
+                gap: 0 1rem;
+                position: relative;
+                margin-bottom: 1.2rem;
+                cursor: pointer;
+                .form-check-input{
+                    margin-left: 0;
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    opacity: 0;
+                    width: 2rem;
+                    height: 2rem;
+                    cursor: pointer;
+                }
+                label{
+                    font-size: 1.1rem;
+                    line-height: 1.5rem;
+                    color: rgb(0, 0, 0,.6);
+                    @include font;
+                    cursor: pointer;                    
+                }
+                .custom-box{
+                    min-width: 2rem;
+                    cursor: pointer;
+                    min-height: 2rem;
+                    border-radius: .3rem;
+                    background-color: transparent;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border: .1rem solid rgb(0, 0, 0 ,.5);
+                    position: relative;
+                    overflow: hidden;
+                    svg{
+                        z-index: 2;
+                        opacity: 0;
+                        visibility: hidden;
+                        transition: opacity 400ms ease, visibility 400ms ease;
+                    }
+                    &::before{
+                        content: "";
+                        position: absolute;
+                        left: 0;
+                        top: 0;
+                        width: 100%;
+                        overflow: hidden;
+                        height: 100%;
+                        background-color: #00AEEF;
+                        transition: all 400ms ease;
+                        opacity: 0;
+                        visibility: hidden;
+                    }
+                }
+                &.active{
+                    .custom-box{
+                        svg{
+                            opacity: 1;
+                            visibility: visible;
+                        }
+                        &:before{
+                            opacity: 1;
+                            visibility: visible;
+                        }
+                        border-color: #00AEEF;
+                    }
+                }
+            }
+            button[type=submit]{
+                margin-top: 1.6rem;
+                background-color: #00AEEF;
+                border-radius: 3rem;
+                padding: 1.1rem 2.5rem;
+                font-size: 1.4rem;
+                line-height: 1.9rem;
+                color: #ffffff;
+                @include extrabold;
+                border: none;
+            }
+        }
+        
+    }
+    &.background-gradient{
+        background: linear-gradient(90deg, #592E6D 0%, #249FDD 100%);
+        padding-top: 6.6rem;
+        padding-bottom: 6.1rem;
+        margin: 0
+    }
+}

@@ -1,0 +1,66 @@
+.customer-experience-detail-hero{
+    width: 100%;
+    background-color: #F8F8F8;
+    .heading-1{
+        @include extrabold;
+    }
+    .hero-block{
+        padding-top: 6rem;
+        padding-bottom: 11.1rem;
+        display: flex;
+        align-items: flex-start;
+    }
+    .text{
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        .detail-info{
+            margin-top: 2.8rem;
+            .info-item{
+                margin-bottom: 1.5rem
+            }
+            .title{
+                @include extrabold;
+                font-size: 1.6rem;
+                line-height: 2.2rem;
+                color: #000000;
+            }
+            p{
+                @include regular;
+                font-size: 1.6rem;
+                line-height: 2.2rem;
+                color: #000000;
+            }
+            ul{
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                padding-left: 1.5rem;
+                a{
+                    position: relative;
+                    @include regular;
+                    font-size: 1.6rem;
+                    line-height: 2.2rem;
+                    color: #00AEEF;
+                    text-decoration: underline;
+                    &:after{
+                        content: "";
+                        position: absolute;
+                        left: -1rem;
+                        width: .5rem;
+                        height: .5rem;
+                        border-radius: 50%;
+                        background-color: #00AEEF;
+                        top: .8rem;
+
+                    }
+                }
+            }
+        }
+    }
+    .img{
+        border-radius: 1.5rem;
+        overflow: hidden;
+        box-shadow: 0 0 1.5rem 0 rgb(0, 0, 0, .2);
+    }
+}

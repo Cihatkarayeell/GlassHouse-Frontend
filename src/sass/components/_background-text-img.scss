@@ -1,0 +1,101 @@
+.background-text-img{
+    padding-top: 9.8rem;
+    .background-gradient{
+        padding-bottom: 7rem;
+        padding-top: 6.4rem;
+        width: 100%;
+        height: 100%;
+        .text{
+            width: 100%;
+            max-width: 65.6rem;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            padding-left: 4.1rem;
+            padding-top: 4rem;
+            padding-right: 3rem;
+            position: relative;
+            min-height: 36rem;
+            .desc{
+                font-size: 2rem;
+                line-height: 2.7rem;
+                @include font;
+                color: #ffffff;
+                p, a{
+                    display: inline;
+                }
+                a{
+                    color: #ffffff;
+                    position: relative;
+                    &:after{
+                        content: "";
+                        position: absolute;
+                        bottom: .3rem;
+                        left: 0;
+                        width: 100%;
+                        background-color: #ffffff;
+                        height: .1rem;
+                    }
+                }
+            }
+            .brand-logo{
+                width: 60%;
+            }
+            .info-text{
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                min-width: 40%;
+                .info-item{
+                    font-size: 1.8rem;
+                    line-height: 2.5rem;
+                    color: #ffffff;
+                    @include font;
+                    &:first-of-type{
+                        @include black;
+                    }
+                }
+            }
+            .backdrop-svg{
+                position: absolute;
+                left: 0;
+                bottom: 0;
+            }
+            &:after{
+                content:url(/img/icon/double-mark.svg);
+                position: absolute;
+                bottom: 1.3rem;
+                right: 0;
+            }
+            &:before{
+                content:url(/img/icon/double-mark.svg);
+                position: absolute;
+                top: 0rem;
+                left: 0;
+                transform: rotate(180deg);
+            }
+        }
+        .img{
+            margin-left: auto;
+            width: 45rem;
+            height: 42rem;
+            position: relative;
+            img{
+                position: absolute;
+                right: 4.7rem;
+                top: 5.3rem;
+            }
+            .profile-backg-icon{
+                position: absolute;
+                left: 0;
+                top: 0;
+                transition: transform 400ms ease;
+            }
+            &:hover{
+                .profile-backg-icon{
+                    transform: rotate(-7deg);
+                }
+            }
+        }
+    }
+}

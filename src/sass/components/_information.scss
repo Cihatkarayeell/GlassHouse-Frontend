@@ -1,0 +1,177 @@
+.information{
+    width: 100%;
+    height: 100%;
+    padding-top: 8.2rem;
+    padding-bottom: 10.4rem;
+    .info-center{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        .heading-type-one{
+            margin-bottom: 4.2rem;
+            color: #000000;
+        }
+        .info-center-left{
+            max-width: 62.4rem;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            .title{
+                font-size: 3.2rem;
+                line-height: 4.4rem;
+                @include font;
+                color: #000000;
+                margin-bottom: 13.2rem;
+            }
+            .card-img.blur{
+                width: 100%;
+                height: 56.8rem;
+                border-radius: 1.5rem;
+                overflow: hidden;
+                position: relative;
+                
+                .img{
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    left: 0;
+                    top: 0;
+                    img{
+                        display: flex;
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                    }
+                }
+                .blur-effect{
+                    width: 100%;
+                    height: 50%;
+                    backdrop-filter: blur(15px);
+                    position: absolute;
+                    left: 0;
+                    bottom: 0;
+                    z-index: 1;
+                    .text{
+                        width: 100%;
+                        height: 100%;
+                        padding: 2.5rem 3.5rem 2.5rem 3rem;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: flex-start;
+                        .date{
+                            font-size: 1.3rem;
+                            line-height: 1.9rem;
+                            color: #ffffff;
+                            @include regular;
+                            margin-bottom: 2.4rem;
+                        }
+                        .title{
+                            font-size: 1.8rem;
+                            line-height: 2.4rem;
+                            color: #ffffff;
+                            @include black;
+                            margin-bottom: 2.4rem;
+                        }
+                        .desc{
+                            font-size: 1.6rem;
+                            line-height: 2.2rem;
+                            color: #ffffff;
+                            @include regular;
+                            margin-bottom: 3.9rem;
+                        }
+                        .card-link{
+                            display: flex;
+                            align-items: center;
+                            font-size: 1.6rem;
+                            line-height: 2.2rem;
+                            @include regular;
+                            gap: 0 .3rem;
+                            span{
+                                color: #ffffff;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .info-center-right{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            max-width: calc(50% - 9.3rem);
+            margin-left: auto;
+            .title{
+                font-size: 1.6rem;
+                line-height: 2.2rem;
+                color: #000000;
+                @include font;
+                margin-bottom: 2.8rem;
+            }
+            .btn-type-one{
+                margin-bottom: 6.3rem;
+                color: #ffffff;
+                padding: 1.1rem 2.5rem;
+            }
+            .card-wrap{
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                gap: 4.3rem 0;
+                .horizontal-card{
+                    width: 100%;
+                    gap: 0 1.5rem;
+                    align-items: stretch;
+                    .card-img{
+                        border-radius: 1.5rem;
+                        max-width: 30rem;
+                        width: 100%;
+                        height: auto;
+                        overflow: hidden;
+                        img{
+                            width: 100%;
+                            height: 100%;
+                            object-fit: cover;
+                            display: flex;
+                        }
+                    }
+                    .card-text{
+                        display: flex;
+                        max-width: calc(100% - 31.5rem);
+                        flex-direction: column;
+                        align-items: flex-start;
+                        justify-content: center;
+                        .date{
+                            font-size: 1.3rem;
+                            line-height: 1.9rem;
+                            @include font;
+                            color: #000000;
+                            margin-bottom: .5rem;       
+                        }
+                        .title{
+                            font-size: 1.8rem;
+                            line-height: 2.2rem;
+                            @include black;;
+                            color: #000000;
+                            margin-bottom: 1rem;       
+                        }
+                        .desc{
+                            font-size: 1.4rem;
+                            line-height: 1.9rem;
+                            @include font;;
+                            color: #000000;
+                        }
+                        .link{
+                            font-size: 1.4rem;
+                            line-height: 1.9rem;
+                            @include font;;
+                            color: #000000;
+                            margin-top: 1.1rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

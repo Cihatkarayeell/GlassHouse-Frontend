@@ -1,0 +1,62 @@
+.hero{
+    &.about-page{
+        width: 100%;
+        height: 78rem;
+        .hero-backdrop{
+            position: relative;
+            width: 100%;
+            height: 100%;
+            &:after{
+                content: "";
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%);
+
+            }
+        }
+        .container{
+            height: 100%;
+        }
+        .hero-section{
+            position: relative;
+            width: 100%;
+            height: 100%;
+            z-index: 2;
+        }
+        .title{
+            font-size: 6rem;
+            line-height: 6.6rem;
+            @include regular;
+            color: #ffffff;
+            max-width: 50.5rem;
+            margin-top: 30.4rem;
+        }
+        .blur-card{
+            inset: unset;
+            position: absolute;
+            bottom: 9.2rem;
+            right: 0;
+            backdrop-filter: blur(15px);
+            border-radius: 1.5rem;
+            padding: 4rem;
+            width: 40rem;
+            min-height: 20.5rem;
+            background: rgba(255, 255, 255, 0.2);
+            .desc{
+                font-size: 1.5rem;
+                line-height: 2.2rem;
+                @include regular;
+                color: #ffffff;
+            }
+        }
+        .bottom-icon{
+            position: absolute;
+            bottom: 7rem;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+}

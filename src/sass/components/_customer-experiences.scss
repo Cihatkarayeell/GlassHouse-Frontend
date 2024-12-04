@@ -1,10 +1,7 @@
 .customer-experiences{
     width: 100%;
-    height: 100%;
-    .bottom-icon {
-        position: relative; /* Elementin pozisyonunu animasyon için kontrol etmek için gerekli */
-        animation: bounce 1.5s infinite; /* Animasyonu 2 saniyede bir sürekli tekrar ettir */
-    }
+    height: 159.5rem;
+    z-index: 1;
     .backdrop{
         width: 100%;
         height: 159.5rem;
@@ -12,7 +9,10 @@
         left: 50%;
         transform: translateX(-50%);
     }
-    .customer-block{
+    .container{
+        height: 100%;
+    }
+    .customer-block{ 
         width: 100%;
         height: 100%;
         display: flex;
@@ -23,7 +23,7 @@
             width: max-content;
             margin-top:5rem;
         }
-        .btn-typ-one{
+        .btn-type-one{
             margin-top: 2.8rem;
         }
         .heading-1 {
@@ -31,6 +31,7 @@
         }
         .customer-sliders{
             margin-top: 3.6rem;
+            display: flex;
             .left-sliders{
                 max-width: 51.25%;
                 overflow-x: hidden;
@@ -307,8 +308,84 @@
                 }
             }
         }
+        .references{
+            width: 100%;
+            margin-top: auto;
+            margin-bottom: 14.5rem;
+            .heading-type-one{
+                margin-bottom: 4.2rem;
+            }
+            .references-block{
+                display: flex;
+                align-items: stretch;
+                width: 100%;
+                justify-content: space-between;
+            }
+            .references-slider{
+                max-width: 60.8rem;
+                width: 100%;
+                position: relative;
+                padding-bottom: 7.4rem;
+            }
+            .item-wrap{
+                width: 100%;
+                display: flex;
+                flex-wrap: wrap;
+                align-items: stretch;
+                gap: 5rem 7rem;
+                .references-item{
+                    max-width: calc(100% / 3 - 4.7rem);
+                    width: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    *{
+                        display: flex;
+                    }
+                }
+            }
+            .references-text{
+                display: flex;
+                align-items: flex-start;
+                flex-direction: column;
+                max-width: 54.7rem;
+                margin-left: auto;
+                .title{
+                    font-size: 3.2rem;
+                    line-height: 4.4rem;
+                    @include font;
+                    color: #ffffff;
+                    margin-bottom: 2.4rem;
+                }
+                .desc{
+                    font-size: 1.6rem;
+                    @include font;
+                    color: #ffffff;
+                    line-height: 2.2rem;
+                    p{
+                        margin-bottom: 2.2rem;
+                        &:last-of-type{
+                            margin-bottom: 0;
+                        }
+                    }
+                }
+            }
+            .btn-layout{
+                display: flex;
+                align-items: center;
+                gap: 0 2rem;
+                justify-content: center;
+                position: absolute;
+                bottom: 0;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+        }
     }
-    
+}
+.bottom-icon {
+    position: relative; /* Elementin pozisyonunu animasyon için kontrol etmek için gerekli */
+    animation: bounce 1.5s infinite; /* Animasyonu 2 saniyede bir sürekli tekrar ettir */
 }
 @keyframes bounce {
     0%, 100% {
@@ -328,6 +405,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-left: 2.8rem;
     &:before{
         content: url(/img/icon/heading-icon.svg);
         position: absolute;
@@ -335,7 +413,7 @@
         top: .4rem;
     }
 }
-.btn-typ-one{
+.btn-type-one{
     padding: 1.4rem 2rem;
     border-radius: 2.5rem;
     font-size: 1.4rem;

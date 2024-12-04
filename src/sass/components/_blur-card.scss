@@ -1,0 +1,33 @@
+.blur-card{
+    position: absolute;
+    backdrop-filter: blur(15px);
+    border-radius: 1.5rem;
+    padding: 4rem;
+    width: 40rem;
+    min-height: 20.5rem;
+    background: rgba(255, 255, 255, 0.2);
+    .title{
+        font-size: 2rem;
+        line-height: 2.2rem;
+        @include medium;
+        color: #ffffff;
+        margin-bottom: 1.5rem;
+    }
+    .desc{
+        font-size: 1.5rem;
+        line-height: 2.2rem;
+        @include regular;
+        color: #ffffff;
+    }
+    .card-link{
+        background-color: var(--color-primary);
+        border-radius: 3rem;
+        padding: 1.1rem 1.5rem;
+        font-size: 1.4rem;
+        line-height: 1.9rem;
+        color: #ffffff;
+        @include extrabold;
+        margin-top: 2rem;
+        width: max-content;
+    }
+}

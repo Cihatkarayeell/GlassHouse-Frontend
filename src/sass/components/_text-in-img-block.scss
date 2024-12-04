@@ -1,0 +1,53 @@
+.text-in-img-block{
+    width: 100%;
+    height: 66.4rem;
+    .backdrop{
+        position: relative;
+        width: 100%;
+        height: 100%;
+        &:after{
+            content: "";
+            width: 100%;
+            height: 100%;
+            background-color: rgb(0, 0, 0,.2);
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+    }
+    .text-section{
+        z-index: 2;
+        width: 100%;
+        height: 100%;
+    }
+    .heading-type-one{
+        margin-bottom: 4.2rem;
+        margin-top: 6.4rem;
+        width: max-content;
+    }
+    .title{
+        font-size: 3.2rem;
+        line-height: 4.4rem;
+        color: #ffffff;
+        @include font;
+        margin-bottom: 4.2rem;
+        max-width: 46rem;
+    }
+    .sub-title{
+        font-size: 2rem;
+        line-height: 2.4rem;
+        color: #ffffff;
+        @include medium;
+        margin-bottom: 2.4rem;
+    }
+    .desc{
+        font-size: 1.6rem;
+        line-height: 2rem;
+        color: #ffffff;
+        @include regular;
+        margin-bottom: 2.4rem;
+        max-width: 40.5rem;
+    }
+    
+    
+}

@@ -1,6 +1,10 @@
 #header{
 	width: 100%;
 	height: auto;
+	position: sticky;
+	top: 0;
+	left: 0;
+	z-index: 3;
 	.header-section{
 		width: 100%;
 		height: 4rem;
@@ -54,149 +58,137 @@
 		.navbar-list{
 			margin-left: auto;
 			width:max-content;
-			height: 100%;
 			display: flex;
-			align-items: center;
-			ul{
-				display: flex;
-				align-items: flex-end;
-				justify-content: flex-end;
-				gap: 0 2.5rem;
-				height: 100%;
-				padding-bottom: 2.2rem;
+			align-items: flex-end;
+			gap: 0 2.5rem;
+			.nav-list-item{
+				font-size: 1.4rem;
+				line-height: 1.9rem;
+				@include medium;
+				color: #ffffff;
+				position: relative;
+				cursor: pointer;
 				@include lg{
-					gap: 0 1.5rem;
+					font-size: 1.1rem;
+					line-height: 1.4rem;
 				}
-				li{
-					height: 100%;
-					display: flex;
-					align-items: flex-end;
+				&:after{
+					content: "";
+					position: absolute;
+					left: 0;
+					top: calc(100% + 2.1rem);
+					width: 100%;
+					height: .3rem;
+					background-color: #ffffff;
+					z-index: 3;
+					transition: all 400ms ease;
+					opacity: 0;
+					visibility: hidden;
 				}
-				.nav-list-item{
+				&:hover{
+					&::after{
+						opacity: 1;
+						visibility: visible;
+					}
+				}
+				span{
+					&:first-of-type{
+						@include black;
+					}
+				}
+			}
+			a{
+				position: relative;
+				@include lg{
+					font-size: 1.1rem;
+					line-height: 1.4rem;
+				}
+				span{
 					font-size: 1.4rem;
 					line-height: 1.9rem;
 					@include medium;
 					color: #ffffff;
-					position: relative;
-					@include lg{
-						font-size: 1.1rem;
-						line-height: 1.4rem;
-					}
-					&:after{
-						content: "";
-						position: absolute;
-						left: 0;
-						bottom: -.2rem;
-						width: 100%;
-						height: .1rem;
-						background-color: #ffffff;
-						transform: scale(0);
-						transition: transform 400ms ease;
-					}
-					&:hover{
-						&::after{
-							transform: scale(1);
-						}
-					}
-					span{
-						&:first-of-type{
-							@include black;
-						}
+					&:first-of-type{
+						@include black;
+						text-decoration: underline;
 					}
 				}
-				a{
-					position: relative;
-					@include lg{
-						font-size: 1.1rem;
-						line-height: 1.4rem;
-					}
-					span{
+			}
+			.submenu{
+				opacity: 0;
+				z-index: 3;
+				visibility: hidden;
+				position: absolute;
+				top: calc(100% + .5rem);
+				left: 0;
+				width: 100%;
+				padding: 0 4rem;
+				transform: translateY(-2rem);
+				transition: transform 400ms ease, opacity 400ms ease, visibility 400ms ease;
+				@include bigger-than-xl{
+					padding: 0 14rem
+				}
+				@include md{
+					padding: 0 3rem;
+				}
+				&:after{
+					content: "";
+					position: absolute;
+					width: 100%;
+					height: 2.25rem;
+					bottom: 100%;
+					left: 0;
+					background-color: transparent;
+					z-index: 0;
+				}
+				.submenu-container{
+					border-radius: .6rem;
+					background-color: rgb(0, 0, 0, .95);
+					padding: 3rem 4rem 1.6rem 4rem;
+					width: 100%;
+					display: flex;
+					align-items: flex-start;
+				}
+				.submenu-list{
+					display: flex;
+					flex-direction: column;
+					align-items: flex-start;
+					width: calc(100% / 4);
+					height: 100%;
+					padding-right: 2rem;
+					.title{
 						font-size: 1.4rem;
-						line-height: 1.9rem;
-						@include medium;
+						line-height: 2.4rem;
 						color: #ffffff;
-						&:first-of-type{
-							@include black;
+						@include extrabold;
+						transition: color 400ms ease, font-weight 400ms ease;
+						&:hover{
+							color: var(--color-primary);
+							@include extrabold;
+						}
+					}
+					.list-item{
+						font-size: 1.4rem;
+						line-height: 2.4rem;
+						color: #ffffff;
+						@include regular;
+						transition: all 400ms ease;
+						margin: 0;
+						&:hover{
 							text-decoration: underline;
 						}
 					}
 				}
-				.submenu{
-					opacity: 0;
-					z-index: 3;
-					visibility: hidden;
-					position: absolute;
-					top: calc(100% + .5rem);
-					left: 0;
-					width: 100%;
-					padding: 0 4rem;
-					transform: translateY(-2rem);
-					transition: transform 400ms ease, opacity 400ms ease, visibility 400ms ease;
-					@include bigger-than-xl{
-						padding: 0 14rem
-					}
-					@include md{
-						padding: 0 3rem;
-					}
-					&:after{
-						content: "";
-						position: absolute;
-						width: 100%;
-						height: 2.25rem;
-						bottom: 100%;
-						left: 0;
-						background-color: transparent;
-						z-index: 0;
-					}
-					.submenu-container{
-						border-radius: .6rem;
-						background-color: rgb(0, 0, 0, .95);
-						padding: 3rem 4rem 1.6rem 4rem;
-						width: 100%;
+			}
+			.nav-list-item{
+				&:hover{
+					+ .submenu{
+						opacity: 1;
+						visibility: visible;
 						display: flex;
 						align-items: flex-start;
-					}
-					.submenu-list{
-						display: flex;
-						flex-direction: column;
-						align-items: flex-start;
-						width: calc(100% / 4);
-						height: 100%;
-						padding-right: 2rem;
-						.title{
-							font-size: 1.4rem;
-							line-height: 2.4rem;
-							color: #ffffff;
-							@include extrabold;
-							transition: color 400ms ease, font-weight 400ms ease;
-							&:hover{
-								color: var(--color-primary);
-								@include extrabold;
-							}
-						}
-						.list-item{
-							font-size: 1.4rem;
-							line-height: 2.4rem;
-							color: #ffffff;
-							@include regular;
-							transition: all 400ms ease;
-							margin: 0;
-							&:hover{
-								text-decoration: underline;
-							}
-						}
-					}
-				}
-				li{
-					&:hover{
-						.submenu{
-							opacity: 1;
-							visibility: visible;
-							display: flex;
-							align-items: flex-start;
-							justify-content: flex-start;
-							transform: translateY(0rem);
-						}
+						justify-content: flex-start;
+						transform: translateY(0rem);
 					}
 				}
 			}
@@ -211,7 +203,7 @@
 			}
 			.btn{
 				border-radius: 2rem;
-				padding: 1rem;
+				padding: .9rem;
 				font-size: 1.2rem;
 				line-height: 1.6rem;
 				@include medium;

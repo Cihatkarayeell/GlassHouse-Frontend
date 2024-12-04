@@ -1,0 +1,55 @@
+.text-img-block{
+    &.what-we-doing{
+        width: 100%;
+        height: 100%;
+        padding-bottom: 9.8rem;
+        padding-top: 7.6rem;
+        .heading-type-one{
+            margin-bottom: 4.2rem;
+            color: #000000;
+            width: max-content;
+        }
+        .title{
+            font-size: 3.2rem;
+            line-height: 4.4rem;
+            color: #000000;
+            @include font;
+            margin-bottom: 5.2rem;
+        }
+        .text-wrap{
+            max-width: 60.1rem;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            .title{                
+                @include medium;
+                font-size: 2rem;
+                line-height: 2.6rem;
+                color: #000000;
+            }
+            .desc{
+                @include regular;
+                font-size: 1.6rem;
+                line-height: 2rem;
+                color: #000000;
+                p{
+                    margin-bottom: 1.5rem;
+                    &:last-of-type{
+                        margin-bottom: 0;
+                    }
+                    a{
+                        color: #00AEEF;
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+        .card-img{
+            border-radius: 1rem;
+            height: 46.2rem;
+            margin-left: auto;
+            max-width: 62.4rem;
+        }
+    }
+}

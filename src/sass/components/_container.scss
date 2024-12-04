@@ -5,9 +5,7 @@
   margin: 0 auto;
   position: relative;
   padding: 0;
-  @include bigger-than-xxl{
-    max-width: 172rem;
-  }
+  
   @media (max-width:1300px) {
     margin: 0 4rem;
     width: auto;

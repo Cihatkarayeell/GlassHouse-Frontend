@@ -295,12 +295,6 @@ $indent-step: 0.5;
 .color-primary {
   color: var(--color-primary) !important;
 }
-.color-primary-linear {
-  background: linear-gradient(90deg, rgba(0,121,193,1) 0%, rgba(0,174,239,1) 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
 .color-secondary {
   color: var(--color-secondary);
 }
@@ -313,8 +307,12 @@ $indent-step: 0.5;
 .color-warning {
   color: var(--color-warning);
 }
-
-
+.color-text{
+  color: var(--color-text) !important;
+}
+.background-gradient{
+  background: linear-gradient(90deg, #592E6D 0%, #249FDD 100%);
+}
 .background-primary {
   background-color: var(--color-primary);
 }

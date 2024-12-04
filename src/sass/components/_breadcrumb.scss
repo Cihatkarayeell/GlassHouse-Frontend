@@ -1,0 +1,27 @@
+.breadcrumb{
+    width: auto;
+    display: flex;
+    align-items: center;
+    gap: 0 2.5rem;
+    padding-top: 2rem;
+    .breadcrumb-item{
+        a{
+            font-size:1.2rem;
+            line-height: 1.6rem;
+            color: #ffff;
+            opacity: .5;
+            @include medium;
+        }
+        &:last-of-type{
+            a{
+                opacity: 1;
+            }
+        }
+    }
+    &.color-text{
+        a{
+            color: #000000;
+        }
+    }
+
+}

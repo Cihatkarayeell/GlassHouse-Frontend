@@ -1,0 +1,223 @@
+.scroll-section-block{
+    .heading-1{
+        margin-top: 4.2rem;
+    }
+    &#sektör{
+        padding-top: 8.8rem;
+        .text{
+            max-width: 61rem;
+        }
+        .description{
+            margin-top: 2.8rem;
+        }
+        .img{
+            margin-left: auto;
+            width: 62.4rem;
+            border-radius: 1.5rem;
+            overflow: hidden;
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                display: flex;
+            }
+        }
+    }
+}
+#hikayeyi-izleyin{
+    padding-top: 8.2rem;
+}
+#ihtiyac{
+    padding-top: 8.9rem;
+    .text{
+        margin-top: 4.2rem;
+        max-width: 61rem;
+        .description{
+            margin-top: 2.8rem;
+        }
+    }
+    .heading-1{
+        margin-top: 0;
+    }
+    .needs-wrap{
+        margin-top: 4.2rem;
+        width: 50%;
+        max-width: 62.4rem;
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        margin-left: auto;
+        .item{
+            display: flex;
+            width: 100%;
+            align-items: center;
+            border-bottom: .1rem solid rgb(0, 0, 0,.5);
+            padding-bottom: 2rem;
+            padding-top: 2rem;
+            &:first-child{
+                padding-top: 0;
+            }
+            .icon{
+                min-width: 6rem;
+                min-height: 6rem;
+                *{
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+            .desc{
+                font-size: 1.7rem;
+                line-height: 2.3rem;
+                color: #000000;
+                @include extrabold;
+                margin-left: 2rem;
+            }
+
+        }
+    }
+}
+#cozum{
+    padding: 9.2rem;
+    z-index: 2;
+    margin-bottom: 9.3rem;
+    .heading-1{
+        margin-bottom: 4.4rem;
+        margin-top: 4.2rem;
+    }
+    .text{
+        width: calc(50% - 1.6rem);
+        .solution-wrap{
+            width: 100%;
+            display: flex;
+            position: relative;
+            padding-left: 3.3rem;
+            flex-direction: column;
+            gap: 5rem 0;
+            padding-top: 2.1rem;
+            &:after{
+                content: "";
+                width: .1rem;
+                height: 100%;
+                background-color: rgb(0, 0, 0,.5);
+                position: absolute;
+                left: 0;
+                top: 0;
+            }
+            .item{
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                position: relative;
+                .title{
+                    @include black;
+                    font-size: 1.6rem;
+                    line-height: 2.2rem;
+                    color: #000000;
+                    margin-bottom: 2rem;
+                }
+                .desc{
+                    @include regular;
+                    font-size: 1.6rem;
+                    line-height: 2.2rem;
+                    color: #000000;
+                }
+                &:after{
+                    content: "";
+                    width: 1.5rem;
+                    height: 1.5rem;
+                    background-color: #00AEEF;
+                    border-radius: 50%;
+                    position: absolute;
+                    right: calc(100% + 2.5rem);
+                    z-index: 2;
+                    top: .3rem;
+                }
+            }
+        }
+    }
+    .text-box-in-img{
+        width: 62.4rem;
+        margin-left: auto;
+        height: 46rem;
+        position: relative;
+        .in-img{
+            width: 100%;
+            height: 100%;
+            border-radius: 1.5rem;
+            overflow: hidden;
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+        .text-box{
+            border-radius: 1rem;
+            width: 32rem;
+            height: 30rem;
+            padding: 0 4.4rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            right: 3rem;
+            bottom: -15rem;
+            box-shadow: 0 0 .4rem 0 rgb(0, 0, 0,.25);
+            .description{
+                color: #ffffff;
+            }
+        }
+    }
+}
+#proje-ciktilari{
+    width: 100%;
+    height: 40rem;
+    padding-top: 9.3rem;
+    .background-gradient{
+        padding-top: 6.3rem;
+        width: 100%;
+        height: 100%;        
+        background: linear-gradient(90deg, #592E6D 0%, #249FDD 100%);
+    }
+    .heading-type-one{
+        margin-bottom: 4.3rem;
+    }
+    .project-items{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 50%;
+        margin-left: auto;
+        gap: 3rem 0;
+        .item{
+            display: flex;
+            align-items: center;
+            gap:0 2rem;
+            span{
+                font-size: 2rem;
+                line-height: 2.7rem;
+                color: #ffffff;
+                @include font;
+            }
+        }
+    }
+}
+#verilen-hizmetler{
+    padding-top: 10.4rem;
+    .mySwiper-gives-services{
+        overflow: visible;
+        margin-top: 2rem;
+    }
+    .heading-1{
+        margin-top: 4.2rem;
+        margin-bottom: 5.1rem;
+    }
+    .swiper-slide{
+        &:hover{
+            .services-card{
+                transform: translateY(-.7rem);
+                box-shadow: 0 0 1.2rem 0 #57B6D1;
+            }
+        }
+    }
+}

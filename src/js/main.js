@@ -22,6 +22,18 @@ document.addEventListener('DOMContentLoaded', () => {
 	@@include('partial/external-link-norefer.js')
 	@@include('partial/protect-image.js')
 	@@include('partial/customer-sliders.js')
+	@@include('partial/references-sliders.js')
+	@@include('partial/services.js')
+	@@include('partial/form-check.js')
+	@@include('partial/video-section.js')
+	@@include('partial/history-slider.js')
+	@@include('partial/contact-info-slider.js')
+	@@include('partial/counter.js')
+	@@include('partial/nested-slider.js')
+	@@include('partial/pdf-slider.js')
+	@@include('partial/tab-section-scroll.js')
+	@@include('partial/services-slider.js')
+	@@include('partial/success-slider.js')
 	/*@@include('partial/responsive-table.js') */
 });
  

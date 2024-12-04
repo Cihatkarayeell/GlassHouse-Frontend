@@ -1,0 +1,70 @@
+.certificates{
+    width: 100%;
+    margin-bottom: 6.4rem;
+    .heading-1{
+        margin-top: 4.4rem;
+    }
+    .pdf-slider{
+        margin-top: 4rem;
+        position: relative;
+        .swiper-wrapper{
+            padding-top: 2rem;
+        }
+        .swiper-slide{
+            &:hover{
+                .pdf-card{
+                    transform: translateY(-.5rem);
+                    box-shadow: 0 0 1rem 0 rgb(0, 0, 0 ,.1) ;
+                }
+            }
+        }
+        .pdf-card{
+            background-color: #F7F9FC;
+            transition: box-shadow 400ms ease,transform 400ms ease;
+            border-radius: 1rem;
+            padding: 3rem 2.6rem 1.5rem 2.6rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            height: 31rem;
+            .img{
+                max-width: 25rem;
+                width: 100%;
+                height: 17.7rem;
+                box-shadow: .5rem .5rem .5rem 0 rgb(0, 0, 0 ,.1);
+                img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+            .title{
+                margin-top: 1.5rem;
+                font-size: 1.4rem;
+                line-height: 1.9rem;
+                color: #000000;
+                @include font;
+            }
+            .pdf-link{
+                margin-top: auto;
+                font-size: 1.4rem;
+                line-height: 1.9rem;
+                color: #000000;
+                @include font;
+                display: flex;
+                align-items: center;
+                gap: 0 .6rem;
+                color: #00AEEF;
+            }
+        }
+        .btn-layout{
+            display: flex;
+            align-items: center;
+            gap: 0 1.5rem;
+            position: absolute;
+            top:  -6.2rem;
+            right: 0;
+        }
+    }
+}
