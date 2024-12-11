@@ -2,12 +2,25 @@
     width: 100%;
     padding-top: 7.8rem;
     padding-bottom: 10.8rem;
+    overflow-x: hidden;
+    @include md{
+        padding-top: 6.4rem;
+        padding-bottom: 7.8rem;
+    }
     .heading-type-one{
         margin-bottom: 4.2rem;
         color: #000000;
+        @include md{
+            margin-bottom: 2.4rem;
+            margin-inline: auto;
+        }
     }
     .heading-1{
         margin-bottom: 3.6rem;
+        @include md{
+            margin-bottom: 2.4rem;
+            text-align: center;
+        }
     }
     .mySwiper-contact-info{
         overflow: visible;
@@ -42,6 +55,13 @@
             display: flex;
             align-items: center;
             justify-content: center;
+            *{
+                height: 100%;
+                object-fit: cover;
+            }
+            @include md{
+                height: 11.5rem;
+            }
         }
         .city{
             font-size: 2rem;
@@ -49,6 +69,9 @@
             color: #00AEEF;
             @include extrabold;
             margin-top:2.3rem;
+            @include md{
+                margin-top: 4rem;
+            }
         }
         .subtitle{
             font-size: 1.6rem;
@@ -56,11 +79,17 @@
             color: #000000;
             @include medium;
             margin-top:1.2rem;
+            @include md{
+                margin-top: .8rem;
+            }
         }
         .location-wrap{
             margin-top: 1.2rem;
             display: flex;
             flex-direction: column;
+            @include md{
+                margin-top: .8rem;
+            }
             .item{
                 display: flex;
                 align-items: flex-start;
@@ -78,12 +107,18 @@
                     img{
                         display: flex;
                     }
+                    @include md{
+                        margin-top:.3rem;
+                    }
                 }
                 span{
                     font-size: 1.4rem;
                     line-height: 3.2rem;
                     color: #000000;
                     @include regular;
+                    @include md{
+                        line-height: 2.2rem;
+                    }
                 }
             }
         }
@@ -98,6 +133,12 @@
         .swiper-button-next-contact-info,
         .swiper-button-prev-contact-info{
             cursor: pointer;
+        }
+        @include md{
+            position: unset;
+            margin-inline: auto;
+            margin-top:2.4rem;
+            justify-content: center;
         }
     }
 }

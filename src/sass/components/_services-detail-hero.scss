@@ -1,0 +1,91 @@
+.services-detail-hero{
+    width: 100%;
+    background-color: #F8F8F8;
+    height:54.4rem;
+    @include md{
+        height: 100%;
+        padding-bottom: 7.5rem;
+        .container{
+            margin-inline: 0;
+        }
+    }
+    @include sm{
+        padding-top: 3.2rem;
+    }
+    .breadcrumb{
+        margin-bottom: 6rem;
+        a{
+            color: #000000;
+        }
+    }
+    .text{
+        max-width: 62.4rem;
+        width: 50%;
+        @include md{
+            max-width: 100%;
+            width: 100%;
+        }
+        .title-box{
+            background-color: #3673B0;
+            border-radius: 3rem;
+            padding: 1.2rem 1.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0 1rem;
+            font-size: 1.4rem ;
+            line-height: 1.9rem;
+            color: #ffffff;
+            @include font;
+            width: max-content;
+            @include md{                
+                margin-inline: 3rem;
+            }
+        }
+        .heading-1{
+            margin-top: 3.7rem;
+            @include md{
+                @include black;
+                margin-inline: 3rem;
+                margin-top: 2.4rem;
+            }
+        }
+        .description{
+            margin-top: 2.8rem;
+            @include md{                
+                margin-inline: 3rem;
+                margin-top: 3rem;
+            }
+        }
+        .mobile-img{
+            @include md{
+                margin-top: 2.4rem;
+                margin-inline: 1.5rem;
+            }
+        }
+        a.link{
+            background-color: #9747FF;
+            border-radius: 3rem;
+            padding: 1.1rem 2.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0 1rem;
+            font-size: 1.4rem ;
+            line-height: 1.9rem;
+            color: #ffffff;
+            @include extrabold;
+            width: max-content;
+            margin-top: 2.8rem;
+            @include md{                
+                margin-inline: 3rem;
+                margin-top: 3rem;
+            }
+        }
+    }
+    .img{
+        width: 50%;
+        max-width: 62.4rem;
+        @include md{
+            display: none;
+        }
+    }
+}

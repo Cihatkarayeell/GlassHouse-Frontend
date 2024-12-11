@@ -34,6 +34,19 @@ document.addEventListener('DOMContentLoaded', () => {
 	@@include('partial/tab-section-scroll.js')
 	@@include('partial/services-slider.js')
 	@@include('partial/success-slider.js')
+	@@include('partial/solutions.js')
+	@@include('partial/features-slider.js')
+	@@include('partial/form.js')
+	@@include('partial/moving.js')
+	@@include('partial/more-button.js')
+	@@include('partial/video-tab.js')
+	@@include('partial/info-tabs.js')
+	@@include('partial/gallery.js')
+	@@include('partial/other-news-slider.js')
+	@@include('partial/announcements-modal.js')
+	@@include('partial/letters-btn.js')
+	@@include('partial/data-centre.js')
+	
 	/*@@include('partial/responsive-table.js') */
 });
  

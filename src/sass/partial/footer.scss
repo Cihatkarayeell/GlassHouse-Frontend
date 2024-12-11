@@ -1,12 +1,18 @@
 #footer{
 	width: 100%;
 	height: 40rem;
+	@include lg{
+		height: 100%;
+	}
 	.footer-backdrop{
 		background-color: #111827;
 		height: 100%;
 	}
 	.container{
 		height: 100%;
+		@include mini{
+			margin-inline: 1.5rem;;
+		}
 	}
 	.footer-layout{
 		width: 100%;
@@ -19,6 +25,10 @@
 			display: flex;
 			align-items: flex-start;
 			width: 100%;
+			@include lg{
+				flex-direction: column;
+				align-items: flex-start;
+			}
 		}
 		.brand-logo{
 			margin-bottom: 3.2rem;
@@ -51,12 +61,29 @@
 		.footer-list-wrap{
 			margin-left: auto;
 			display: flex;
+			@include lg{
+				margin-left: 0;
+				margin-top: 5.7rem;
+				width: 100%;
+			}
+			@include sm{
+				flex-wrap: wrap;
+				gap: 4rem 0;
+				width: 100%;
+			}
 			.footer-list{
 				display: flex;
 				flex-direction: column;
 				align-items: flex-start;
 				width: 18.7rem;
 				margin-left: 3.2rem;
+				@include lg{
+					margin-left:5.8rem;
+				}
+				@include sm{
+					width: 50%;
+					margin-left: 0;
+				}
 				&:first-of-type{
 					margin-left: 0;
 				}
@@ -72,9 +99,12 @@
 					flex-direction: column;
 					align-items: flex-start;
 					gap: 2rem 0;
+					@include sm{
+						max-width: 18.7rem;
+					}
 					a{
 						font-size: 1.3rem;
-						line-height: 1.9rem;
+						line-height: 1.8rem;
 						@include regular;
 						color: #989FAB;
 
@@ -88,6 +118,27 @@
 			border-top: .1rem solid rgb(152, 159, 171,.3);
 			display: flex;
 			align-items: center;
+			padding-top: 2rem;
+			@include md{
+				margin-top: 5.3rem;
+			}
+			@include sm{
+				margin-top: 9.1rem;
+				flex-direction: column-reverse;
+				align-items: flex-start;		
+				gap: 2rem 0;	
+			}
+			.footer-right{
+				display: flex;
+				align-items: center;
+				gap: 0 1rem;
+				margin-left: auto;
+				@include sm{
+					margin-left: 0;
+					flex-direction: column;
+					align-items: flex-start;
+				}
+			}
 			.footer-bottom-item{
 				font-size: 1.2rem;
 				line-height: 2.4rem;

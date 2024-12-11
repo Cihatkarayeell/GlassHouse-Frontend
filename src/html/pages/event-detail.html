@@ -1,0 +1,434 @@
+{# prettier-ignore #}
+{% extends "./layout/layout-general.html" %}
+{% block title %}Front end Starter Kit{% endblock %}
+{%block bodyClass %}body-home{% endblock %} {% block content %}
+<div class="video-modal" id="videoModal">
+    <button class="close-button" id="closeModal">
+        <img src="./img/icon/close-button-kare.svg" alt="">
+    </button>
+    <iframe id="videoIframe" width="560" height="315" src="https://www.youtube.com/embed/2aceXxCCWlU?si=EX1oCmvQdBf_zje8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
+<section class="event detail-hero">
+    <div class="container">
+        <div class="breadcrumb color-text">
+            <div class="breadcrumb-item">
+                <a href="index.html">Ana Sayfa</a>
+            </div>
+            <div class="chevron">
+                <svg width="10" height="16" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path opacity="0.5" d="M1.46143 2L7.92296 8L1.46143 14" stroke="white" stroke-width="2" stroke-linecap="square"/>
+                </svg>                                      
+            </div>
+            <div class="breadcrumb-item">
+                <a href="#">Bilgi Merkezi</a>
+            </div>
+            <div class="chevron">
+                <svg width="10" height="16" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path opacity="0.5" d="M1.46143 2L7.92296 8L1.46143 14" stroke="white" stroke-width="2" stroke-linecap="square"/>
+                </svg>                                     
+            </div>
+            <div class="breadcrumb-item">
+                <a href="#">Etkinlikler</a>
+            </div>
+            <div class="chevron">
+                <svg width="10" height="16" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path opacity="0.5" d="M1.46143 2L7.92296 8L1.46143 14" stroke="white" stroke-width="2" stroke-linecap="square"/>
+                </svg>                                     
+            </div>
+            <div class="breadcrumb-item">
+                <a href="#">Yeni Dönem Başlıyor: GlassHouse, e& enterprise Ailesinde</a>
+            </div>
+        </div>
+        <div class="block">
+            <div class="text">
+                <div class="heading-1">
+                    <h1>Powerstore ve Datadomain Entegrasyonu ile Verileriniz Güvende</h1>
+                </div>
+                <div class="info-item">
+                    <div class="icon">
+                        <img src="./img/icon/location-2.svg" alt="">
+                    </div>
+                    <span>Online</span>
+                </div>
+                <div class="info-item">
+                    <div class="icon">
+                        <img src="./img/icon/calendar.svg" alt="">
+                    </div>
+                    <span>15 Ekim 2024 - Salı</span>
+                </div>
+                <div class="info-item">
+                    <div class="icon">
+                        <img src="./img/icon/clock.svg" alt="">
+                    </div>
+                    <span>15:00 - 16:00</span>
+                </div>
+            </div>
+            <div class="img">
+                <img src="./img/card/event-hero.png" alt="">
+            </div>
+        </div>
+    </div>
+</section>
+<section class="detail-text-section">
+    <div class="alt-container">
+        <div class="position-relative">
+            <div class="d-flex block">
+                <div class="social-media-items">
+                    <div class="item">
+                        <div class="icon">
+                            <img src="./img/icon/linkden.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="icon">
+                            <img src="./img/icon/facebook.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="icon">
+                            <img src="./img/icon/x.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="text-block">
+                    <div class="title">
+                        <h3>e& enterprise, GlassHouse'u 60 milyon dolara satın alarak küresel erişimini genişletti. Türkiye, grubun faaliyet gösterdiği 33. ülke oldu. GlassHouse, e& enterprise'ın bir iştiraki olarak marka kimliğini koruyacak ve faaliyetlerini bağımsız olarak yürütecek.</h3>
+                    </div>
+                    <div class="desc">
+                        <p>Orta Doğu, Asya ve Afrika'da 32 ülkede faaliyet gösteren ve bölgenin en büyük küresel teknoloji şirketler grubu olan e&’in grup şirketlerinden biri olan e& enterprise, Türkiye'nin lider BT altyapı hizmet sağlayıcısı GlassHouse'un hisselerini devraldı. Hisse Devir Sözleşmesi’nin 25 Haziran tarihinde imzalanmasının ardından e&'in dijital dönüşüm birimi e& enterprise, Türkiye'nin önde gelen yönetilen bulut ve SAP altyapı hizmetleri sağlayıcısı GlassHouse'un yüzde 100 hissesini 60 milyon ABD doları karşılığında satın alma sürecinin başarıyla tamamlandığını duyurdu. Bu satın almayla birlikte, GlassHouse e& enterprise'ın iştirakleri arasına katılırken, marka kimliğini koruyarak bağımsız bir şekilde faaliyet göstermeye devam edecek.</p>
+                    </div>
+                    <div class="title">
+                        <h2>GlassHouse hakkında:</h2>
+                    </div>
+                    <ul>
+                        <li>GlassHouse, 2004 yılından bu yana, Türkiye'nin önde gelen kuruluşlarına sunduğu BT altyapı hizmetleri ile işletmelerin dijital dönüşüm yolculuğundaki güvenilir iş ortağıdır. 2024 yılında, Orta Doğu, Asya ve Afrika'da 32 ülkede faaliyet gösteren ve bölgenin en büyük küresel teknoloji şirketler grubu olan e&’in grup şirketlerinden biri olan e& enterprise bünyesine katılan GlassHouse, Yönetilen Bulut, SAP Altyapı ve Danışmanlık, Veri Yedekliliği ve İş Sürekliliği alanlarında uluslararası standartlarda hizmet verir.</li>
+                        <li>Türkiye'nin lider BT altyapı hizmet sağlayıcısı GlassHouse, 100’ü aşkın bilişim mühendisi ile endüstrinin en iyi takımının derin teknik uzmanlığını Türkiye’nin lider şirketlerinin hizmetine sunar. GlassHouse uzmanları, GlassHouse Cloud platformu, Hyperscaler ortamları ve müşteriye özel bilişim altyapılarında, finansal mevzuatlar başta olmak üzere ülkemizdeki ilgili regülasyonlara tam uyumlu operasyon modelleri ile özel çözümler geliştirir.</li>
+                        <li>GlassHouse’un uzman takımı, GlassHouse müşterilerinin işlerini sahiplenir ve onların takımlarının bir üyesi olur. GlassHouse yönetimi düzenli olarak müşteri memnuniyet düzeyini ölçer ve müşteri projelerinin başarısını her adımda destekler.</li>
+                    </ul>
+                    <div class="title">
+                        <h2>GlassHouse hakkında:</h2>
+                    </div>
+                    <ul>
+                        <li>e& enterprise, kamu ve büyük ölçekli kuruluşların dijital altyapılarını oluşturup büyütmelerine destek veren bir dijital dönüşüm lideridir.</li>
+                        <li>e& enterprise operasyonları optimize ederek, müşteri etkileşimlerini artırarak ve veri odaklı karar alma süreçlerini geliştirerek, işletmelerin dijital dünyaya sorunsuz, sürdürülebilir ve güvenle geçmelerini sağlar.BAE, Suudi Arabistan, Mısır ve Umman'da faaliyet gösteren e& enterprise, çeşitli sektörlerde organizasyonların ve yöneticilerin karşılaştıkları zorluklara karşı yenilikçi dijital çözümler sunar.e& enterprise, güvenilir bir dijital dönüşüm ortağı olarak teknik uzmanlığı ve karmaşık çözümleri devreye alıp yönetme yeteneği ile müşterilerinin uçtan uca dijital dönüşüm yolculuklarını yönetmelerine olanak tanıyan iş birliğine dayalı, özelleştirilmiş çözümler sunmaktadır.</li>
+                        <li>e& enterprise hakkında daha fazla bilgi edinmek için <a href="www.eandenterprise.com" target="_blank"> www.eandenterprise.com</a>adresini ziyaret edebilirsiniz.</li>
+                        <li>GlassHouse çözümleri ile ilgili sorularınızı <a href="mailto:bilgi@glasshouse.com.tr"> bilgi@glasshouse.com.tr</a>adresine e-posta atabilir, detaylı bilgi almak için <a href="tell:">+90 (850) 885 0175</a> no’lu Ücretsiz Danışma Hattımızı arayabilirsiniz.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <section class="register-section">
+            <div class="backdrop">
+                <div class="block">
+                    <div class="title">
+                        <h2>Kayıt Formu</h2>
+                    </div>
+                    <div class="contact-form">
+                        <form class="row g-3 needs-validation" novalidate >
+                            <div class="col-md-6 position-relative form-input">
+                              <input type="text" class="form-control" id="validationTooltip01" placeholder="*Adınız" required>
+                              <div class="invalid-tooltip">
+                                Lütfen boş bırakmayınız!
+                              </div>
+                            </div>
+                            <div class="col-md-6 position-relative form-input">
+                              <input type="text" class="form-control" id="validationTooltip02" placeholder="*Soyadınız" required>
+                              <div class="invalid-tooltip">
+                                Lütfen boş bırakmayınız!
+                              </div>
+                            </div>
+                            <div class="col-md-6 position-relative form-input">
+                                <input type="text" class="form-control" id="validationTooltip03" placeholder="*Firmanızın Adı" required>
+                                <div class="invalid-tooltip">
+                                    Lütfen boş bırakmayınız!
+                                  </div>
+                              </div>
+                              <div class="col-md-6 position-relative form-input">
+                                <input type="text" class="form-control" id="validationTooltip04" placeholder="*Ünvanınız" required>
+                                <div class="invalid-tooltip">
+                                    Lütfen boş bırakmayınız!
+                                  </div>
+                              </div>
+                              <div class="col-md-6 position-relative form-input">
+                                <input type="tel" class="form-control" id="validationTooltip05" placeholder="+90 (5_ _) _ _ _  _ _  _ _" required>
+                              </div>
+                              <div class="col-md-6 position-relative form-input">
+                                <input type="email" class="form-control" id="validationTooltip06" placeholder="*E-Postanız" required>
+                              </div>
+                            <div class="col-md-12 position-relative form-textarea">
+                              <textarea type="text" class="form-control"  maxlength="250"  placeholder="Mesajınızı bu alana yazabilirsiniz" id="validationTooltip07" required></textarea>
+                              <div class="invalid-tooltip">
+                                Lütfen boş bırakmayınız!
+                              </div>
+                            </div>
+                            <div class="form-check" id="kvkk">
+                                <div class="custom-box">
+                                    <svg width="13" height="10" viewBox="0 0 13 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M3.99614 10L0 6.00386L1.82111 4.18275L3.99614 6.36422L10.3539 0L12.175 1.82111L3.99614 10Z" fill="white"/>
+                                    </svg>                            
+                                </div>
+                                <input class="form-check-input" type="checkbox" id="kvkkCheck">
+                                <label class="form-check-label" for="kvkkCheck">
+                                    Bizimle kurmuş olduğunuz iş ilişkisi kapsamında bizlerle paylaşmış olduğunuz verilerinizi, sizleri ürün ve hizmetlerimizle ilgili bilgilendirmek ve ürünlerimizle ilgili etkinliklerimizden haberdar edebilmek amacıyla işlemekteyiz. Kişisel verilerinizi nasıl işlediğimize ilişkin daha detaylı bilgi ve haklarınız için Kişisel Verilerin Korunması Kanunu Uyarınca Aydınlatma Metninde yer alan aydınlatma metnini inceleyebilirsiniz.Gönder tuşuna basarak bu formda paylaştığınız bilgilerle ilgili olarak Kişisel Verilerin Korunması Kanunu Uyarınca Aydınlatma Metninde yer alan şartları kabul etmiş sayılırsınız.
+                                </label>
+                              </div>
+                              <div class="form-check active align-items-center" id="eBulten">
+                                <div class="custom-box">
+                                    <svg width="13" height="10" viewBox="0 0 13 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M3.99614 10L0 6.00386L1.82111 4.18275L3.99614 6.36422L10.3539 0L12.175 1.82111L3.99614 10Z" fill="white"/>
+                                    </svg>                            
+                                </div>
+                                <input class="form-check-input" type="checkbox" id="newsletterCheck">
+                                <label class="form-check-label" for="newsletterCheck">
+                                    e-Bülten'e abone olmak istiyorum.
+                                </label>
+                              </div>
+                            <div class="col-12">
+                              <button class="btn" type="submit">Gönder</button>
+                            </div>
+                          </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="video-section-backdrop">
+            <div class="video-box">
+                <img src="./img/card/video-img-backg.png" alt="">
+                <button class="play-button videoPlayButton" data-video="https://www.youtube.com/embed/xlV_ynMOZMU?si=7KjiJeCAdLIY9ZLz">
+                    <img src="./img/icon/video-play-btn.svg" alt="">
+                </button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="photo-gallery">
+    <div class="title">
+        <h2>Foto Galeri</h2>
+    </div>
+    <div class="backdrop">
+        <div class="container">
+            <div class="block">
+                <div class="swiper-button-prev-gallery">
+                    <svg width="41" height="41" viewBox="0 0 41 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="20.5" cy="20.5" r="20.5" fill="#00AEEF"/>
+                        <path d="M18.7486 12.607C18.8682 12.7266 18.9353 12.8889 18.9353 13.058C18.9353 13.2272 18.8682 13.3894 18.7486 13.5091L12.1793 20.0795L29.3617 20.0795C29.531 20.0795 29.6933 20.1468 29.813 20.2665C29.9328 20.3862 30 20.5485 30 20.7178C30 20.8871 29.9328 21.0495 29.813 21.1692C29.6933 21.2889 29.531 21.3561 29.3617 21.3561L12.1793 21.3561L18.7486 27.9265C18.8614 28.0475 18.9228 28.2076 18.9198 28.3729C18.9169 28.5383 18.8499 28.6961 18.733 28.813C18.616 28.93 18.4582 28.997 18.2929 28.9999C18.1275 29.0028 17.9675 28.9414 17.8465 28.8287L10.1867 21.1689C10.0671 21.0492 10 20.887 10 20.7178C10 20.5487 10.0671 20.3864 10.1867 20.2667L17.8465 12.607C17.9662 12.4874 18.1284 12.4203 18.2975 12.4203C18.4667 12.4203 18.6289 12.4874 18.7486 12.607Z" fill="white"/>
+                    </svg>                            
+                </div>
+                <div class="gallery-slider">
+                    <div class="swiper mySwiper-gallery">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                    <a href="./img/card/gallery-big-pic.png" class="gallery-link glightbox">
+                                        <div class="img">
+                                            <img src="./img/card/gallery-1.png" alt="">
+                                        </div>
+                                    </a>
+                            </div>
+                            <div class="swiper-slide">
+                                    <a href="./img/card/gallery-big-pic.png" class="gallery-link glightbox">
+                                        <div class="img">
+                                            <img src="./img/card/gallery-2.png" alt="">
+                                        </div>
+                                    </a>
+                            </div>
+                            <div class="swiper-slide">
+                                    <a href="./img/card/gallery-big-pic.png" class="gallery-link glightbox">
+                                        <div class="img">
+                                            <img src="./img/card/gallery-1.png" alt="">
+                                        </div>
+                                    </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="./img/card/gallery-big-pic.png" class="gallery-link glightbox">
+                                    <div class="img">
+                                        <img src="./img/card/gallery-3.png" alt="">
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="./img/card/gallery-big-pic.png" class="gallery-link glightbox">
+                                    <div class="img">
+                                        <img src="./img/card/gallery-4.png" alt="">
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                    <a href="./img/card/gallery-big-pic.png" class="gallery-link glightbox">
+                                        <div class="img">
+                                            <img src="./img/card/gallery-2.png" alt="">
+                                        </div>
+                                    </a>
+                            </div>
+                            <div class="swiper-slide">
+                                    <a href="./img/card/gallery-big-pic.png" class="gallery-link glightbox">
+                                        <div class="img">
+                                            <img src="./img/card/gallery-1.png" alt="">
+                                        </div>
+                                    </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="./img/card/gallery-big-pic.png" class="gallery-link glightbox">
+                                    <div class="img">
+                                        <img src="./img/card/gallery-3.png" alt="">
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="./img/card/gallery-big-pic.png" class="gallery-link glightbox">
+                                    <div class="img">
+                                        <img src="./img/card/gallery-4.png" alt="">
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-next-gallery">
+                    <svg width="41" height="41" viewBox="0 0 41 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="20.5" cy="20.5" r="20.5" transform="rotate(-180 20.5 20.5)" fill="#00AEEF"/>
+                        <path d="M22.2514 28.393C22.1318 28.2734 22.0647 28.1111 22.0647 27.942C22.0647 27.7728 22.1318 27.6106 22.2514 27.4909L28.8207 20.9205L11.6383 20.9205C11.469 20.9205 11.3067 20.8532 11.187 20.7335C11.0672 20.6138 11 20.4515 11 20.2822C11 20.1129 11.0672 19.9505 11.187 19.8308C11.3067 19.7111 11.469 19.6439 11.6383 19.6439L28.8207 19.6439L22.2514 13.0735C22.1386 12.9525 22.0772 12.7924 22.0802 12.6271C22.0831 12.4617 22.1501 12.3039 22.267 12.187C22.384 12.07 22.5418 12.003 22.7071 12.0001C22.8725 11.9972 23.0325 12.0586 23.1535 12.1713L30.8133 19.8311C30.9329 19.9508 31 20.113 31 20.2822C31 20.4513 30.9329 20.6136 30.8133 20.7333L23.1535 28.393C23.0338 28.5126 22.8716 28.5797 22.7025 28.5797C22.5333 28.5797 22.3711 28.5126 22.2514 28.393Z" fill="white"/>
+                    </svg>                            
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="other-news-section">
+    <div class="container">
+        <div class="block">
+            <div class="heading-1">
+                <h1>Diğer haberleri incelemek ister misiniz?</h1>
+            </div>
+            <div class="other-news-slider">
+                <div class="swiper mySwiper-other-news">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <a href="#" class="info-centre-card">
+                            <div class="img">
+                                <img src="./img/card/news-1.png" alt="">
+                            </div>
+                            <div class="text">
+                                <div class="date">
+                                    <span>Haz 26, 2024</span>
+                                </div>
+                                <div class="title">
+                                    <h3>Yeni Dönem Başlıyor: GlassHouse, e& enterprise Ailesinde</h3>
+                                </div>
+                                <div class="desc">
+                                    <p>e& enterprise, GlassHouse'u 60 milyon dolara satın alarak küresel erişimini genişletti. Türkiye, grubun faaliyet gösterdiği 33. ülke oldu. GlassHouse, e& ...</p>
+                                </div>
+                            </div>
+                        </a>
+                      </div>
+                      <div class="swiper-slide">
+                        <a href="#" class="info-centre-card">
+                            <div class="img">
+                                <img src="./img/card/news-1.png" alt="">
+                            </div>
+                            <div class="text">
+                                <div class="date">
+                                    <span>Haz 26, 2024</span>
+                                </div>
+                                <div class="title">
+                                    <h3>Yeni Dönem Başlıyor: GlassHouse, e& enterprise Ailesinde</h3>
+                                </div>
+                                <div class="desc">
+                                    <p>e& enterprise, GlassHouse'u 60 milyon dolara satın alarak küresel erişimini genişletti. Türkiye, grubun faaliyet gösterdiği 33. ülke oldu. GlassHouse, e& ...</p>
+                                </div>
+                            </div>
+                        </a>
+                      </div>
+                      <div class="swiper-slide">
+                        <a href="#" class="info-centre-card">
+                            <div class="img">
+                                <img src="./img/card/news-1.png" alt="">
+                            </div>
+                            <div class="text">
+                                <div class="date">
+                                    <span>Haz 26, 2024</span>
+                                </div>
+                                <div class="title">
+                                    <h3>Yeni Dönem Başlıyor: GlassHouse, e& enterprise Ailesinde</h3>
+                                </div>
+                                <div class="desc">
+                                    <p>e& enterprise, GlassHouse'u 60 milyon dolara satın alarak küresel erişimini genişletti. Türkiye, grubun faaliyet gösterdiği 33. ülke oldu. GlassHouse, e& ...</p>
+                                </div>
+                            </div>
+                        </a>
+                      </div>
+                      <div class="swiper-slide">
+                        <a href="#" class="info-centre-card">
+                            <div class="img">
+                                <img src="./img/card/news-1.png" alt="">
+                            </div>
+                            <div class="text">
+                                <div class="date">
+                                    <span>Haz 26, 2024</span>
+                                </div>
+                                <div class="title">
+                                    <h3>Yeni Dönem Başlıyor: GlassHouse, e& enterprise Ailesinde</h3>
+                                </div>
+                                <div class="desc">
+                                    <p>e& enterprise, GlassHouse'u 60 milyon dolara satın alarak küresel erişimini genişletti. Türkiye, grubun faaliyet gösterdiği 33. ülke oldu. GlassHouse, e& ...</p>
+                                </div>
+                            </div>
+                        </a>
+                      </div>
+                      <div class="swiper-slide">
+                        <a href="#" class="info-centre-card">
+                            <div class="img">
+                                <img src="./img/card/news-1.png" alt="">
+                            </div>
+                            <div class="text">
+                                <div class="date">
+                                    <span>Haz 26, 2024</span>
+                                </div>
+                                <div class="title">
+                                    <h3>Yeni Dönem Başlıyor: GlassHouse, e& enterprise Ailesinde</h3>
+                                </div>
+                                <div class="desc">
+                                    <p>e& enterprise, GlassHouse'u 60 milyon dolara satın alarak küresel erişimini genişletti. Türkiye, grubun faaliyet gösterdiği 33. ülke oldu. GlassHouse, e& ...</p>
+                                </div>
+                            </div>
+                        </a>
+                      </div>
+                      <div class="swiper-slide">
+                        <a href="#" class="info-centre-card">
+                            <div class="img">
+                                <img src="./img/card/news-1.png" alt="">
+                            </div>
+                            <div class="text">
+                                <div class="date">
+                                    <span>Haz 26, 2024</span>
+                                </div>
+                                <div class="title">
+                                    <h3>Yeni Dönem Başlıyor: GlassHouse, e& enterprise Ailesinde</h3>
+                                </div>
+                                <div class="desc">
+                                    <p>e& enterprise, GlassHouse'u 60 milyon dolara satın alarak küresel erişimini genişletti. Türkiye, grubun faaliyet gösterdiği 33. ülke oldu. GlassHouse, e& ...</p>
+                                </div>
+                            </div>
+                        </a>
+                      </div>
+                    </div>
+                </div>
+                <div class="btn-layout">
+                    <div class="swiper-button-prev-other-news">
+                        <svg width="41" height="41" viewBox="0 0 41 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="20.5" cy="20.5" r="20.5" fill="#00AEEF"/>
+                            <path d="M18.7486 12.607C18.8682 12.7266 18.9353 12.8889 18.9353 13.058C18.9353 13.2272 18.8682 13.3894 18.7486 13.5091L12.1793 20.0795L29.3617 20.0795C29.531 20.0795 29.6933 20.1468 29.813 20.2665C29.9328 20.3862 30 20.5485 30 20.7178C30 20.8871 29.9328 21.0495 29.813 21.1692C29.6933 21.2889 29.531 21.3561 29.3617 21.3561L12.1793 21.3561L18.7486 27.9265C18.8614 28.0475 18.9228 28.2076 18.9198 28.3729C18.9169 28.5383 18.8499 28.6961 18.733 28.813C18.616 28.93 18.4582 28.997 18.2929 28.9999C18.1275 29.0028 17.9675 28.9414 17.8465 28.8287L10.1867 21.1689C10.0671 21.0492 10 20.887 10 20.7178C10 20.5487 10.0671 20.3864 10.1867 20.2667L17.8465 12.607C17.9662 12.4874 18.1284 12.4203 18.2975 12.4203C18.4667 12.4203 18.6289 12.4874 18.7486 12.607Z" fill="white"/>
+                        </svg>                            
+                    </div>
+                    <div class="swiper-button-next-other-news">
+                        <svg width="41" height="41" viewBox="0 0 41 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="20.5" cy="20.5" r="20.5" transform="rotate(-180 20.5 20.5)" fill="#00AEEF"/>
+                            <path d="M22.2514 28.393C22.1318 28.2734 22.0647 28.1111 22.0647 27.942C22.0647 27.7728 22.1318 27.6106 22.2514 27.4909L28.8207 20.9205L11.6383 20.9205C11.469 20.9205 11.3067 20.8532 11.187 20.7335C11.0672 20.6138 11 20.4515 11 20.2822C11 20.1129 11.0672 19.9505 11.187 19.8308C11.3067 19.7111 11.469 19.6439 11.6383 19.6439L28.8207 19.6439L22.2514 13.0735C22.1386 12.9525 22.0772 12.7924 22.0802 12.6271C22.0831 12.4617 22.1501 12.3039 22.267 12.187C22.384 12.07 22.5418 12.003 22.7071 12.0001C22.8725 11.9972 23.0325 12.0586 23.1535 12.1713L30.8133 19.8311C30.9329 19.9508 31 20.113 31 20.2822C31 20.4513 30.9329 20.6136 30.8133 20.7333L23.1535 28.393C23.0338 28.5126 22.8716 28.5797 22.7025 28.5797C22.5333 28.5797 22.3711 28.5126 22.2514 28.393Z" fill="white"/>
+                        </svg>                                                      
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

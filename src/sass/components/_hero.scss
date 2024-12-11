@@ -4,7 +4,7 @@
     height: 100vh;
     position:fixed;
     left: 0;
-    top: 12rem;
+    top: 8rem;
     video{
         width: 100%;
         height: 100%;
@@ -19,11 +19,43 @@
         left: 0;
         background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%);
     }
+    @include mini{
+        height: 54.4rem;
+    }
 }
 .home-hero{
     width: 100%;
     height: 74rem;
     margin-bottom: -7.7rem;
+    @include mini{
+        height: 54.4rem;
+    }
+    .hero-backdrop{
+        width: 100%;
+        height: 74rem;
+        height: 100vh;
+        position:fixed;
+        left: 0;
+        top: 8rem;
+        video{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        &::after{
+            content: "";
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%);
+        }
+        @include mini{
+            top: 15.4rem;
+            height: 54.4rem;
+        }
+    }
     .hero-section{
         width: 100%;
         height: 100%;
@@ -41,6 +73,11 @@
             align-items: center;
             justify-content: center;
             max-width: 62rem;
+            @include mini{
+                height: 100%;
+                padding: 0 2.5rem;
+                justify-content: flex-start;
+            }
         }
         .top-title{
             font-size: 2.4rem;
@@ -48,6 +85,11 @@
             color: #ffffff;
             margin-bottom: 2rem;
             @include medium;
+            @include mini{
+                font-size: 2rem;
+                line-height: 2.7rem;
+                margin-top: 7rem;
+            }
         }
         .title{
             font-size: 7.2rem;
@@ -56,6 +98,10 @@
             @include regular;
             text-align: center;
             margin-bottom: 4rem;
+            @include mini{
+                font-size: 4.2rem;
+                line-height: 4.6rem;
+            }
         }
         .desc{
             font-size: 1.8rem;
@@ -63,6 +109,10 @@
             color: #ffffff;
             @include light;
             text-align: center;
+            @include mini{
+                font-size: 1.7rem;
+                line-height: 2.3rem;
+            }
         }
     }
 }

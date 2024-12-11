@@ -1,0 +1,298 @@
+{# prettier-ignore #}
+{% extends "./layout/layout-general.html" %}
+{% block title %}Front end Starter Kit{% endblock %}
+{%block bodyClass %}body-home{% endblock %} {% block content %}
+<div class="announcements-modal" id="announcementsModal">
+    <button class="close-button">
+        <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0.868 20.004C0.644 20.004 0.42 19.916 0.252 19.748C-0.084 19.412 -0.084 18.86 0.252 18.516L18.516 0.252C18.852 -0.084 19.404 -0.084 19.748 0.252C20.084 0.588 20.084 1.14 19.748 1.484L1.484 19.748C1.316 19.916 1.092 20.004 0.868 20.004Z" fill="black"/>
+            <path d="M19.124 20.0038C18.9 20.0038 18.676 19.9158 18.508 19.7478L0.252 1.49181C-0.084 1.15581 -0.084 0.603813 0.252 0.259813C0.588 -0.0761875 1.14 -0.0761875 1.484 0.259813L19.748 18.5238C20.084 18.8598 20.084 19.4118 19.748 19.7558C19.58 19.9238 19.356 20.0118 19.132 20.0118L19.124 20.0038Z" fill="black"/>
+        </svg>            
+    </button>
+    <div class="modal-body">
+        <div class="text">
+            <div class="time">
+                <span>04.10.2024 15:24</span>
+            </div>
+            <span>Değerli Müşterimiz,</span>
+            <span>GlassHouse Cloud Equinix Veri Merkezi'nde bulunan yedekleme cihazımızda yaşanan sorun nedeniyle, yedekleme operasyonlarında kesintiler meydana gelmektedir. Uzman ekiplerimiz sorunun çözümü için çalışmalarına devam etmektedir.</span>
+            <span>Çalışma tamamlandığında tekrar bilgi vereceğiz.</span>
+            <span>Anlayışınız için teşekkür ederiz.</span>
+            <a href="#">RCA Dokümanı</a>
+            <span>Saygılarımızla,</span>
+            <span>GlassHouse</span>
+        </div>
+    </div>
+</div>
+<section class="data-centre-hero background-gradient">
+    <div class="container position-relative">
+        <div class="breadcrumb">
+            <div class="breadcrumb-item">
+                <a href="index.html">Ana Sayfa</a>
+            </div>
+            <div class="chevron">
+                <svg width="10" height="16" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path opacity="0.5" d="M1.46143 2L7.92296 8L1.46143 14" stroke="white" stroke-width="2" stroke-linecap="square"/>
+                </svg>                                      
+            </div>
+            <div class="breadcrumb-item">
+                <a href="#">Bulut Veri Merkezleri</a>
+            </div>
+        </div>
+        <div class="block">
+            <div class="text">
+                <div class="heading-type-one w-max">
+                    <h1>VERİ MERKEZLERİ</h1>
+                </div>
+                <div class="heading-1 color-body">
+                    <h1>GlassHouse Bulut Veri Merkezleri</h1>
+                </div>
+                <div class="description color-body">
+                    <p>Bu platformda paylaşılan erişilebilirlik durumları, veri merkezlerimizde bulunan IP adreslerinin erişim durumlarını bir dakikalık aralıklarla ölçerek hesaplanır. Bu hesaplama yöntemi ile paylaşılan erişilebilirlik durumları tüm veri merkezimiz için geçerlidir ve tekil müşterilerin toplam erişim durumunu göstermez.</p>
+                </div>
+            </div>
+        </div>
+        <div class="backdrop-svg">
+            <img src="./img/icon/GH.svg" alt="">
+        </div>
+    </div>
+</section>
+<div class="data-centre-box">
+    <div class="container">
+        <div class="data-centre-box-wrap">
+            <div class="data-box">
+                <div class="data-top">
+                    <div class="data-item">
+                        <div class="icon">
+                            <svg width="24" height="16" viewBox="0 0 24 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M19.35 6.04C18.67 2.59 15.64 0 12 0C9.11 0 6.6 1.64 5.35 4.04C2.34 4.36 0 6.91 0 10C0 13.31 2.69 16 6 16H19C21.76 16 24 13.76 24 11C24 8.36 21.95 6.22 19.35 6.04Z" fill="black"/>
+                            </svg>                        
+                        </div>
+                        <div class="text">
+                            <span>KKB Veri Merkezi</span>
+                            <span>Anlık</span>
+                        </div>
+                    </div>
+                    <div class="data-item">
+                        <div class="circle wait">
+                                                 
+                        </div>
+                        <div class="text">
+                            <span>BEKLENİYOR</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="data-bottom">
+                    <div class="data-bottom-item">
+                        <div class="per-cent">
+                            <span>%100</span>
+                        </div>
+                        <span>Son 24 Saat</span>
+                    </div>
+                    <div class="data-bottom-item">
+                        <div class="per-cent">
+                            <span>%100</span>
+                        </div>
+                        <span>Son 7 Gün</span>
+                    </div>
+                    <div class="data-bottom-item">
+                        <div class="per-cent">
+                            <span>%100</span>
+                        </div>
+                        <span>Son 1 Ay</span>
+                    </div>
+                </div>
+            </div>
+            <div class="data-box">
+                <div class="data-top">
+                    <div class="data-item">
+                        <div class="icon">
+                            <svg width="24" height="16" viewBox="0 0 24 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M19.35 6.04C18.67 2.59 15.64 0 12 0C9.11 0 6.6 1.64 5.35 4.04C2.34 4.36 0 6.91 0 10C0 13.31 2.69 16 6 16H19C21.76 16 24 13.76 24 11C24 8.36 21.95 6.22 19.35 6.04Z" fill="black"/>
+                            </svg>                        
+                        </div>
+                        <div class="text">
+                            <span>Equinix Veri Merkezi</span>
+                            <span>Anlık</span>
+                        </div>
+                    </div>
+                    <div class="data-item">
+                        <div class="circle avaliable">
+                                                 
+                        </div>
+                        <div class="text">
+                            <span>BEKLENİYOR</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="data-bottom">
+                    <div class="data-bottom-item">
+                        <div class="per-cent">
+                            <span>%100</span>
+                        </div>
+                        <span>Son 24 Saat</span>
+                    </div>
+                    <div class="data-bottom-item">
+                        <div class="per-cent">
+                            <span>%100</span>
+                        </div>
+                        <span>Son 7 Gün</span>
+                    </div>
+                    <div class="data-bottom-item">
+                        <div class="per-cent">
+                            <span>%100</span>
+                        </div>
+                        <span>Son 1 Ay</span>
+                    </div>
+                </div>
+            </div>
+            <div class="data-box">
+                <div class="data-top">
+                    <div class="data-item">
+                        <div class="icon">
+                            <svg width="24" height="16" viewBox="0 0 24 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M19.35 6.04C18.67 2.59 15.64 0 12 0C9.11 0 6.6 1.64 5.35 4.04C2.34 4.36 0 6.91 0 10C0 13.31 2.69 16 6 16H19C21.76 16 24 13.76 24 11C24 8.36 21.95 6.22 19.35 6.04Z" fill="black"/>
+                            </svg>                        
+                        </div>
+                        <div class="text">
+                            <span>Turksat Veri Merkezi</span>
+                            <span>Anlık</span>
+                        </div>
+                    </div>
+                    <div class="data-item">
+                        <div class="circle inaccessible">
+                                                 
+                        </div>
+                        <div class="text">
+                            <span>BEKLENİYOR</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="data-bottom">
+                    <div class="data-bottom-item">
+                        <div class="per-cent">
+                            <span>%100</span>
+                        </div>
+                        <span>Son 24 Saat</span>
+                    </div>
+                    <div class="data-bottom-item">
+                        <div class="per-cent">
+                            <span>%100</span>
+                        </div>
+                        <span>Son 7 Gün</span>
+                    </div>
+                    <div class="data-bottom-item">
+                        <div class="per-cent">
+                            <span>%100</span>
+                        </div>
+                        <span>Son 1 Ay</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<section class="announcements">
+    <div class="container">
+        <div class="announcements-block">
+            <div class="heading-type-one color-text w-max">
+                <h1>DUYURULAR</h1>
+            </div>
+            <div class="heading-1">
+                <h1>Geçmiş Olay ve Duyurularımız</h1>
+            </div>
+            <div class="announcements-item">
+                <div class="header">
+                    <div class="title">
+                        <h3>PLANLI ÇALIŞMA DUYURUSU </h3>
+                    </div>
+                    <span>|</span>
+                    <div class="time">
+                        <span>04.10.2024 15:24</span>
+                    </div>
+                </div>
+                <div class="content">
+                    <p>Değerli Müşterimiz, 26.09.2024 tarihinde yaşanan hizmet kesintisine ait kök neden analizine aşağıdaki linkten ulaşabilirsiniz. RCA Dokümanı Saygılarımızla, GlassHouse</p>
+                </div>
+                <a href="javascript:void(0);" class="link announcement-link">Devamını Oku</a>
+            </div>
+            <div class="announcements-item">
+                <div class="header">
+                    <div class="title">
+                        <h3>BİLGİLENDİRME </h3>
+                    </div>
+                    <span>|</span>
+                    <div class="time">
+                        <span>04.10.2024 15:24</span>
+                    </div>
+                </div>
+                <div class="content">
+                    <p>Değerli Müşterimiz, 26.09.2024 tarihinde yaşanan hizmet kesintisine ait kök neden analizine aşağıdaki linkten ulaşabilirsiniz. RCA Dokümanı Saygılarımızla, GlassHouse</p>
+                </div>
+                <a href="javascript:void(0);" class="link announcement-link">Devamını Oku</a>
+            </div>
+            <div class="announcements-item">
+                <div class="header">
+                    <div class="title">
+                        <h3>PLANLI ÇALIŞMA DUYURUSU </h3>
+                    </div>
+                    <span>|</span>
+                    <div class="time">
+                        <span>04.10.2024 15:24</span>
+                    </div>
+                </div>
+                <div class="content">
+                    <p>Değerli Müşterimiz, 26.09.2024 tarihinde yaşanan hizmet kesintisine ait kök neden analizine aşağıdaki linkten ulaşabilirsiniz. RCA Dokümanı Saygılarımızla, GlassHouse</p>
+                </div>
+                <a href="javascript:void(0);" class="link announcement-link">Devamını Oku</a>
+            </div>
+            <div class="announcements-item disabled">
+                <div class="header">
+                    <div class="title">
+                        <h3>PLANLI ÇALIŞMA DUYURUSU </h3>
+                    </div>
+                    <span>|</span>
+                    <div class="time">
+                        <span>04.10.2024 15:24</span>
+                    </div>
+                </div>
+                <div class="content">
+                    <p>Değerli Müşterimiz, 26.09.2024 tarihinde yaşanan hizmet kesintisine ait kök neden analizine aşağıdaki linkten ulaşabilirsiniz. RCA Dokümanı Saygılarımızla, GlassHouse</p>
+                </div>
+                <a href="javascript:void(0);" class="link announcement-link">Devamını Oku</a>
+            </div>
+            <div class="announcements-item disabled">
+                <div class="header">
+                    <div class="title">
+                        <h3>PLANLI ÇALIŞMA DUYURUSU </h3>
+                    </div>
+                    <span>|</span>
+                    <div class="time">
+                        <span>04.10.2024 15:24</span>
+                    </div>
+                </div>
+                <div class="content">
+                    <p>Değerli Müşterimiz, 26.09.2024 tarihinde yaşanan hizmet kesintisine ait kök neden analizine aşağıdaki linkten ulaşabilirsiniz. RCA Dokümanı Saygılarımızla, GlassHouse</p>
+                </div>
+                <a href="javascript:void(0);" class="link announcement-link">Devamını Oku</a>
+            </div>
+            <div class="announcements-item disabled">
+                <div class="header">
+                    <div class="title">
+                        <h3>PLANLI ÇALIŞMA DUYURUSU </h3>
+                    </div>
+                    <span>|</span>
+                    <div class="time">
+                        <span>04.10.2024 15:24</span>
+                    </div>
+                </div>
+                <div class="content">
+                    <p>Değerli Müşterimiz, 26.09.2024 tarihinde yaşanan hizmet kesintisine ait kök neden analizine aşağıdaki linkten ulaşabilirsiniz. RCA Dokümanı Saygılarımızla, GlassHouse</p>
+                </div>
+                <a href="javascript:void(0);" class="link announcement-link">Devamını Oku</a>
+            </div>
+            <button class="announcement-more-button" id="dataCentreMore">Daha Fazla Göster</button>
+        </div>
+    </div>
+</section>
+{% endblock %}

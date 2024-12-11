@@ -1,0 +1,89 @@
+.announcements{
+    width: 100%;
+    margin-top: 9.4rem;
+    @include md{
+        margin-top: 6.4rem;
+        margin-inline:1.5rem;
+        width: auto;
+        .container{
+            margin-inline:0;
+        }
+    }
+   
+    .announcements-block{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 11.1rem;
+        .heading-1{
+            margin-top: 4.2rem;
+            margin-bottom: 2rem;
+        }
+        .announcements-item{
+            width: 100%;
+            padding-bottom: 3.4rem;
+            padding-top: 3.2rem;
+            border-bottom: .1rem solid #C4C4C4;
+            &.disabled{
+                display: none;
+            }
+            .header{
+                display: flex;
+                align-items: center;
+                gap: 0 1rem;
+                .title{
+                    font-size: 1.6rem;
+                    line-height: 2.2rem;
+                    color: #00AEEF;
+                    @include black;
+                }
+                span{
+                    font-size: 1.6rem;
+                    line-height: 2.2rem;
+                    color: #00AEEF;
+                    @include font;
+                    opacity: .5;
+                }
+                .time{
+                    span{
+                        font-size: 1.6rem;
+                        line-height: 2.2rem;
+                        color: #000000;
+                        @include font;
+                        opacity: 1;
+                    }
+                }
+            }
+            .content{
+                font-size: 1.6rem;
+                line-height: 2.2rem;
+                @include font;
+                color: #000000;
+                margin-top: 2.5rem;
+            }
+            .link{
+                font-size: 1.6rem;
+                line-height: 2.2rem;
+                color: #00AEEF;
+                @include font;
+                text-decoration: underline;
+                margin-top: 2.5rem;
+                display: block;
+            }
+        }
+        .announcement-more-button{
+            font-size: 1.4rem;
+            line-height: 1.9rem;
+            color: #ffffff;
+            @include font;
+            padding: 1.1rem 1.5rem;
+            border-radius: 3rem;
+            background-color: #00AEEF;
+            margin-top: 4rem;
+            &.disabled{
+                display: none;
+            }
+        }
+    }
+}

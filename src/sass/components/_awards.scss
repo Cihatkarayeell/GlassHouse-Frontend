@@ -4,29 +4,54 @@
     padding-top: 7.2rem;
     overflow: hidden;
     padding-bottom: 10.9rem;
+    @include md{
+        padding-top: 6.4rem;
+        padding-bottom: 6.4rem;
+
+    }
     .heading-1{
         margin-top: 4.2rem;
         text-align: center;
+        @include md{
+            margin-top: 3.2rem;
+        }
     }
     .nested-slider{
         width: 100%;
         margin-top: 6.4rem;
+        @include md{
+            margin-top: 4.8rem;
+        }
         .mySwiper-nested{
             min-height: 30.8rem;
             overflow: visible;
+            @include md{
+                min-height: 100%;
+            }
             .swiper-wrapper{
                 min-height: 30.8rem;
                 padding-left: 8rem;
+                @include md{
+                    min-height: auto;
+                    align-items: stretch;
+                    padding-left: 0;
+                }
             }
         }
         .swiper-slide{
             margin-left: -5%;
             margin-right: -5%;
-            filter: grayscale(1);
             filter: grayscale(0);
             min-height: 12rem;
             transition: all 400ms ease;
             position: relative;
+            @include md{
+                margin-left: 0;
+                margin-right: 0;
+                height: auto;
+                filter: grayscale(1);
+                opacity: .5;
+            }
             .awards-card{
                 opacity: .5;
                 opacity: 1;
@@ -52,9 +77,16 @@
                 display: flex;
                 .awards-card{
                     align-items: flex-end;
+                    @include md{
+                        align-items: center;
+                    }
                     .card-title{
                         padding-bottom: 1rem;
                         padding-top: 0;
+                        @include md{
+                            padding-top: 1.5rem;
+                            padding-bottom: 0;
+                        }
                     }
                 }
                 &:after{
@@ -67,15 +99,35 @@
                     border-radius: 50%;
                     background-color: #D7D7D7;
                     transition: all 400ms ease;
+                    @include md{                        
+                        left: 50%;
+                        transform: translateX(-50%);
+                    }
+                }
+                @include md{
+                    margin-bottom: 0;
                 }
             }
             &:nth-child(even){
                 margin-top: auto;
+                @include md{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                }
                 .awards-card{
                     align-items: flex-start;
+                    @include md{
+                        align-items: center;
+                    }
                     .card-title{
                         padding-top: 1rem;
                         padding-bottom: 0;
+                        @include md{
+                            padding-top: 1.5rem;
+                            padding-bottom: 0;
+                        }
                     }
                 }
                 &:after{
@@ -88,6 +140,14 @@
                     border-radius: 50%;
                     background-color: #D7D7D7;
                     transition: all 400ms ease;
+                    @include md{                        
+                        top: calc(100% + 2.7rem);
+                        left: 50%;
+                        transform: translateX(-50%);
+                    }
+                }
+                @include md{
+                    margin-top: 0;
                 }
             }
             &:hover{
@@ -115,11 +175,22 @@
             width: 100%;
             display: flex;
             gap: 0 1.5rem;
+            @include md{
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+            }
             .img{
                 border-radius: 1rem;
                 overflow: hidden;
                 min-width: 12rem;
                 height: auto;
+                @include md{
+                    height: 12rem;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
             }
             .card-title{
                 font-size: 1.5rem;
@@ -127,6 +198,10 @@
                 color: #000000;
                 @include extrabold;
                 max-width: 27rem;
+                @include md{
+                    text-align: center;
+                    max-width: 100%;
+                }
             }
         }
     }
@@ -137,6 +212,9 @@
         margin:0 auto;
         margin-top: 2.8rem;
         width: max-content;
+        @include md{
+            margin-top: 7.3rem;
+        }
     }
 
 }

@@ -1,0 +1,167 @@
+.contact-hero{
+    width: 100%;
+    background-color: #fff;
+    height: 100%;
+    @include md{
+        .container{
+            margin-inline:1.5rem
+        }
+    }
+    .block{
+        width: 100%;
+        padding-top: 7.6rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 8rem;
+        @include md{
+            padding-top: 6.4rem;
+        }
+        .heading-1{
+            margin-top: 4.2rem;
+            margin-bottom: 4.2rem;
+            font-size: 6rem;
+            line-height: 6.6rem;
+            max-width: 60%;
+            text-align: center;
+            @include md{
+                max-width: 100%;
+                font-size: 4.3rem;
+                line-height: 5rem;
+                margin-bottom: 2.4rem;
+            }
+        }
+        .description{
+            margin-bottom: 5.4rem;
+            max-width: 45%;
+            text-align: center;
+            @include md{
+                max-width: 90%;
+            }
+        }
+        .boxes{
+            @include md{
+                flex-direction: column;
+                gap: 2rem 0;
+            }
+        }
+        .form-box.contact-form{
+            width: 65.85%;
+            border-radius: 1.5rem;
+            background-color: #F7F9FC;
+            padding: 4rem 5rem 3.8rem 5rem;
+            height: auto;
+            @include md{
+                width: 100%;
+            }
+            form.row .form-input{
+                width: 100%;
+                max-width: 100%;
+            }
+            button.btn{
+                margin-inline:auto;
+            }
+        }
+        .right-block{
+            width: 31.5%;
+            gap: 2rem 0;
+            margin-left: auto;
+            @include md{
+                width: 100%;
+            }
+        }
+        .tell-us-section{
+            background-color: #F7F9FC;
+            border-radius: 1.5rem;
+            padding: 4rem 5rem 3.5rem 5rem;
+            .title{
+                font-size: 1.8rem;
+                line-height: 2.5rem;
+                color: #000000;
+                @include medium;
+                margin-bottom: 2rem;
+            }
+            .tell-us-item{
+                width: 100%;
+                display: flex;
+                align-items: flex-start;
+                flex-direction: column;
+                margin-bottom: 1.7rem;
+                .title{
+                    font-size: 1.6rem;
+                    line-height: 2.2rem;
+                    @include extrabold;
+                    margin-bottom: .8rem;
+                }
+                .tell-link{
+                    font-size: 1.6rem;
+                    line-height: 2.6rem;
+                    color: #000000;
+                    @include regular;
+                }
+                img{
+                    margin-right: 1rem;
+                    min-width: 1.6rem;
+                }
+                &.red{
+                    .title{
+                        color: #E0027A;
+                    }
+                }
+                &.blue{
+                    .title{
+                        color: #00AEEF;
+                    }
+                }
+                &.darkblue{
+                    .title{
+                        color: #3271B2;
+                    }
+                }
+                &.light{
+                    .title{
+                        color: #57B6D1;
+                    }
+                }
+                &.green{
+                    .title{
+                        color: #0E4F69;
+                    }
+                }
+            }
+        }
+        .meet-us{
+            background-color: #F7F9FC;
+            border-radius: 1.5rem;
+            padding: 4rem 3rem 2.8rem 5rem;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            width: 100%;
+            height: 100%;
+            .title{
+                font-size: 1.8rem;
+                line-height: 2.6rem;
+                @include medium;
+                color: #000000;
+                margin-bottom: 1.5rem;
+            }
+            .desc{
+                font-size: 1.4rem;
+                line-height: 2.2rem;
+                @include regular;
+                color: #000000;
+                margin-bottom: 1.5rem;
+            }
+            .link{
+                border-radius: 3rem;
+                background-color: #00AEEF;
+                padding: 1.1rem 2.5rem;
+                font-size: 1.4rem;
+                line-height: 2.2rem;
+                @include medium;
+                color: #ffffff;
+            }
+        }
+    }
+}

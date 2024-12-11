@@ -2,7 +2,7 @@
 {% extends "./layout/layout-general.html" %}
 {% block title %}Front end Starter Kit{% endblock %}
 {%block bodyClass %}body-home{% endblock %} {% block content %}
-<section class="why-us hero">
+<section class="why-us hero" id="whyUsHero">
     <div class="container">
         <div class="breadcrumb">
             <div class="breadcrumb-item">
@@ -33,6 +33,7 @@
                 <div class="title">
                     <h1>BT Altyapınızı güvenle dönüştürün!</h1>
                 </div>
+                <div class="mobile-img"></div>
                 <div class="desc-ul">
                     <ul>
                         <li>100’ün üzerinde danışmanımız, 40’ın üzerinde yönetilen servis ürünümüz ve 7/24 destek merkezimizle, coğrafi yedekli veri merkezlerimizde, yüzde 99.9 SLA ortalamamızla hizmet veriyoruz.</li>
@@ -100,19 +101,19 @@
         <div class="counters-wrap">
             <div class="counter-item">
                 <div class="number">
-                    <span class="count" data-target="100">100</span><span>+</span>
+                    <span data-target="100">100</span><span>+</span>
                 </div>
                 <div class="title">Danışman</div>
             </div>
             <div class="counter-item">
                 <div class="number">
-                    <span class="count" data-target="40">40</span><span>+</span>
+                    <span data-target="40">40</span><span>+</span>
                 </div>
                 <div class="title">Yönetilen Servis Ürünü</div>
             </div>
             <div class="counter-item">
                 <div class="number">
-                    <span class="count" data-target="300">300</span><span>+</span>
+                    <span data-target="300">300</span><span>+</span>
                 </div>
                 <div class="title">Mutlu Müşteri</div>
             </div>
@@ -125,7 +126,7 @@
         </div>
     </div>
 </section>
-<section class="business-partners">
+<section class="business-partners" id="businessPartners">
     <div class="background-gradient">
         <div class="container">
             <div class="d-flex align-items-start w-100">
@@ -138,6 +139,9 @@
                     </div>
                     <div class="heading-1">
                         <h2>İş ortaklarımızla birlikte güçleniyoruz.</h2>
+                    </div>
+                    <div class="mobile-img">
+
                     </div>
                     <div class="description">
                         <p>Sizlere en güncel teknolojileri sunabilmek ve en katma değerli servisleri geliştirebilmek için endüstri lideri üreticiler ile yıllara dayanan güçlü iş ortaklıkları kuruyoruz. Operasyon takımımızın uzmanlık seviyesini bu teknolojilere yönelik sürekli eğitimler ve sertifikasyon edinimleri ile durmaksızın geliştiriyoruz. Böylece dünya çapındaki teknoloji markaları tarafından yapılan sürekli denetimlerde yeterlilik ve iş ortaklığı seviyemizi her zaman en üst seviyede tutuyoruz. İş ortaklarımız ile olan güçlü ilişkilerimiz ile tüm servis seviyelerinde en hızlı ve pratik çözümleri ayağınıza getiriyoruz.</p>

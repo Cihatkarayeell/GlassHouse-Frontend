@@ -14,6 +14,45 @@
         </div>
     </div>
 </section>
+<section class="form-modal">
+    <div class="modal-box">
+        <div class="modal-body" id="waitBody">
+            <div class="icon">
+                <img src="./img/icon/wait.svg" alt="">
+            </div>
+            <div class="title">
+                <h1>Gönderiliyor...</h1>
+            </div>
+            <div class="subtitle">
+                <h2>Lütfen bekleyin!</h2>
+            </div>
+        </div>
+        <div class="modal-body " id="successBody">
+            <div class="icon">
+                <img src="./img/icon/success.svg" alt="">
+            </div>
+            <div class="title">
+                <h1>Teşekkürler!</h1>
+            </div>
+            <div class="subtitle">
+                <h2>Form başarı ile gönderildi. En kısa sürede sizinle iletişime geçilecektir.</h2>
+            </div>
+            <button class="btn form-button close">Tamam</button>
+        </div>
+        <div class="modal-body" id="errorBody">
+            <div class="icon">
+                <img src="./img/icon/error.svg" alt="">
+            </div>
+            <div class="title">
+                <h1>Hata</h1>
+            </div>
+            <div class="subtitle">
+                <h2>Lütfen daha sonra tekrar deneyiniz.</h2>
+            </div>
+            <button class="btn form-button close">Tamam</button>
+        </div>
+    </div>
+</section>
 <div class="hero-backdrop">
     <video width="640" height="360" autoplay loop muted>
         <source src="./img/video/Home-Video.mp4" type="video/mp4">
@@ -54,8 +93,8 @@
                 <a href="#" class="btn-type-one background-body">
                     Tümünü Gör
                 </a>
-                <div class="w-100 customer-sliders" ">
-                    <div class="flex-column d-flex w-100 left-sliders">
+                <div class="w-100 customer-sliders">
+                    <div class="left">
                         <div class="swiper mySwiper-top-left">
                             <div class="swiper-wrapper">
                               <div class="swiper-slide">
@@ -163,19 +202,19 @@
                                 </div>
                               </div>
                             </div>
-                            <div class="swiper-button-next-customer">
+                            <div class="swiper-button-next-customer-1">
                                 <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <circle cx="13" cy="13" r="13" transform="rotate(-180 13 13)" fill="white"/>
                                     <path d="M14.4385 19.2948C14.3489 19.205 14.2985 19.0833 14.2985 18.9565C14.2985 18.8296 14.3489 18.7079 14.4385 18.6182L19.3655 13.6904L6.47874 13.6904C6.35177 13.6904 6.23 13.6399 6.14022 13.5502C6.05044 13.4604 6 13.3386 6 13.2116C6 13.0847 6.05044 12.9629 6.14022 12.8731C6.23 12.7833 6.35177 12.7329 6.47874 12.7329L19.3655 12.7329L14.4385 7.8051C14.354 7.71435 14.3079 7.59432 14.3101 7.47029C14.3123 7.34627 14.3626 7.22793 14.4503 7.14022C14.538 7.05251 14.6563 7.00226 14.7803 7.00007C14.9044 6.99789 15.0244 7.04392 15.1151 7.12849L20.86 12.8733C20.9496 12.9631 21 13.0848 21 13.2116C21 13.3385 20.9496 13.4602 20.86 13.5499L15.1151 19.2948C15.0254 19.3844 14.9037 19.4348 14.7768 19.4348C14.65 19.4348 14.5283 19.3844 14.4385 19.2948Z" fill="black"/>
                                 </svg>                                                                  
                             </div>
-                            <div class="swiper-button-prev-customer">
+                            <div class="swiper-button-prev-customer-2">
                                 <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <circle cx="13" cy="13" r="13" fill="white"/>
                                     <path d="M11.5615 6.70521C11.6511 6.79497 11.7015 6.91665 11.7015 7.04352C11.7015 7.17039 11.6511 7.29206 11.5615 7.38183L6.63446 12.3096L19.5213 12.3096C19.6482 12.3096 19.77 12.3601 19.8598 12.4498C19.9496 12.5396 20 12.6614 20 12.7884C20 12.9153 19.9496 13.0371 19.8598 13.1269C19.77 13.2167 19.6482 13.2671 19.5213 13.2671L6.63446 13.2671L11.5615 18.1949C11.646 18.2856 11.6921 18.4057 11.6899 18.5297C11.6877 18.6537 11.6374 18.7721 11.5497 18.8598C11.462 18.9475 11.3437 18.9977 11.2197 18.9999C11.0956 19.0021 10.9756 18.9561 10.8849 18.8715L5.14001 13.1267C5.05036 13.0369 5 12.9152 5 12.7884C5 12.6615 5.05036 12.5398 5.14001 12.4501L10.8848 6.70521C10.9746 6.61556 11.0963 6.5652 11.2232 6.5652C11.35 6.5652 11.4717 6.61556 11.5615 6.70521Z" fill="black"/>
                                 </svg>                                                                 
                             </div>
-                        </div>
+                        </div>          
                         <div class="swiper mySwiper-bottom-left">
                             <div class="swiper-wrapper">
                               <div class="swiper-slide">
@@ -282,115 +321,227 @@
                                         </div>
                                     </div>
                               </div>
+                              <div class="swiper-slide">
+                                <div class="text">
+                                    <div class="desc">
+                                        <p>
+                                            Operasyonlarımız 7/24 devam ediyor, bu yüzden sistemlerimizin sürekli aktif olması şart. GlassHouse'tan veri merkezi hizmeti, 7/24 operasyonel destek, Backup as a Service, Disaster Recovery as a Service ve gelişmiş raporlama gibi hizmetler alıyoruz. GlassHouse'un desteğiyle tüm sistemlerimizi sorunsuzca yönetebiliyoruz.
+                                        </p>
+                                        <a href="#">Devamını Oku</a>
+                                    </div>
+                                    <div class="info d-flex align-items-center w-100 m-t-6">
+                                        <div class="brand-logo">
+                                            <img src="./img/logo/sarar.svg" alt="">
+                                        </div>
+                                        <div class="info-text">
+                                            <div class="info-item">
+                                                <p>Tolga Güney</p>
+                                            </div>
+                                            <div class="info-item">
+                                                <p>UNO</p>
+                                            </div>
+                                            <div class="info-item">
+                                                <p>Sistem Operasyon Yöneticisi</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                          </div>
+                          <div class="swiper-slide">
+                                <div class="text">
+                                    <div class="desc">
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo ratione laboriosam rem ea optio sit doloribus quo, dolor corporis? Facere deserunt quaerat rerum perferendis sunt nulla placeat tenetur facilis libero ad asperiores incidunt, nostrum excepturi aut, obcaecati unde, deleniti doloribus!
+                                        </p>
+                                        <a href="#">Devamını Oku</a>
+                                    </div>
+                                    <div class="info d-flex align-items-center w-100 m-t-6">
+                                        <div class="brand-logo">
+                                            <img src="./img/logo/sarar.svg" alt="">
+                                        </div>
+                                        <div class="info-text">
+                                            <div class="info-item">
+                                                <p>Tolga Güney</p>
+                                            </div>
+                                            <div class="info-item">
+                                                <p>UNO</p>
+                                            </div>
+                                            <div class="info-item">
+                                                <p>Sistem Operasyon Yöneticisi</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                          </div>
+                          <div class="swiper-slide">
+                                <div class="text">
+                                    <div class="desc">
+                                        <p>
+                                            Operasyonlarımız 7/24 devam ediyor, bu yüzden sistemlerimizin sürekli aktif olması şart. GlassHouse'tan veri merkezi hizmeti, 7/24 operasyonel destek, Backup as a Service, Disaster Recovery as a Service ve gelişmiş raporlama gibi hizmetler alıyoruz. GlassHouse'un desteğiyle tüm sistemlerimizi sorunsuzca yönetebiliyoruz.
+                                        </p>
+                                        <a href="#">Devamını Oku</a>
+                                    </div>
+                                    <div class="info d-flex align-items-center w-100 m-t-6">
+                                        <div class="brand-logo">
+                                            <img src="./img/logo/sarar.svg" alt="">
+                                        </div>
+                                        <div class="info-text">
+                                            <div class="info-item">
+                                                <p>Tolga Güney</p>
+                                            </div>
+                                            <div class="info-item">
+                                                <p>UNO</p>
+                                            </div>
+                                            <div class="info-item">
+                                                <p>Sistem Operasyon Yöneticisi</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                          </div>
+                          <div class="swiper-slide">
+                                <div class="text">
+                                    <div class="desc">
+                                        <p>
+                                            Operasyonlarımız 7/24 devam ediyor, bu yüzden sistemlerimizin sürekli aktif olması şart. GlassHouse'tan veri merkezi hizmeti, 7/24 operasyonel destek, Backup as a Service, Disaster Recovery as a Service ve gelişmiş raporlama gibi hizmetler alıyoruz. GlassHouse'un desteğiyle tüm sistemlerimizi sorunsuzca yönetebiliyoruz.
+                                        </p>
+                                        <a href="#">Devamını Oku</a>
+                                    </div>
+                                    <div class="info d-flex align-items-center w-100 m-t-6">
+                                        <div class="brand-logo">
+                                            <img src="./img/logo/sarar.svg" alt="">
+                                        </div>
+                                        <div class="info-text">
+                                            <div class="info-item">
+                                                <p>Tolga Güney</p>
+                                            </div>
+                                            <div class="info-item">
+                                                <p>UNO</p>
+                                            </div>
+                                            <div class="info-item">
+                                                <p>Sistem Operasyon Yöneticisi</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                          </div>
                             </div>
                             <div class="backdrop-svg">
                                 <img src="./img/icon/customer-backdrop.svg" alt="">
                             </div>
-                          </div>
+                        </div>
                     </div>
-                    <div class="flex-column d-flex w-100 right-sliders">
+                    <div class="right">
                         <div class="swiper mySwiper-top-right">
                             <div class="swiper-wrapper">
                               <div class="swiper-slide">
                                 <div class="profile-img">
                                     <img src="./img/profile/profile-1.png" alt="">
+                                    <img src="./img/icon/profile-backdrop.svg" alt="">
                                 </div>
                               </div>
                               <div class="swiper-slide">
                                 <div class="profile-img">
                                     <img src="./img/profile/profile-1.png" alt="">
+                                    <img src="./img/icon/profile-backdrop.svg" alt="">
                                 </div>
                               </div>
                               <div class="swiper-slide">
                                 <div class="profile-img">
                                     <img src="./img/profile/profile-1.png" alt="">
+                                    <img src="./img/icon/profile-backdrop.svg" alt="">
                                 </div>
                               </div>
                               <div class="swiper-slide">
                                 <div class="profile-img">
                                     <img src="./img/profile/profile-1.png" alt="">
+                                    <img src="./img/icon/profile-backdrop.svg" alt="">
                                 </div>
                               </div>
                               <div class="swiper-slide">
                                 <div class="profile-img">
                                     <img src="./img/profile/profile-1.png" alt="">
+                                    <img src="./img/icon/profile-backdrop.svg" alt="">
                                 </div>
                               </div>
                               <div class="swiper-slide">
                                 <div class="profile-img">
                                     <img src="./img/profile/profile-1.png" alt="">
+                                    <img src="./img/icon/profile-backdrop.svg" alt="">
                                 </div>
                               </div>
                               <div class="swiper-slide">
                                 <div class="profile-img">
                                     <img src="./img/profile/profile-1.png" alt="">
+                                    <img src="./img/icon/profile-backdrop.svg" alt="">
+                                </div>
+                              </div>
+                              <div class="swiper-slide">
+                                <div class="profile-img">
+                                    <img src="./img/profile/profile-1.png" alt="">
+                                    <img src="./img/icon/profile-backdrop.svg" alt="">
                                 </div>
                               </div>
                             </div>
                           </div>
                           <div class="bottom-slider-block">
-                              <div class="swiper mySwiper-bottom-right">
-                                <div class="swiper-wrapper">
-                                  <div class="swiper-slide">
-                                    <div class="profile-section">
-                                        <img src="./img/profile/profile-1.png" alt="">
-                                    </div>
-                                  </div>
-                                  <div class="swiper-slide">
-                                    <div class="profile-section">
-                                        <img src="./img/profile/profile-2.png" alt="">
-                                    </div>
-                                  </div>
-                                  <div class="swiper-slide">
-                                    <div class="profile-section">
-                                        <img src="./img/profile/profile-2.png" alt="">
-                                    </div>
-                                  </div>
-                                  <div class="swiper-slide">
-                                    <div class="profile-section">
-                                        <img src="./img/profile/profile-2.png" alt="">
-                                    </div>
-                                  </div>
-                                  <div class="swiper-slide">
-                                    <div class="profile-section">
-                                        <img src="./img/profile/profile-2.png" alt="">
-                                    </div>
-                                  </div>
-                                  <div class="swiper-slide">
-                                    <div class="profile-section">
-                                        <img src="./img/profile/profile-2.png" alt="">
-                                    </div>
-                                  </div>
-                                  <div class="swiper-slide">
-                                    <div class="profile-section">
-                                        <img src="./img/profile/profile-2.png" alt="">
-                                    </div>
-                                  </div>
-                                  <div class="swiper-slide">
-                                    <div class="profile-section">
-                                        <img src="./img/profile/profile-2.png" alt="">
-                                    </div>
-                                  </div>
-                                  <div class="swiper-slide">
-                                    <div class="profile-section">
-                                        <img src="./img/profile/profile-2.png" alt="">
-                                    </div>
+                            <div class="swiper mySwiper-bottom-right">
+                              <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                  <div class="profile-section">
+                                      <img src="./img/profile/profile-1.png" alt="">
                                   </div>
                                 </div>
-                            </div>
-                            <div class="swiper-button-next-customer">
-                                <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <circle cx="13" cy="13" r="13" transform="rotate(-180 13 13)" fill="white"/>
-                                    <path d="M14.4385 19.2948C14.3489 19.205 14.2985 19.0833 14.2985 18.9565C14.2985 18.8296 14.3489 18.7079 14.4385 18.6182L19.3655 13.6904L6.47874 13.6904C6.35177 13.6904 6.23 13.6399 6.14022 13.5502C6.05044 13.4604 6 13.3386 6 13.2116C6 13.0847 6.05044 12.9629 6.14022 12.8731C6.23 12.7833 6.35177 12.7329 6.47874 12.7329L19.3655 12.7329L14.4385 7.8051C14.354 7.71435 14.3079 7.59432 14.3101 7.47029C14.3123 7.34627 14.3626 7.22793 14.4503 7.14022C14.538 7.05251 14.6563 7.00226 14.7803 7.00007C14.9044 6.99789 15.0244 7.04392 15.1151 7.12849L20.86 12.8733C20.9496 12.9631 21 13.0848 21 13.2116C21 13.3385 20.9496 13.4602 20.86 13.5499L15.1151 19.2948C15.0254 19.3844 14.9037 19.4348 14.7768 19.4348C14.65 19.4348 14.5283 19.3844 14.4385 19.2948Z" fill="black"/>
-                                </svg>                                    
-                            </div>
-                            <div class="swiper-button-prev-customer">
-                                <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <circle cx="13" cy="13" r="13" fill="white"/>
-                                    <path d="M11.5615 6.70521C11.6511 6.79497 11.7015 6.91665 11.7015 7.04352C11.7015 7.17039 11.6511 7.29206 11.5615 7.38183L6.63446 12.3096L19.5213 12.3096C19.6482 12.3096 19.77 12.3601 19.8598 12.4498C19.9496 12.5396 20 12.6614 20 12.7884C20 12.9153 19.9496 13.0371 19.8598 13.1269C19.77 13.2167 19.6482 13.2671 19.5213 13.2671L6.63446 13.2671L11.5615 18.1949C11.646 18.2856 11.6921 18.4057 11.6899 18.5297C11.6877 18.6537 11.6374 18.7721 11.5497 18.8598C11.462 18.9475 11.3437 18.9977 11.2197 18.9999C11.0956 19.0021 10.9756 18.9561 10.8849 18.8715L5.14001 13.1267C5.05036 13.0369 5 12.9152 5 12.7884C5 12.6615 5.05036 12.5398 5.14001 12.4501L10.8848 6.70521C10.9746 6.61556 11.0963 6.5652 11.2232 6.5652C11.35 6.5652 11.4717 6.61556 11.5615 6.70521Z" fill="black"/>
-                                </svg>                                    
-                            </div>
+                                <div class="swiper-slide">
+                                  <div class="profile-section">
+                                      <img src="./img/profile/profile-2.png" alt="">
+                                  </div>
+                                </div>
+                                <div class="swiper-slide">
+                                  <div class="profile-section">
+                                      <img src="./img/profile/profile-2.png" alt="">
+                                  </div>
+                                </div>
+                                <div class="swiper-slide">
+                                  <div class="profile-section">
+                                      <img src="./img/profile/profile-2.png" alt="">
+                                  </div>
+                                </div>
+                                <div class="swiper-slide">
+                                  <div class="profile-section">
+                                      <img src="./img/profile/profile-2.png" alt="">
+                                  </div>
+                                </div>
+                                <div class="swiper-slide">
+                                  <div class="profile-section">
+                                      <img src="./img/profile/profile-2.png" alt="">
+                                  </div>
+                                </div>
+                                <div class="swiper-slide">
+                                  <div class="profile-section">
+                                      <img src="./img/profile/profile-2.png" alt="">
+                                  </div>
+                                </div>
+                                <div class="swiper-slide">
+                                  <div class="profile-section">
+                                      <img src="./img/profile/profile-2.png" alt="">
+                                  </div>
+                                </div>
+                              </div>
                           </div>
+                          <div class="swiper-button-next-customer-3">
+                              <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                  <circle cx="13" cy="13" r="13" transform="rotate(-180 13 13)" fill="white"/>
+                                  <path d="M14.4385 19.2948C14.3489 19.205 14.2985 19.0833 14.2985 18.9565C14.2985 18.8296 14.3489 18.7079 14.4385 18.6182L19.3655 13.6904L6.47874 13.6904C6.35177 13.6904 6.23 13.6399 6.14022 13.5502C6.05044 13.4604 6 13.3386 6 13.2116C6 13.0847 6.05044 12.9629 6.14022 12.8731C6.23 12.7833 6.35177 12.7329 6.47874 12.7329L19.3655 12.7329L14.4385 7.8051C14.354 7.71435 14.3079 7.59432 14.3101 7.47029C14.3123 7.34627 14.3626 7.22793 14.4503 7.14022C14.538 7.05251 14.6563 7.00226 14.7803 7.00007C14.9044 6.99789 15.0244 7.04392 15.1151 7.12849L20.86 12.8733C20.9496 12.9631 21 13.0848 21 13.2116C21 13.3385 20.9496 13.4602 20.86 13.5499L15.1151 19.2948C15.0254 19.3844 14.9037 19.4348 14.7768 19.4348C14.65 19.4348 14.5283 19.3844 14.4385 19.2948Z" fill="black"/>
+                              </svg>                                    
+                          </div>
+                          <div class="swiper-button-prev-customer-4">
+                              <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                  <circle cx="13" cy="13" r="13" fill="white"/>
+                                  <path d="M11.5615 6.70521C11.6511 6.79497 11.7015 6.91665 11.7015 7.04352C11.7015 7.17039 11.6511 7.29206 11.5615 7.38183L6.63446 12.3096L19.5213 12.3096C19.6482 12.3096 19.77 12.3601 19.8598 12.4498C19.9496 12.5396 20 12.6614 20 12.7884C20 12.9153 19.9496 13.0371 19.8598 13.1269C19.77 13.2167 19.6482 13.2671 19.5213 13.2671L6.63446 13.2671L11.5615 18.1949C11.646 18.2856 11.6921 18.4057 11.6899 18.5297C11.6877 18.6537 11.6374 18.7721 11.5497 18.8598C11.462 18.9475 11.3437 18.9977 11.2197 18.9999C11.0956 19.0021 10.9756 18.9561 10.8849 18.8715L5.14001 13.1267C5.05036 13.0369 5 12.9152 5 12.7884C5 12.6615 5.05036 12.5398 5.14001 12.4501L10.8848 6.70521C10.9746 6.61556 11.0963 6.5652 11.2232 6.5652C11.35 6.5652 11.4717 6.61556 11.5615 6.70521Z" fill="black"/>
+                              </svg>                                    
+                          </div>
+                        </div>
                     </div>
                 </div>
                 <section class="references d-flex flex-column align-items-center">
@@ -629,6 +780,45 @@
                 </div>
                 <span>Profesyonel Hizmetler</span>
             </button>
+        </div>
+        <div class="mobile-radio-section">
+            <a class="btn btn-secondary dropdown-toggle" href="javascript:void(0);" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                GlassHouse Cloud Hizmetleri
+              </a>
+              <ul class="dropdown-menu">
+                <button class="radio-tab radio-tab-cloud active" data-tab="cloud-service-1">
+                    <div class="circle active">
+                        <div class="ball">
+                            <div></div>
+                        </div>
+                    </div>
+                    <span>GlassHouse Cloud Hizmetleri</span>
+                </button>
+                <button class="radio-tab radio-tab-cloud" data-tab="cloud-service-2">
+                    <div class="circle">
+                        <div class="ball">
+                            <div></div>
+                        </div>
+                    </div>
+                    <span>Finansa Özel Mevzuata Tam Uyumlu Yönetilen Bulut Hizmetleri</span>
+                </button>
+                <button class="radio-tab radio-tab-cloud" data-tab="cloud-service-3">
+                    <div class="circle">
+                        <div class="ball">
+                            <div></div>
+                        </div>
+                    </div>
+                    <span>Yönetilen Hizmetler</span>
+                </button>
+                <button class="radio-tab radio-tab-cloud" data-tab="cloud-service-4">
+                    <div class="circle">
+                        <div class="ball">
+                            <div></div>
+                        </div>
+                    </div>
+                    <span>Profesyonel Hizmetler</span>
+                </button>
+              </ul>
         </div>
         <div class="tab-slider-block tab-slider-block-cloud active" data-tab="cloud-service-1">
             <div class="swiper mySwiper-services">
@@ -907,7 +1097,7 @@
               </div>
         </div>
         <div class="tab-slider-block tab-slider-block-cloud" data-tab="cloud-service-2">
-            <div class="swiper mySwiper-services">
+            <div class="swiper mySwiper-services-2">
                 <div class="swiper-wrapper">
                   <div class="swiper-slide">
                     <div class="services-card">
@@ -1183,7 +1373,7 @@
               </div>
         </div>
         <div class="tab-slider-block tab-slider-block-cloud" data-tab="cloud-service-3">
-            <div class="swiper mySwiper-services">
+            <div class="swiper mySwiper-services-3">
                 <div class="swiper-wrapper">
                   <div class="swiper-slide">
                     <div class="services-card">
@@ -1459,7 +1649,7 @@
               </div>
         </div>
         <div class="tab-slider-block tab-slider-block-cloud" data-tab="cloud-service-4">
-            <div class="swiper mySwiper-services">
+            <div class="swiper mySwiper-services-4">
                 <div class="swiper-wrapper">
                   <div class="swiper-slide">
                     <div class="services-card">
@@ -1771,16 +1961,53 @@
                 <span>Profesyonel Hizmetler</span>
             </button>
         </div>
+        <div class="mobile-radio-section">
+            <a class="btn btn-secondary dropdown-toggle" href="javascript:void(0);" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                GlassHouse Cloud Hizmetleri
+              </a>
+              <ul class="dropdown-menu">
+                <button class="radio-tab radio-tab-promise active" data-tab="promise-service-1">
+                    <div class="circle active">
+                        <div class="ball">
+                            <div></div>
+                        </div>
+                    </div>
+                    <span>GlassHouse Cloud Hizmetleri</span>
+                </button>
+                <button class="radio-tab radio-tab-promise" data-tab="promise-service-2">
+                    <div class="circle">
+                        <div class="ball">
+                            <div></div>
+                        </div>
+                    </div>
+                    <span>Finansa Özel Mevzuata Tam Uyumlu Yönetilen Bulut Hizmetleri</span>
+                </button>
+                <button class="radio-tab radio-tab-promise" data-tab="promise-service-3">
+                    <div class="circle">
+                        <div class="ball">
+                            <div></div>
+                        </div>
+                    </div>
+                    <span>Yönetilen Hizmetler</span>
+                </button>
+                <button class="radio-tab radio-tab-promise" data-tab="promise-service-4">
+                    <div class="circle">
+                        <div class="ball">
+                            <div></div>
+                        </div>
+                    </div>
+                    <span>Profesyonel Hizmetler</span>
+                </button>
+              </ul>
+        </div>
         <div class="tab-slider-block tab-slider-block-promise active" data-tab="promise-service-1">
-            <div class="swiper mySwiper-services">
+            <div class="swiper mySwiper-services-5">
                 <div class="swiper-wrapper">
                   <div class="swiper-slide">
                     <div class="services-card">
                         <div class="tab">
                             <div class="icon">
-                                <svg width="24" height="17" viewBox="0 0 24 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M19.35 6.54C18.67 3.09 15.64 0.5 12 0.5C9.11 0.5 6.6 2.14 5.35 4.54C2.34 4.86 0 7.41 0 10.5C0 13.81 2.69 16.5 6 16.5H19C21.76 16.5 24 14.26 24 11.5C24 8.86 21.95 6.72 19.35 6.54Z" fill="#3673B0"/>
-                                </svg>                            
+                                <img src="./img/icon/hardware.svg" alt="">                           
                             </div>
                             <span>GLASSHOUSE CLOUD</span>
                         </div>
@@ -1805,9 +2032,7 @@
                     <div class="services-card">
                         <div class="tab">
                             <div class="icon">
-                                <svg width="24" height="17" viewBox="0 0 24 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M19.35 6.54C18.67 3.09 15.64 0.5 12 0.5C9.11 0.5 6.6 2.14 5.35 4.54C2.34 4.86 0 7.41 0 10.5C0 13.81 2.69 16.5 6 16.5H19C21.76 16.5 24 14.26 24 11.5C24 8.86 21.95 6.72 19.35 6.54Z" fill="#3673B0"/>
-                                </svg>                            
+                                <img src="./img/icon/hardware.svg" alt="">                           
                             </div>
                             <span>GLASSHOUSE CLOUD</span>
                         </div>
@@ -1832,9 +2057,7 @@
                     <div class="services-card">
                         <div class="tab">
                             <div class="icon">
-                                <svg width="24" height="17" viewBox="0 0 24 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M19.35 6.54C18.67 3.09 15.64 0.5 12 0.5C9.11 0.5 6.6 2.14 5.35 4.54C2.34 4.86 0 7.41 0 10.5C0 13.81 2.69 16.5 6 16.5H19C21.76 16.5 24 14.26 24 11.5C24 8.86 21.95 6.72 19.35 6.54Z" fill="#3673B0"/>
-                                </svg>                            
+                                <img src="./img/icon/hardware.svg" alt="">                           
                             </div>
                             <span>GLASSHOUSE CLOUD</span>
                         </div>
@@ -1859,9 +2082,7 @@
                     <div class="services-card">
                         <div class="tab">
                             <div class="icon">
-                                <svg width="24" height="17" viewBox="0 0 24 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M19.35 6.54C18.67 3.09 15.64 0.5 12 0.5C9.11 0.5 6.6 2.14 5.35 4.54C2.34 4.86 0 7.41 0 10.5C0 13.81 2.69 16.5 6 16.5H19C21.76 16.5 24 14.26 24 11.5C24 8.86 21.95 6.72 19.35 6.54Z" fill="#3673B0"/>
-                                </svg>                            
+                                <img src="./img/icon/hardware.svg" alt="">                           
                             </div>
                             <span>GLASSHOUSE CLOUD</span>
                         </div>
@@ -1886,9 +2107,7 @@
                     <div class="services-card">
                         <div class="tab">
                             <div class="icon">
-                                <svg width="24" height="17" viewBox="0 0 24 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M19.35 6.54C18.67 3.09 15.64 0.5 12 0.5C9.11 0.5 6.6 2.14 5.35 4.54C2.34 4.86 0 7.41 0 10.5C0 13.81 2.69 16.5 6 16.5H19C21.76 16.5 24 14.26 24 11.5C24 8.86 21.95 6.72 19.35 6.54Z" fill="#3673B0"/>
-                                </svg>                            
+                                <img src="./img/icon/hardware.svg" alt="">                           
                             </div>
                             <span>GLASSHOUSE CLOUD</span>
                         </div>
@@ -1913,9 +2132,7 @@
                     <div class="services-card">
                         <div class="tab">
                             <div class="icon">
-                                <svg width="24" height="17" viewBox="0 0 24 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M19.35 6.54C18.67 3.09 15.64 0.5 12 0.5C9.11 0.5 6.6 2.14 5.35 4.54C2.34 4.86 0 7.41 0 10.5C0 13.81 2.69 16.5 6 16.5H19C21.76 16.5 24 14.26 24 11.5C24 8.86 21.95 6.72 19.35 6.54Z" fill="#3673B0"/>
-                                </svg>                            
+                                <img src="./img/icon/hardware.svg" alt="">                           
                             </div>
                             <span>GLASSHOUSE CLOUD</span>
                         </div>
@@ -1940,9 +2157,7 @@
                     <div class="services-card">
                         <div class="tab">
                             <div class="icon">
-                                <svg width="24" height="17" viewBox="0 0 24 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M19.35 6.54C18.67 3.09 15.64 0.5 12 0.5C9.11 0.5 6.6 2.14 5.35 4.54C2.34 4.86 0 7.41 0 10.5C0 13.81 2.69 16.5 6 16.5H19C21.76 16.5 24 14.26 24 11.5C24 8.86 21.95 6.72 19.35 6.54Z" fill="#3673B0"/>
-                                </svg>                            
+                                <img src="./img/icon/hardware.svg" alt="">                           
                             </div>
                             <span>GLASSHOUSE CLOUD</span>
                         </div>
@@ -1967,9 +2182,7 @@
                     <div class="services-card">
                         <div class="tab">
                             <div class="icon">
-                                <svg width="24" height="17" viewBox="0 0 24 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M19.35 6.54C18.67 3.09 15.64 0.5 12 0.5C9.11 0.5 6.6 2.14 5.35 4.54C2.34 4.86 0 7.41 0 10.5C0 13.81 2.69 16.5 6 16.5H19C21.76 16.5 24 14.26 24 11.5C24 8.86 21.95 6.72 19.35 6.54Z" fill="#3673B0"/>
-                                </svg>                            
+                                <img src="./img/icon/hardware.svg" alt="">                           
                             </div>
                             <span>GLASSHOUSE CLOUD</span>
                         </div>
@@ -1994,9 +2207,7 @@
                     <div class="services-card">
                         <div class="tab">
                             <div class="icon">
-                                <svg width="24" height="17" viewBox="0 0 24 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M19.35 6.54C18.67 3.09 15.64 0.5 12 0.5C9.11 0.5 6.6 2.14 5.35 4.54C2.34 4.86 0 7.41 0 10.5C0 13.81 2.69 16.5 6 16.5H19C21.76 16.5 24 14.26 24 11.5C24 8.86 21.95 6.72 19.35 6.54Z" fill="#3673B0"/>
-                                </svg>                            
+                                <img src="./img/icon/hardware.svg" alt="">                           
                             </div>
                             <span>GLASSHOUSE CLOUD</span>
                         </div>
@@ -2021,9 +2232,7 @@
                     <div class="services-card">
                         <div class="tab">
                             <div class="icon">
-                                <svg width="24" height="17" viewBox="0 0 24 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M19.35 6.54C18.67 3.09 15.64 0.5 12 0.5C9.11 0.5 6.6 2.14 5.35 4.54C2.34 4.86 0 7.41 0 10.5C0 13.81 2.69 16.5 6 16.5H19C21.76 16.5 24 14.26 24 11.5C24 8.86 21.95 6.72 19.35 6.54Z" fill="#3673B0"/>
-                                </svg>                            
+                                <img src="./img/icon/hardware.svg" alt="">                           
                             </div>
                             <span>GLASSHOUSE CLOUD</span>
                         </div>
@@ -2048,15 +2257,13 @@
               </div>
         </div>
         <div class="tab-slider-block tab-slider-block-promise" data-tab="promise-service-2">
-            <div class="swiper mySwiper-services">
+            <div class="swiper mySwiper-services-6">
                 <div class="swiper-wrapper">
                   <div class="swiper-slide">
                     <div class="services-card">
                         <div class="tab">
                             <div class="icon">
-                                <svg width="24" height="17" viewBox="0 0 24 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M19.35 6.54C18.67 3.09 15.64 0.5 12 0.5C9.11 0.5 6.6 2.14 5.35 4.54C2.34 4.86 0 7.41 0 10.5C0 13.81 2.69 16.5 6 16.5H19C21.76 16.5 24 14.26 24 11.5C24 8.86 21.95 6.72 19.35 6.54Z" fill="#3673B0"/>
-                                </svg>                            
+                                <img src="./img/icon/hardware.svg" alt="">                           
                             </div>
                             <span>GLASSHOUSE CLOUD</span>
                         </div>
@@ -2081,9 +2288,7 @@
                     <div class="services-card">
                         <div class="tab">
                             <div class="icon">
-                                <svg width="24" height="17" viewBox="0 0 24 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M19.35 6.54C18.67 3.09 15.64 0.5 12 0.5C9.11 0.5 6.6 2.14 5.35 4.54C2.34 4.86 0 7.41 0 10.5C0 13.81 2.69 16.5 6 16.5H19C21.76 16.5 24 14.26 24 11.5C24 8.86 21.95 6.72 19.35 6.54Z" fill="#3673B0"/>
-                                </svg>                            
+                                <img src="./img/icon/hardware.svg" alt="">                           
                             </div>
                             <span>GLASSHOUSE CLOUD</span>
                         </div>
@@ -2108,9 +2313,7 @@
                     <div class="services-card">
                         <div class="tab">
                             <div class="icon">
-                                <svg width="24" height="17" viewBox="0 0 24 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M19.35 6.54C18.67 3.09 15.64 0.5 12 0.5C9.11 0.5 6.6 2.14 5.35 4.54C2.34 4.86 0 7.41 0 10.5C0 13.81 2.69 16.5 6 16.5H19C21.76 16.5 24 14.26 24 11.5C24 8.86 21.95 6.72 19.35 6.54Z" fill="#3673B0"/>
-                                </svg>                            
+                                <img src="./img/icon/hardware.svg" alt="">                           
                             </div>
                             <span>GLASSHOUSE CLOUD</span>
                         </div>
@@ -2135,9 +2338,7 @@
                     <div class="services-card">
                         <div class="tab">
                             <div class="icon">
-                                <svg width="24" height="17" viewBox="0 0 24 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M19.35 6.54C18.67 3.09 15.64 0.5 12 0.5C9.11 0.5 6.6 2.14 5.35 4.54C2.34 4.86 0 7.41 0 10.5C0 13.81 2.69 16.5 6 16.5H19C21.76 16.5 24 14.26 24 11.5C24 8.86 21.95 6.72 19.35 6.54Z" fill="#3673B0"/>
-                                </svg>                            
+                                <img src="./img/icon/hardware.svg" alt="">                           
                             </div>
                             <span>GLASSHOUSE CLOUD</span>
                         </div>
@@ -2162,9 +2363,7 @@
                     <div class="services-card">
                         <div class="tab">
                             <div class="icon">
-                                <svg width="24" height="17" viewBox="0 0 24 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M19.35 6.54C18.67 3.09 15.64 0.5 12 0.5C9.11 0.5 6.6 2.14 5.35 4.54C2.34 4.86 0 7.41 0 10.5C0 13.81 2.69 16.5 6 16.5H19C21.76 16.5 24 14.26 24 11.5C24 8.86 21.95 6.72 19.35 6.54Z" fill="#3673B0"/>
-                                </svg>                            
+                                <img src="./img/icon/hardware.svg" alt="">                           
                             </div>
                             <span>GLASSHOUSE CLOUD</span>
                         </div>
@@ -2189,9 +2388,7 @@
                     <div class="services-card">
                         <div class="tab">
                             <div class="icon">
-                                <svg width="24" height="17" viewBox="0 0 24 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M19.35 6.54C18.67 3.09 15.64 0.5 12 0.5C9.11 0.5 6.6 2.14 5.35 4.54C2.34 4.86 0 7.41 0 10.5C0 13.81 2.69 16.5 6 16.5H19C21.76 16.5 24 14.26 24 11.5C24 8.86 21.95 6.72 19.35 6.54Z" fill="#3673B0"/>
-                                </svg>                            
+                                <img src="./img/icon/hardware.svg" alt="">                           
                             </div>
                             <span>GLASSHOUSE CLOUD</span>
                         </div>
@@ -2216,9 +2413,7 @@
                     <div class="services-card">
                         <div class="tab">
                             <div class="icon">
-                                <svg width="24" height="17" viewBox="0 0 24 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M19.35 6.54C18.67 3.09 15.64 0.5 12 0.5C9.11 0.5 6.6 2.14 5.35 4.54C2.34 4.86 0 7.41 0 10.5C0 13.81 2.69 16.5 6 16.5H19C21.76 16.5 24 14.26 24 11.5C24 8.86 21.95 6.72 19.35 6.54Z" fill="#3673B0"/>
-                                </svg>                            
+                                <img src="./img/icon/hardware.svg" alt="">                           
                             </div>
                             <span>GLASSHOUSE CLOUD</span>
                         </div>
@@ -2243,9 +2438,7 @@
                     <div class="services-card">
                         <div class="tab">
                             <div class="icon">
-                                <svg width="24" height="17" viewBox="0 0 24 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M19.35 6.54C18.67 3.09 15.64 0.5 12 0.5C9.11 0.5 6.6 2.14 5.35 4.54C2.34 4.86 0 7.41 0 10.5C0 13.81 2.69 16.5 6 16.5H19C21.76 16.5 24 14.26 24 11.5C24 8.86 21.95 6.72 19.35 6.54Z" fill="#3673B0"/>
-                                </svg>                            
+                                <img src="./img/icon/hardware.svg" alt="">                           
                             </div>
                             <span>GLASSHOUSE CLOUD</span>
                         </div>
@@ -2270,9 +2463,7 @@
                     <div class="services-card">
                         <div class="tab">
                             <div class="icon">
-                                <svg width="24" height="17" viewBox="0 0 24 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M19.35 6.54C18.67 3.09 15.64 0.5 12 0.5C9.11 0.5 6.6 2.14 5.35 4.54C2.34 4.86 0 7.41 0 10.5C0 13.81 2.69 16.5 6 16.5H19C21.76 16.5 24 14.26 24 11.5C24 8.86 21.95 6.72 19.35 6.54Z" fill="#3673B0"/>
-                                </svg>                            
+                                <img src="./img/icon/hardware.svg" alt="">                           
                             </div>
                             <span>GLASSHOUSE CLOUD</span>
                         </div>
@@ -2297,9 +2488,7 @@
                     <div class="services-card">
                         <div class="tab">
                             <div class="icon">
-                                <svg width="24" height="17" viewBox="0 0 24 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M19.35 6.54C18.67 3.09 15.64 0.5 12 0.5C9.11 0.5 6.6 2.14 5.35 4.54C2.34 4.86 0 7.41 0 10.5C0 13.81 2.69 16.5 6 16.5H19C21.76 16.5 24 14.26 24 11.5C24 8.86 21.95 6.72 19.35 6.54Z" fill="#3673B0"/>
-                                </svg>                            
+                                <img src="./img/icon/hardware.svg" alt="">                           
                             </div>
                             <span>GLASSHOUSE CLOUD</span>
                         </div>
@@ -2324,15 +2513,13 @@
               </div>
         </div>
         <div class="tab-slider-block tab-slider-block-promise" data-tab="promise-service-3">
-            <div class="swiper mySwiper-services">
+            <div class="swiper mySwiper-services-7">
                 <div class="swiper-wrapper">
                   <div class="swiper-slide">
                     <div class="services-card">
                         <div class="tab">
                             <div class="icon">
-                                <svg width="24" height="17" viewBox="0 0 24 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M19.35 6.54C18.67 3.09 15.64 0.5 12 0.5C9.11 0.5 6.6 2.14 5.35 4.54C2.34 4.86 0 7.41 0 10.5C0 13.81 2.69 16.5 6 16.5H19C21.76 16.5 24 14.26 24 11.5C24 8.86 21.95 6.72 19.35 6.54Z" fill="#3673B0"/>
-                                </svg>                            
+                                <img src="./img/icon/hardware.svg" alt="">                           
                             </div>
                             <span>GLASSHOUSE CLOUD</span>
                         </div>
@@ -2357,9 +2544,7 @@
                     <div class="services-card">
                         <div class="tab">
                             <div class="icon">
-                                <svg width="24" height="17" viewBox="0 0 24 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M19.35 6.54C18.67 3.09 15.64 0.5 12 0.5C9.11 0.5 6.6 2.14 5.35 4.54C2.34 4.86 0 7.41 0 10.5C0 13.81 2.69 16.5 6 16.5H19C21.76 16.5 24 14.26 24 11.5C24 8.86 21.95 6.72 19.35 6.54Z" fill="#3673B0"/>
-                                </svg>                            
+                                <img src="./img/icon/hardware.svg" alt="">                           
                             </div>
                             <span>GLASSHOUSE CLOUD</span>
                         </div>
@@ -2384,9 +2569,7 @@
                     <div class="services-card">
                         <div class="tab">
                             <div class="icon">
-                                <svg width="24" height="17" viewBox="0 0 24 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M19.35 6.54C18.67 3.09 15.64 0.5 12 0.5C9.11 0.5 6.6 2.14 5.35 4.54C2.34 4.86 0 7.41 0 10.5C0 13.81 2.69 16.5 6 16.5H19C21.76 16.5 24 14.26 24 11.5C24 8.86 21.95 6.72 19.35 6.54Z" fill="#3673B0"/>
-                                </svg>                            
+                                <img src="./img/icon/hardware.svg" alt="">                           
                             </div>
                             <span>GLASSHOUSE CLOUD</span>
                         </div>
@@ -2411,9 +2594,7 @@
                     <div class="services-card">
                         <div class="tab">
                             <div class="icon">
-                                <svg width="24" height="17" viewBox="0 0 24 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M19.35 6.54C18.67 3.09 15.64 0.5 12 0.5C9.11 0.5 6.6 2.14 5.35 4.54C2.34 4.86 0 7.41 0 10.5C0 13.81 2.69 16.5 6 16.5H19C21.76 16.5 24 14.26 24 11.5C24 8.86 21.95 6.72 19.35 6.54Z" fill="#3673B0"/>
-                                </svg>                            
+                                <img src="./img/icon/hardware.svg" alt="">                           
                             </div>
                             <span>GLASSHOUSE CLOUD</span>
                         </div>
@@ -2438,9 +2619,7 @@
                     <div class="services-card">
                         <div class="tab">
                             <div class="icon">
-                                <svg width="24" height="17" viewBox="0 0 24 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M19.35 6.54C18.67 3.09 15.64 0.5 12 0.5C9.11 0.5 6.6 2.14 5.35 4.54C2.34 4.86 0 7.41 0 10.5C0 13.81 2.69 16.5 6 16.5H19C21.76 16.5 24 14.26 24 11.5C24 8.86 21.95 6.72 19.35 6.54Z" fill="#3673B0"/>
-                                </svg>                            
+                                <img src="./img/icon/hardware.svg" alt="">                           
                             </div>
                             <span>GLASSHOUSE CLOUD</span>
                         </div>
@@ -2465,9 +2644,7 @@
                     <div class="services-card">
                         <div class="tab">
                             <div class="icon">
-                                <svg width="24" height="17" viewBox="0 0 24 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M19.35 6.54C18.67 3.09 15.64 0.5 12 0.5C9.11 0.5 6.6 2.14 5.35 4.54C2.34 4.86 0 7.41 0 10.5C0 13.81 2.69 16.5 6 16.5H19C21.76 16.5 24 14.26 24 11.5C24 8.86 21.95 6.72 19.35 6.54Z" fill="#3673B0"/>
-                                </svg>                            
+                                <img src="./img/icon/hardware.svg" alt="">                           
                             </div>
                             <span>GLASSHOUSE CLOUD</span>
                         </div>
@@ -2492,9 +2669,7 @@
                     <div class="services-card">
                         <div class="tab">
                             <div class="icon">
-                                <svg width="24" height="17" viewBox="0 0 24 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M19.35 6.54C18.67 3.09 15.64 0.5 12 0.5C9.11 0.5 6.6 2.14 5.35 4.54C2.34 4.86 0 7.41 0 10.5C0 13.81 2.69 16.5 6 16.5H19C21.76 16.5 24 14.26 24 11.5C24 8.86 21.95 6.72 19.35 6.54Z" fill="#3673B0"/>
-                                </svg>                            
+                                <img src="./img/icon/hardware.svg" alt="">                           
                             </div>
                             <span>GLASSHOUSE CLOUD</span>
                         </div>
@@ -2519,9 +2694,7 @@
                     <div class="services-card">
                         <div class="tab">
                             <div class="icon">
-                                <svg width="24" height="17" viewBox="0 0 24 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M19.35 6.54C18.67 3.09 15.64 0.5 12 0.5C9.11 0.5 6.6 2.14 5.35 4.54C2.34 4.86 0 7.41 0 10.5C0 13.81 2.69 16.5 6 16.5H19C21.76 16.5 24 14.26 24 11.5C24 8.86 21.95 6.72 19.35 6.54Z" fill="#3673B0"/>
-                                </svg>                            
+                                <img src="./img/icon/hardware.svg" alt="">                           
                             </div>
                             <span>GLASSHOUSE CLOUD</span>
                         </div>
@@ -2546,9 +2719,7 @@
                     <div class="services-card">
                         <div class="tab">
                             <div class="icon">
-                                <svg width="24" height="17" viewBox="0 0 24 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M19.35 6.54C18.67 3.09 15.64 0.5 12 0.5C9.11 0.5 6.6 2.14 5.35 4.54C2.34 4.86 0 7.41 0 10.5C0 13.81 2.69 16.5 6 16.5H19C21.76 16.5 24 14.26 24 11.5C24 8.86 21.95 6.72 19.35 6.54Z" fill="#3673B0"/>
-                                </svg>                            
+                                <img src="./img/icon/hardware.svg" alt="">                           
                             </div>
                             <span>GLASSHOUSE CLOUD</span>
                         </div>
@@ -2573,9 +2744,7 @@
                     <div class="services-card">
                         <div class="tab">
                             <div class="icon">
-                                <svg width="24" height="17" viewBox="0 0 24 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M19.35 6.54C18.67 3.09 15.64 0.5 12 0.5C9.11 0.5 6.6 2.14 5.35 4.54C2.34 4.86 0 7.41 0 10.5C0 13.81 2.69 16.5 6 16.5H19C21.76 16.5 24 14.26 24 11.5C24 8.86 21.95 6.72 19.35 6.54Z" fill="#3673B0"/>
-                                </svg>                            
+                                <img src="./img/icon/hardware.svg" alt="">                           
                             </div>
                             <span>GLASSHOUSE CLOUD</span>
                         </div>
@@ -2600,15 +2769,13 @@
               </div>
         </div>
         <div class="tab-slider-block tab-slider-block-promise" data-tab="promise-service-4">
-            <div class="swiper mySwiper-services">
+            <div class="swiper mySwiper-services-8">
                 <div class="swiper-wrapper">
                   <div class="swiper-slide">
                     <div class="services-card">
                         <div class="tab">
                             <div class="icon">
-                                <svg width="24" height="17" viewBox="0 0 24 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M19.35 6.54C18.67 3.09 15.64 0.5 12 0.5C9.11 0.5 6.6 2.14 5.35 4.54C2.34 4.86 0 7.41 0 10.5C0 13.81 2.69 16.5 6 16.5H19C21.76 16.5 24 14.26 24 11.5C24 8.86 21.95 6.72 19.35 6.54Z" fill="#3673B0"/>
-                                </svg>                            
+                                <img src="./img/icon/hardware.svg" alt="">                           
                             </div>
                             <span>GLASSHOUSE CLOUD</span>
                         </div>
@@ -2633,9 +2800,7 @@
                     <div class="services-card">
                         <div class="tab">
                             <div class="icon">
-                                <svg width="24" height="17" viewBox="0 0 24 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M19.35 6.54C18.67 3.09 15.64 0.5 12 0.5C9.11 0.5 6.6 2.14 5.35 4.54C2.34 4.86 0 7.41 0 10.5C0 13.81 2.69 16.5 6 16.5H19C21.76 16.5 24 14.26 24 11.5C24 8.86 21.95 6.72 19.35 6.54Z" fill="#3673B0"/>
-                                </svg>                            
+                                <img src="./img/icon/hardware.svg" alt="">                           
                             </div>
                             <span>GLASSHOUSE CLOUD</span>
                         </div>
@@ -2660,9 +2825,7 @@
                     <div class="services-card">
                         <div class="tab">
                             <div class="icon">
-                                <svg width="24" height="17" viewBox="0 0 24 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M19.35 6.54C18.67 3.09 15.64 0.5 12 0.5C9.11 0.5 6.6 2.14 5.35 4.54C2.34 4.86 0 7.41 0 10.5C0 13.81 2.69 16.5 6 16.5H19C21.76 16.5 24 14.26 24 11.5C24 8.86 21.95 6.72 19.35 6.54Z" fill="#3673B0"/>
-                                </svg>                            
+                                <img src="./img/icon/hardware.svg" alt="">                           
                             </div>
                             <span>GLASSHOUSE CLOUD</span>
                         </div>
@@ -2687,9 +2850,7 @@
                     <div class="services-card">
                         <div class="tab">
                             <div class="icon">
-                                <svg width="24" height="17" viewBox="0 0 24 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M19.35 6.54C18.67 3.09 15.64 0.5 12 0.5C9.11 0.5 6.6 2.14 5.35 4.54C2.34 4.86 0 7.41 0 10.5C0 13.81 2.69 16.5 6 16.5H19C21.76 16.5 24 14.26 24 11.5C24 8.86 21.95 6.72 19.35 6.54Z" fill="#3673B0"/>
-                                </svg>                            
+                                <img src="./img/icon/hardware.svg" alt="">                           
                             </div>
                             <span>GLASSHOUSE CLOUD</span>
                         </div>
@@ -2714,9 +2875,7 @@
                     <div class="services-card">
                         <div class="tab">
                             <div class="icon">
-                                <svg width="24" height="17" viewBox="0 0 24 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M19.35 6.54C18.67 3.09 15.64 0.5 12 0.5C9.11 0.5 6.6 2.14 5.35 4.54C2.34 4.86 0 7.41 0 10.5C0 13.81 2.69 16.5 6 16.5H19C21.76 16.5 24 14.26 24 11.5C24 8.86 21.95 6.72 19.35 6.54Z" fill="#3673B0"/>
-                                </svg>                            
+                                <img src="./img/icon/hardware.svg" alt="">                           
                             </div>
                             <span>GLASSHOUSE CLOUD</span>
                         </div>
@@ -2741,9 +2900,7 @@
                     <div class="services-card">
                         <div class="tab">
                             <div class="icon">
-                                <svg width="24" height="17" viewBox="0 0 24 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M19.35 6.54C18.67 3.09 15.64 0.5 12 0.5C9.11 0.5 6.6 2.14 5.35 4.54C2.34 4.86 0 7.41 0 10.5C0 13.81 2.69 16.5 6 16.5H19C21.76 16.5 24 14.26 24 11.5C24 8.86 21.95 6.72 19.35 6.54Z" fill="#3673B0"/>
-                                </svg>                            
+                                <img src="./img/icon/hardware.svg" alt="">                           
                             </div>
                             <span>GLASSHOUSE CLOUD</span>
                         </div>
@@ -2768,9 +2925,7 @@
                     <div class="services-card">
                         <div class="tab">
                             <div class="icon">
-                                <svg width="24" height="17" viewBox="0 0 24 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M19.35 6.54C18.67 3.09 15.64 0.5 12 0.5C9.11 0.5 6.6 2.14 5.35 4.54C2.34 4.86 0 7.41 0 10.5C0 13.81 2.69 16.5 6 16.5H19C21.76 16.5 24 14.26 24 11.5C24 8.86 21.95 6.72 19.35 6.54Z" fill="#3673B0"/>
-                                </svg>                            
+                                <img src="./img/icon/hardware.svg" alt="">                           
                             </div>
                             <span>GLASSHOUSE CLOUD</span>
                         </div>
@@ -2795,9 +2950,7 @@
                     <div class="services-card">
                         <div class="tab">
                             <div class="icon">
-                                <svg width="24" height="17" viewBox="0 0 24 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M19.35 6.54C18.67 3.09 15.64 0.5 12 0.5C9.11 0.5 6.6 2.14 5.35 4.54C2.34 4.86 0 7.41 0 10.5C0 13.81 2.69 16.5 6 16.5H19C21.76 16.5 24 14.26 24 11.5C24 8.86 21.95 6.72 19.35 6.54Z" fill="#3673B0"/>
-                                </svg>                            
+                                <img src="./img/icon/hardware.svg" alt="">                           
                             </div>
                             <span>GLASSHOUSE CLOUD</span>
                         </div>
@@ -2822,9 +2975,7 @@
                     <div class="services-card">
                         <div class="tab">
                             <div class="icon">
-                                <svg width="24" height="17" viewBox="0 0 24 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M19.35 6.54C18.67 3.09 15.64 0.5 12 0.5C9.11 0.5 6.6 2.14 5.35 4.54C2.34 4.86 0 7.41 0 10.5C0 13.81 2.69 16.5 6 16.5H19C21.76 16.5 24 14.26 24 11.5C24 8.86 21.95 6.72 19.35 6.54Z" fill="#3673B0"/>
-                                </svg>                            
+                                <img src="./img/icon/hardware.svg" alt="">                           
                             </div>
                             <span>GLASSHOUSE CLOUD</span>
                         </div>
@@ -2849,9 +3000,7 @@
                     <div class="services-card">
                         <div class="tab">
                             <div class="icon">
-                                <svg width="24" height="17" viewBox="0 0 24 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M19.35 6.54C18.67 3.09 15.64 0.5 12 0.5C9.11 0.5 6.6 2.14 5.35 4.54C2.34 4.86 0 7.41 0 10.5C0 13.81 2.69 16.5 6 16.5H19C21.76 16.5 24 14.26 24 11.5C24 8.86 21.95 6.72 19.35 6.54Z" fill="#3673B0"/>
-                                </svg>                            
+                                <img src="./img/icon/hardware.svg" alt="">                           
                             </div>
                             <span>GLASSHOUSE CLOUD</span>
                         </div>
@@ -2906,30 +3055,30 @@
                     <p>Formu doldurun, sizinle iletişime geçelim! BT operasyonlarınız için başarının altyapısını birlikte kuralım.</p>
                 </div>
             </div>
-            <form class="row g-3 needs-validation" novalidate>
-                <div class="col-md-6 position-relative form-input">
+            <form class="row g-3 needs-validation" novalidate >
+                <div class="col-md-6 position-relative form-input form-item">
                   <input type="text" class="form-control" id="validationTooltip01" placeholder="*Adınız" required>
                 </div>
-                <div class="col-md-6 position-relative form-input">
+                <div class="col-md-6 position-relative form-input form-item">
                   <input type="text" class="form-control" id="validationTooltip02" placeholder="*Soyadınız" required>
                 </div>
-                <div class="col-md-6 position-relative form-input">
+                <div class="col-md-6 position-relative form-input form-item">
                     <input type="text" class="form-control" id="validationTooltip03" placeholder="*Firmanızın Adı" required>
                   </div>
-                  <div class="col-md-6 position-relative form-input">
+                  <div class="col-md-6 position-relative form-input form-item">
                     <input type="text" class="form-control" id="validationTooltip04" placeholder="*Ünvanınız" required>
+                    <div class="invalid-tooltip">
+                        Lütfen boş bırakmayınız!
+                      </div>
                   </div>
-                  <div class="col-md-6 position-relative form-input">
+                  <div class="col-md-6 position-relative form-input form-item">
                     <input type="tel" class="form-control" id="validationTooltip05" placeholder="+90 (5_ _) _ _ _  _ _  _ _" required>
-                  </div>
-                  <div class="col-md-6 position-relative form-input">
+                </div>
+                  <div class="col-md-6 position-relative form-input form-item">
                     <input type="email" class="form-control" id="validationTooltip06" placeholder="*E-Postanız" required>
-                  </div>
-                <div class="col-md-12 position-relative form-textarea">
+                </div>
+                <div class="col-md-12 position-relative form-textarea form-item">
                   <textarea type="text" class="form-control"  maxlength="250"  placeholder="Mesajınızı bu alana yazabilirsiniz" id="validationTooltip07" required></textarea>
-                  <div class="invalid-tooltip">
-                    Lütfen boş bırakmayınız!
-                  </div>
                 </div>
                 <div class="form-check" id="kvkk">
                     <div class="custom-box">
@@ -2965,7 +3114,7 @@
         <div class="video-block">
             <div class="video-img">
                 <img src="./img/background/video-backg.png" alt="">
-                <video width="100%" height="100%" id="myVideo" autoplay muted loop>
+                <video width="100%" height="100%" id="myVideo" >
                     <source width="1280" height="544" src="./img/video/home-full-video.mp4" type="video/mp4">
                   </video>
                 <div class="play-btn" id="videoPlyBtn">
@@ -2984,9 +3133,21 @@
             <div class="heading-type-one">
                 <h1>BİLGİ MERKEZİ</h1>
             </div>
-            <div class="d-flex w-100">
+            <div class="mobile-block">
+                <!-- BU kısım 1024den sonra aktif oluyor aşağıdaki ttile ve buttona yazdıklarını bunlar içinde yazman gerek -->
+                <div class="heading-1">
+                    <h2>GlassHouse Bilgi Merkezi</h2>
+                </div>
+                <div class="description">
+                    <p>En son haberler, blog yazıları, etkinlik duyuruları ve bilgi dokümanlarına erişmek için hemen göz atın.</p>
+                </div>
+                <button class="btn-type-one background-primary">
+                    Tümünü Gör
+                </button>
+            </div>
+            <div class="d-flex w-100 align-items-strech mobile-scroll-slides">
                 <div class="info-center-left">
-                    <div class="title">
+                    <div class="heading-1">
                         <h2>GlassHouse Bilgi Merkezi</h2>
                     </div>
                     <div class="card-img blur">
@@ -3017,8 +3178,8 @@
                     </div>
                 </div>
                 <div class="info-center-right">
-                    <div class="title">
-                        <h2>En son haberler, blog yazıları, etkinlik duyuruları ve bilgi dokümanlarına erişmek için hemen göz atın.</h2>
+                    <div class="description">
+                        <p>En son haberler, blog yazıları, etkinlik duyuruları ve bilgi dokümanlarına erişmek için hemen göz atın.</p>
                     </div>
                     <button class="btn-type-one background-primary">
                         Tümünü Gör

@@ -2,12 +2,8 @@
     width: 100%;
     padding-bottom: 8.1rem;
     @include sm{
-        padding-top: 4rem;
-        padding-bottom: 4rem;
-    }
-    @include mini{
-        padding-top: 3.2rem;
-        padding-bottom: 3.2rem;
+        padding-top: 0rem;
+        padding-bottom: 6.4rem;
     }
     .counters-wrap{
         display: flex;
@@ -16,6 +12,9 @@
         padding: 0 7rem;
         @include md{
             padding: 0;
+            flex-wrap: wrap;
+            gap: .5rem 0;
+            align-items: flex-start;
         }
     }
     .counter-item{
@@ -24,10 +23,11 @@
         align-items: center;
         justify-content: center;
         max-width: 20rem;
-        width: 100%;
-        @include mini{
-            width: calc(100% / 4);
+        width: calc(100% / 4);
+        @include sm{
+            width: calc(100% / 2);
             justify-content: space-between;
+            max-width: 100%;
         }
         .number{
             display: flex;
@@ -38,14 +38,7 @@
             width: max-content;
             @include regular;
             color: #00AEEF;
-            @include sm{
-                font-size: 3.2rem;
-                line-height: 3.9rem;
-            }
-            @include mini{
-                font-size: 2.8rem;
-                line-height: 3.4rem;
-            }
+            
             span{
                 display: inline;
             }
@@ -55,14 +48,7 @@
             line-height: 2.3rem;
             color: #000000;
             @include regular;
-            @include sm{
-                font-size: 1.6rem;
-                line-height: 1.8rem;
-            }
-            @include mini{
-                font-size: 1.4rem;
-                line-height: 1.6rem;
-            }
+            text-align: center;
         }
     }
 }

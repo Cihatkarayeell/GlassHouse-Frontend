@@ -11,6 +11,8 @@ body {
 
 html {
   height: 100%;
+  scroll-behavior: smooth;
+  scroll-padding-top: 12rem;
 }
 
 body {
@@ -33,6 +35,9 @@ body {
     overflow: hidden;
     touch-action: none;
     -ms-touch-action: none;
+  }
+  &.mobile{
+    overflow: hidden;
   }
 }
 

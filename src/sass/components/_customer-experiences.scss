@@ -2,12 +2,30 @@
     width: 100%;
     height: 159.5rem;
     z-index: 1;
+    @include lg{
+        min-height: 100%;
+        height: 220.8rem;
+    }
+    @include md{
+        min-height: 222rem;
+    }
+    @include mini{
+        min-height: 205rem;
+        height: 100%;
+        .container{
+            margin-inline:0;
+        }
+    }
     .backdrop{
         width: 100%;
         height: 159.5rem;
         position: absolute;
         left: 50%;
         transform: translateX(-50%);
+        @include lg{
+            min-height: 100%;
+            height: 220.8rem;
+        }
     }
     .container{
         height: 100%;
@@ -28,23 +46,161 @@
         }
         .heading-1 {
             margin-top: 4.2rem;
-        }
-        .customer-sliders{
-            margin-top: 3.6rem;
-            display: flex;
-            .left-sliders{
-                max-width: 51.25%;
-                overflow-x: hidden;
+            @include sm{
+                text-align: center;
             }
-            .right-sliders{
-                overflow-x: hidden;
+        }
+    }
+    
+    .references{
+        width: 100%;
+        margin-top: auto;
+        margin-bottom: 14.5rem;
+        @include lg{
+            margin-top: 5rem;
+        }
+        @include md{
+            margin-top: 0;
+        }
+        @include mini{
+            padding-inline:3rem;
+        }
+        .heading-type-one{
+            margin-bottom: 4.2rem;
+        }
+        .references-block{
+            display: flex;
+            align-items: stretch;
+            width: 100%;
+            justify-content: space-between;
+            @include md{
+                flex-direction: column;
                 align-items: center;
             }
+        }
+        .references-slider{
+            max-width: 60.8rem;
+            width: 100%;
+            position: relative;
+            padding-bottom: 7.4rem;
+            @include smaller-than-xl{
+                max-width: 55rem;
+            }
+            @include lg{
+                max-width: 48rem;
+            }
+            @include md{
+                max-width:60.8rem;
+            }
+        }
+        .item-wrap{
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: stretch;
+            gap: 5rem 7rem;
+            @include mini{
+                gap: 3rem;
+            }
+            .references-item{
+                max-width: calc(100% / 3 - 4.7rem);
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                @include mini{
+                    max-width: calc(100% / 3 - 2rem);
+                }
+                *{
+                    display: flex;
+                }
+            }
+        }
+        .references-text{
+            display: flex;
+            align-items: flex-start;
+            flex-direction: column;
+            max-width: 54.7rem;
+            margin-left: auto;
+            @include smaller-than-xl{
+                margin-left: 4rem;
+            }
+            @include md{
+                margin-right: auto;
+                margin-left: auto;
+                align-items: center;
+                margin-top: 7rem;
+                margin-bottom: 5rem;
+            }
+            .title{
+                font-size: 3.2rem;
+                line-height: 4.4rem;
+                @include font;
+                color: #ffffff;
+                margin-bottom: 2.4rem;
+                @include md{
+                    text-align: center;
+                }
+            }
+            .desc{
+                font-size: 1.6rem;
+                @include font;
+                color: #ffffff;
+                line-height: 2.2rem;
+                @include md{
+                    text-align: center;
+                }
+                p{
+                    margin-bottom: 2.2rem;
+                    &:last-of-type{
+                        margin-bottom: 0;
+                    }
+                }
+            }
+        }
+        .btn-layout{
+            display: flex;
+            align-items: center;
+            gap: 0 2rem;
+            justify-content: center;
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            .swiper-button-prev-references,
+            .swiper-button-next-references{
+                @include mini{
+                    width: 4rem;
+                    height: 4rem;
+                    *{
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
+.customer-sliders{
+    margin-top: 3.6rem;
+    display: flex;
+    @include md{
+        flex-direction: column;
+        align-items: center;
+        max-width: 65.4rem;
+    }
+    .left{
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+        @include md{
+            width: 100%;
         }
         .mySwiper-top-left{
             overflow: visible;
             position: relative;
-            .swiper-button-next-customer{
+            .swiper-button-next-customer-1{
                 position: absolute;
                 right: 0rem;
                 top: 50%;
@@ -56,14 +212,22 @@
                 svg{
                     display: flex;
                 }
+                @include mini{
+                    display: none;
+                }
             }
-            .swiper-button-prev-customer{
+            .swiper-button-prev-customer-2{
                 position: absolute;
                 left: 0;
                 top: 50%;
                 transform: translateY(-50%);
+                min-width: 2.6rem;
+                min-height: 2.6rem;
                 cursor: pointer;
                 z-index: 3;
+                @include mini{
+                    display: none;
+                }
             }
             .swiper-slide{
                 align-items: center;
@@ -166,7 +330,7 @@
             .swiper-slide{
                 opacity: 0;
                 visibility: hidden;
-                &.swiper-slide-visible{
+                &.swiper-slide-active{
                     opacity: 1;
                     visibility: visible;
                 }
@@ -189,6 +353,16 @@
                     line-height: 2.7rem;
                     @include font;
                     color: #ffffff;
+                    @include lg{
+                        font-size: 1.8rem;
+                        line-height: 2.4rem;
+                        @include line-clamp(5);
+                    }
+                    p{
+                        @include lg{
+                            @include line-clamp(4);
+                        }
+                    }
                     p, a{
                         display: inline;
                     }
@@ -208,51 +382,125 @@
                 }
                 .brand-logo{
                     width: 60%;
+                    @include lg{
+                        width: 12rem;
+                    }
                 }
                 .info-text{
                     display: flex;
                     flex-direction: column;
                     align-items: flex-start;
                     min-width: 40%;
+                    @include lg{
+                        margin-left: 1rem;
+                    }
                     .info-item{
                         font-size: 1.8rem;
                         line-height: 2.5rem;
-                        color: #ffffff;
+                        color: #ffffff;width: max-content;
                         @include font;
                         &:first-of-type{
                             @include black;
+                        }
+                        @include lg{
+                            font-size: 1.4rem;
+                            line-height: 2rem;
+                            &:first-of-type{
+                                @include extrabold;
+                            }
                         }
                     }
                 }
             }
         }
+    }
+    .right{
+        overflow-x: hidden;
+        align-items: center;
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        min-width: 60rem;
+        margin-left: auto;
+        @include lg{
+            min-width: 50rem;
+            margin-left: 2rem;
+        }
+        @include md{
+            width: 100%;
+            margin-top: 2rem;
+        }
+        @include mini{
+            position: relative;
+            min-width: 100%;
+            margin-left: 0;
+        }
         .mySwiper-top-right{
             height: 41.8rem;
             overflow: visible;
+            @include md{
+                height: 100%;
+            }
             .swiper-slide{
                 display: flex;
                 align-items: center;
                 justify-content: center;
                 height: 41.8rem;
+                overflow: hidden;
+                @include md{
+                    height: 29rem;
+                }
+                @include mini{
+                    height: 20rem;
+                }
                 .profile-img{
                     border-radius: 50%;
-                    overflow: hidden;
                     max-width:29rem;
                     max-height: 29rem;
                     position: relative;
                     margin-bottom: 2rem;
-                }
-                &:after{
-                    content: url(/img/icon/profile-backdrop.svg);
-                    position: absolute;
-                    left: 6rem;
-                    bottom: 1rem;
-                    top: 0;
-                    transition: transform 400ms ease;
-                }
-                &:hover{
-                    &:after{
-                        transform: rotate(-5deg);
+                    @include md{
+                        max-width: 19.5rem;
+                        max-height: 19.5rem;
+                    }
+                    @include mini{
+                        width: 12rem;
+                        height: 12rem;
+                        max-width: 12rem;
+                        max-height: 12rem;
+                    }
+                    img{
+                        &:last-of-type{
+                            position: absolute;
+                            left: 50%;
+                            top: 50%;
+                            width: 45rem;
+                            height: 42rem;
+                            transition: transform 400ms ease;
+                            transform: translate(-56%, -48%);
+                            max-width: 45rem;
+                            @include lg{
+                                width: 44rem;
+                            }
+                            @include md{
+                                width: 30rem;
+                                height: 28rem;
+                                max-width: 30rem;
+                                max-height: 28rem;
+                            }
+                            @include mini{
+                                width: 19rem;
+                                height: 19rem;
+                                max-width: 19rem;
+                                max-height: 19rem;
+                            }
+                            
+                        }
+                    }
+                    &:hover{
+                        &:after{
+                            transform: rotate(-5deg);
+                        }
                     }
                 }
             }
@@ -263,19 +511,48 @@
             padding: 0 3.9rem;
             width: 100%;
             position: relative;
-            .swiper-button-next-customer{
+            @include mini{
+                position: unset;
+                padding: 0;
+                margin-top: 0;
+            }
+            .swiper-button-next-customer-3{
                 position: absolute;
                 right: 0rem;
                 top: 50%;
                 transform: translateY(-50%);
                 z-index: 3;
+                cursor: pointer;
+                @include mini{
+                    top: 8rem;
+                    transform: none;
+                    width: 4rem;
+                    height: 4rem;
+                    right: 3rem;
+                    *{
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
             }
-            .swiper-button-prev-customer{
+            .swiper-button-prev-customer-4{
                 position: absolute;
                 left: 0rem;
                 top: 50%;
                 transform: translateY(-50%);
                 z-index: 3;
+                cursor: pointer;
+                @include mini{
+                    top: 8rem;
+                    transform: none;
+                    width: 4rem;
+                    height: 4rem;
+                    left: 3rem;
+                    *{
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
             }
         }
         .mySwiper-bottom-right{
@@ -308,81 +585,167 @@
                 }
             }
         }
-        .references{
-            width: 100%;
-            margin-top: auto;
-            margin-bottom: 14.5rem;
-            .heading-type-one{
-                margin-bottom: 4.2rem;
-            }
-            .references-block{
-                display: flex;
-                align-items: stretch;
-                width: 100%;
-                justify-content: space-between;
-            }
-            .references-slider{
-                max-width: 60.8rem;
-                width: 100%;
+        @include md{
+            .mySwiper-bottom-left{
                 position: relative;
-                padding-bottom: 7.4rem;
-            }
-            .item-wrap{
                 width: 100%;
-                display: flex;
-                flex-wrap: wrap;
-                align-items: stretch;
-                gap: 5rem 7rem;
-                .references-item{
-                    max-width: calc(100% / 3 - 4.7rem);
-                    width: 100%;
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    *{
-                        display: flex;
+                min-height: 39rem;
+                position: relative;
+                @include md{
+                    min-height: auto;
+                    min-height: 36rem;
+                }
+                &:after{
+                    content:url(/img/icon/double-mark.svg);
+                    position: absolute;
+                    bottom: 1.3rem;
+                    right: 0;
+                    @include mini{
+                        right: 1.5rem;
+                        bottom: 0;
                     }
                 }
-            }
-            .references-text{
-                display: flex;
-                align-items: flex-start;
-                flex-direction: column;
-                max-width: 54.7rem;
-                margin-left: auto;
-                .title{
-                    font-size: 3.2rem;
-                    line-height: 4.4rem;
-                    @include font;
-                    color: #ffffff;
-                    margin-bottom: 2.4rem;
+                &:before{
+                    content:url(/img/icon/double-mark.svg);
+                    position: absolute;
+                    top: 2.9rem;
+                    left: 0;
+                    transform: rotate(180deg);
+                    @include md{
+                        top: 1rem;
+                    }
+                    @include mini{
+                        left: 1.5rem;
+                    }
                 }
-                .desc{
-                    font-size: 1.6rem;
-                    @include font;
-                    color: #ffffff;
-                    line-height: 2.2rem;
-                    p{
-                        margin-bottom: 2.2rem;
-                        &:last-of-type{
-                            margin-bottom: 0;
+                .swiper-slide{
+                    opacity: 0;
+                    visibility: hidden;
+                    &.swiper-slide-active{
+                        opacity: 1;
+                        visibility: visible;
+                    }
+                }
+                .backdrop-svg{
+                    position: absolute;
+                    left: 0;
+                    bottom: 0;
+                    img{
+                        @include md{
+                            width: 100%;
+                            height: 100%;
+                            object-fit: cover;
+                        }
+                    }
+                }
+                .text{
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    padding-left: 4.1rem;
+                    padding-top: 6.1rem;
+                    padding-right: 3rem;
+                    @include md{
+                        padding-top: 5.5rem;
+                    }
+                    .desc{
+                        font-size: 2rem;
+                        line-height: 2.7rem;
+                        @include font;
+                        color: #ffffff;
+                        @include lg{
+                            font-size: 1.8rem;
+                            line-height: 2.4rem;
+                            @include line-clamp(5);
+                        }
+                        @include mini{
+                            text-align: center
+                        }
+                        p{
+                            @include lg{
+                                @include line-clamp(4);
+                            }
+                        }
+                        p, a{
+                            display: inline;
+                        }
+                        a{
+                            color: #ffffff;
+                            position: relative;
+                            &:after{
+                                content: "";
+                                position: absolute;
+                                bottom: .3rem;
+                                left: 0;
+                                width: 100%;
+                                background-color: #ffffff;
+                                height: .1rem;
+                            }
+                        }
+                    }
+                    .brand-logo{
+                        width: 60%;
+                        @include lg{
+                            width: 12rem;
+                        }
+                    }
+                    .info{
+                        @include md{
+                            justify-content: space-between;
+                        }
+                        @include mini{
+                            flex-direction: column-reverse;
+                            align-items: center;
+                            gap: 4rem 0;
+                        }
+                    }
+                    .info-text{
+                        display: flex;
+                        flex-direction: column;
+                        align-items: flex-start;
+                        min-width: 40%;
+                        @include lg{
+                            margin-left: 1rem;
+                        }
+                        @include mini{
+                            align-items: center;
+                        }
+                        .info-item{
+                            font-size: 1.8rem;
+                            line-height: 2.5rem;
+                            color: #ffffff;width: max-content;
+                            @include font;
+                            &:first-of-type{
+                                @include black;
+                            }
+                            @include lg{
+                                font-size: 1.4rem;
+                                line-height: 2rem;
+                                &:first-of-type{
+                                    @include extrabold;
+                                }
+                            }
+                            @include mini{
+                                font-size: 1.8rem;
+                                line-height: 2.5rem;
+                                @include font;
+                            }
                         }
                     }
                 }
             }
-            .btn-layout{
-                display: flex;
-                align-items: center;
-                gap: 0 2rem;
-                justify-content: center;
-                position: absolute;
-                bottom: 0;
-                left: 50%;
-                transform: translateX(-50%);
-            }
         }
     }
 }
+
+
+
+
+
+
+
+
 .bottom-icon {
     position: relative; /* Elementin pozisyonunu animasyon için kontrol etmek için gerekli */
     animation: bounce 1.5s infinite; /* Animasyonu 2 saniyede bir sürekli tekrar ettir */

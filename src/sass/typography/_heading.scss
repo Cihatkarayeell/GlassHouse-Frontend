@@ -1,7 +1,11 @@
 .heading-1 {
   font-size: 3.2rem;
   line-height: 4.4rem;
-  font-weight: 500;
+  @include font;
+  @include md{
+    font-size: 2.8rem;
+    line-height: 3.8rem;
+  }
 }
 .heading-2 {
   font-size: 2.4rem;

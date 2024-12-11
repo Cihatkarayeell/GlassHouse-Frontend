@@ -1,0 +1,77 @@
+.services-card{
+    &.glasshouse-card{
+        background-color: #3673B0;
+    }
+    &.on-promise{
+        background-color: #57B6D1;
+    }
+    background-color: #3673B0;
+    border-radius: 1rem;
+    padding: 5rem 4rem 3rem 4rem ;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    max-width: 100% !important;
+    transition: box-shadow 400ms ease, transform 400ms ease;
+    @include md{
+        padding: 4rem 2rem 3rem 2rem;
+    }
+    @include sm{
+        max-width: 100%;
+        padding: 5rem 4rem 3rem 4rem;
+    }
+    .tab{
+        padding: 1.2rem 1.5rem;
+        border-radius: 3rem;
+        background-color: #ffffff;
+        display: flex;
+        align-items: center;
+        gap: 0 1rem;
+        margin-bottom: 3.6rem;
+        font-size:1.4rem;
+        line-height: 1.9rem;
+        color: #3673B0;
+        .icon{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+    .title{
+        font-size: 1.7rem;
+        line-height: 2.3rem;
+        color: #ffffff;
+        @include black;
+        margin-bottom: 2rem;
+        margin-top: 0;
+    }
+    .desc{
+        font-size: 1.6rem;
+        line-height: 2.2rem;
+        color: #ffffff;
+        @include regular;
+        margin-bottom: 2.6rem;
+        @include line-clamp(5);
+        margin-top: 0;
+    }
+    .card-link{
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        font-size: 1.6rem;
+        line-height: 2.2rem;
+        color: #ffffff;
+        @include regular;
+        span{
+            color: #ffffff;
+        }
+    }
+    &:hover{
+        box-shadow: 0   0   1.2rem 0 #57B6D1;
+        transform: translateY(-.7rem);
+        @include md{
+            box-shadow: none;
+            transform: none;
+        }
+    }
+}

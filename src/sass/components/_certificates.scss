@@ -3,10 +3,32 @@
     margin-bottom: 6.4rem;
     .heading-1{
         margin-top: 4.4rem;
+        @include md{
+            margin-top: 3.1rem;
+        }
+    }
+    @include md{
+        .block{
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            flex-direction: column;
+            width: 100%;
+        }
+    }
+    @include md{
+        .container{
+            margin-inline: 0;
+        }
     }
     .pdf-slider{
         margin-top: 4rem;
         position: relative;
+        width: 100%;
+        @include md{
+            margin-top: 1.2rem;
+            padding-inline: 1.5rem;
+        }
         .swiper-wrapper{
             padding-top: 2rem;
         }
@@ -45,6 +67,9 @@
                 line-height: 1.9rem;
                 color: #000000;
                 @include font;
+                @include md{
+                    text-align: center;
+                }
             }
             .pdf-link{
                 margin-top: auto;
@@ -65,6 +90,12 @@
             position: absolute;
             top:  -6.2rem;
             right: 0;
+            @include md{
+                position: unset;
+                width: max-content;
+                margin-inline: auto;
+                margin-top: 3.2rem;
+            }
         }
     }
 }

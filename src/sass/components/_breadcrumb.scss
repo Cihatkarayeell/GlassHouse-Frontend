@@ -22,6 +22,14 @@
         a{
             color: #000000;
         }
+        svg{
+            path{
+                stroke:#000000
+            }
+        }
+    }
+    @include sm{
+        display: none;
     }
 
 }

@@ -1,0 +1,248 @@
+.tab-section{
+    width: 100%;
+    padding-top: 9.2rem;
+    padding-bottom: 9.4rem;
+    overflow-x: hidden;
+    @include md{
+        padding-top: 6.4rem;
+        padding-bottom: 6.4rem;
+        .container{
+            margin-inline:0;
+        }
+        margin-inline: 1.5rem;
+        width: auto;
+    }
+    .title{
+        font-size: 2rem;
+        line-height: 2.7rem;
+        @include extrabold;
+        color: #000000;
+        margin-bottom: 3.7rem;
+        @include sm{
+            margin-bottom:2.4rem;
+        }
+    }
+    .sub-title{
+        font-size: 1.5rem;
+        line-height: 2.2rem;
+        @include extrabold;
+        color: #000000;
+        margin-bottom: 2rem;
+    }
+    .table{
+        width: 100%;
+        border-radius: 1rem;
+        overflow: hidden;
+        background-color: #F2F4F6;
+        margin-bottom: 0;
+        .table-header{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 3.6rem;
+            .tr{
+                padding: 0 2rem;
+                width: 100%;
+                height: auto;
+                background-color: transparent;
+                box-shadow: none;
+                border: none;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                @include md{
+                    padding: 0 .5rem;
+                }
+                .th{
+                    width: calc(100% / 4);
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    text-align: center;
+                    font-size: 1.4rem;
+                    line-height: 2.2rem;
+                    color: #ffffff;
+                    @include extrabold;
+                    background-color: transparent;
+                    box-shadow: none;
+                    border: none;
+                    @include mini{
+                        font-size: 1.2rem;
+                    }
+                }
+
+            }
+        }
+        .table-body{
+            width: 100%;
+            .tr{
+                width: 100%;
+                display: flex;
+                align-items: flex-start;
+                justify-content: space-between;
+                padding: 0 2rem;
+                .td{
+                    width: calc(100% / 4);
+                    font-size: 1.4rem;
+                    line-height: 2.2rem;
+                    color: #000000;
+                    @include font;
+                    background-color: transparent;
+                    box-shadow: none;
+                    border: none;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    text-align: center;
+                    @include mini{
+                        font-size: 1.2rem;
+                    }
+                }
+            }
+        }
+        &.cookie{
+            .tr{
+                .th{
+                    &:first-child{
+                        text-align: left;
+                        justify-content: flex-start;
+                    }
+                    &:last-of-type{
+                        text-align: left;
+                        justify-content: flex-start;
+                    }
+                }
+                .td{
+                    &:first-child{
+                        text-align: left;
+                        justify-content: flex-start;
+                    }
+                    &:last-of-type{
+                        text-align: left;
+                        justify-content: flex-start;
+                    }
+                }
+            }
+            .table-body{
+                .tr{
+                    padding-bottom: 2.4rem;
+                    padding-top: 2rem;
+                }
+            }
+        }
+        &.information{
+            padding: 0;
+            .table-body{
+                .tr{
+                    padding-bottom: 5.4rem;
+                    padding-top: 2rem;
+                }
+                .td{
+                    width: calc(100% / 2 - 4rem);
+                }
+            }
+            .table-header{
+                .th{
+                    width: calc(100% / 2 - 4rem);
+                }
+            }
+            .th{
+                &:first-child{
+                    text-align: left;
+                    justify-content: flex-start;
+                }
+                &:last-of-type{
+                    text-align: left;
+                    justify-content: flex-start;
+                }
+            }
+            .td{
+                &:first-child{
+                    text-align: left;
+                    justify-content: flex-start;
+                }
+                &:last-of-type{
+                    text-align: left;
+                    justify-content: flex-start;
+                    font-size: 1.2rem;
+                    line-height: 1.6rem;
+                }
+                ul{
+                    padding-left: 2.3rem;
+                    li{
+                        list-style-type: disc;
+                        font-size: 1.2rem;
+                        line-height: 1.6rem;
+                    }
+                }
+            }
+            
+        }
+    }
+    .text-section{
+        margin-top: 4.2rem;
+        @include sm{
+            margin-top: 2.4rem;
+        }
+        p{
+            font-size: 1.5rem;
+            line-height: 2.2rem;
+            color: #000000;
+            @include regular;
+            strong{
+                @include extrabold;
+            }
+        }
+        li{
+            font-size: 1.5rem;
+            line-height: 2.2rem;
+            color: #000000;
+            @include regular;
+            list-style-type: disc;
+            strong{
+                @include extrabold;
+            }
+        }
+        a{
+            color: #00AEEF;
+            font-size: 1.5rem;
+            line-height: 2.2rem;
+            @include regular;
+        }
+        .desc{
+            margin-bottom: 2rem;
+        }
+        .ul{
+            margin-bottom: 2rem;
+            padding-left: 2.3rem;
+            &.blue{
+                li{
+                    list-style: disc;
+                    color: #00AEEF;
+                    a{
+                        color: #00AEEF;
+                    }
+                }
+            }
+        }
+        ul{
+            padding-left: 2.3rem;
+        }
+    }
+}
+.scroll{
+
+    width: 80rem;
+    /* overflow-x: scroll; */
+    height: 10rem;
+    background: blue;
+    padding: 4rem;
+
+    .text{
+        width: 100%;
+        overflow-x: scroll;
+        height: 100%;
+        background: red;
+    
+    }
+}

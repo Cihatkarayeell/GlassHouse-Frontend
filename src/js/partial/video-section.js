@@ -19,3 +19,45 @@ if (videoPlyBtn) {
     }
   });
 }
+
+const playButton = document.querySelector('.videoPlayButton');
+if (playButton){
+
+  const videoPlayButtons = document.querySelectorAll('.videoPlayButton');
+  const videoModal = document.getElementById('videoModal');
+  const videoIframe = document.getElementById('videoIframe');
+  const closeModal = document.getElementById('closeModal');
+  
+  // Play button click event
+  videoPlayButtons.forEach(button => {
+    button.addEventListener('click', () => {
+      event.preventDefault();
+      const videoSrc = button.getAttribute('data-video');
+      videoIframe.src = videoSrc; // Set iframe src to the video URL
+      videoModal.classList.add('active');
+    });
+  });
+  
+  
+  // Close modal on close button click
+  closeModal.addEventListener('click', closeModalModal);
+  
+  function closeModalModal() {
+    videoModal.classList.remove('active');
+    videoIframe.src = ''; // Stop the video
+  }
+  
+  // Modal dışına tıklama ile kapatma
+  videoModal.addEventListener('click', (event) => {
+    const modalContent = document.querySelector('.video-modal-content');
+    console.log("ksjkdfbvmsdfhjb")
+    
+    // Eğer tıklanan yer modal içerik elemanının dışında ise modal kapanır
+    if (!modalContent.contains(event.target)) {
+      closeModalModal();
+    }
+  });
+
+}
+
+

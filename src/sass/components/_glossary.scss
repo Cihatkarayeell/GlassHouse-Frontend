@@ -1,0 +1,346 @@
+.glossary-hero{
+    width: 100%;
+    height: 50rem;
+    @include sm{
+        height: 100%;
+        padding-bottom: 3.2rem;
+    }
+    .block{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        margin-top: 8.4rem;
+        @include sm{
+            margin-top: 6.4rem;
+        }
+        .heading-type-one{
+            margin-bottom: 2.8rem;
+        }
+        .heading-1{
+            margin-bottom: 4.4rem;
+            @include sm{
+                margin-bottom: 3.2rem;
+            }
+        }
+        .glossary-letters{
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0 .2rem;
+            @include sm{
+                justify-content: space-between;
+                display: none;
+            }
+            .letter-btn{
+                width: 3rem;
+                height: 3rem;
+                border-radius: .5rem;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 2.4rem;
+                line-height: 3.3rem;
+                color: #ffffff;
+                @include black;
+                transition: background-color 300ms ease;
+                @include sm{
+                    width: 2rem;
+                    height: 2rem;
+                    font-size: 1.8rem;
+                    line-height: 2.7rem;
+                }
+                &.active{
+                    background-color: #00AEEF;
+                }
+                &:hover{
+                    background-color: #00AEEF;
+                }
+            }
+        }
+        .search-box{
+            width: 90.6rem;
+            padding: 1.7rem 2.8rem 1.8rem 3.2rem;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            background-color: #ffffff;
+            border-radius: 6rem;
+            margin-top: 2.1rem;
+            box-shadow: 0   0   1.5rem 0 rgb(0, 0, 0,.1);
+            @include md{
+                width: 100%;
+            }
+            @include sm{
+                padding: 1.5rem;
+                padding-left: 3rem;
+            }
+            .icon{
+                min-width:2.4rem;
+                margin-right: 2rem;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                @include mini{
+                    margin-right: .5rem;
+                }
+            }
+            input{
+                font-size: 2rem;
+                line-height: 2.7rem;
+                color: rgb(0, 0, 0,.7);
+                width: 55%;
+                background-color: transparent;
+                outline:none;
+                border:none;
+                @include font;
+                &::placeholder{
+                    font-size: 2rem;
+                    line-height: 2.7rem;
+                    color: rgb(0, 0, 0,.7);
+                    @include font;
+                }
+                @include sm{
+                    width: 100%;
+                    font-size: 1.6rem;
+                    line-height: 2.2rem;
+                    &::placeholder{
+                        font-size: 1.6rem;
+                        line-height: 2.2rem;
+                    }
+                }
+                @include mini{
+                    font-size: 1.4rem;
+                    line-height: 2rem;
+                    &::placeholder{
+                        font-size: 1.4rem;
+                        line-height: 2rem;
+                    }
+                }
+            }
+            .ara-btn{
+                background-color: #00AEEF;
+                border-radius: 3rem;
+                padding: 1.5rem 3rem;
+                margin-left: auto;
+                font-size: 1.4rem;
+                line-height: 1.9rem;
+                color: #ffffff;
+                @include extrabold;
+                @include mini{
+                    padding: .5rem 1.2rem;
+                }
+            }
+        }
+    }
+}
+.glossary-section{
+    width: 100%;
+    padding-top: 8.4rem;
+    padding-bottom: 15rem;
+    @include md{
+        .container{
+            margin-inline:1.5rem;
+        }
+    }
+    @include mini{
+        padding-top:4.2rem;
+        padding-bottom: 6.4rem;
+    }
+    .block{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        .glossary-item{
+            width: 100%;
+            margin-top: 7.2rem;
+            @include sm{
+                margin-top: 3.2rem;
+            }
+            &:first-of-type{
+                margin-top: 0;
+            }
+            .letter{
+                width: 100%;
+                border-bottom: .1rem solid #00AEEF;
+                padding-bottom: 1.5rem;
+                span{
+                    font-size: 4.8rem;
+                    line-height: 6.6rem;
+                    color: #00AEEF;
+                    @include light;
+                    display: inline;
+                }
+            }
+            .keyword-padding{
+                padding-top: 4.7rem;
+                padding-left: 10rem;
+                width: 100%;
+                display: flex;
+                align-items: center;
+                flex-wrap: wrap;
+                gap: .3rem 0;
+                @include mini{
+                    padding-left: 3.2rem;
+                    padding-top: 3.2rem;
+                }
+                .keyword-item{
+                    width: calc(100% / 2);
+                    span{
+                        cursor: pointer;
+                        display: block;
+                        padding: 1rem;
+                        border-radius: 1rem;
+                        font-size: 1.6rem;
+                        line-height: 2.2rem;
+                        color: #000000;
+                        transition: all 300ms ease;
+                        width: max-content;
+                        &:hover{
+                            color: #ffffff;
+                            background-color: #00AEEF;
+                        }
+
+                    }
+                }
+            }
+        }
+    }
+}
+.not-found{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem 0;
+    margin-top: 6.4rem;
+    margin-bottom: 6.4rem;
+    margin-inline:auto;
+    .icon{
+        width: 4.8rem;
+        height: 4.8rem;
+    }
+    span{
+        font-size: 2rem;
+        line-height: 2.7rem;
+        color: #000000;
+        @include medium;
+        text-align: center;
+    }
+}
+.glossary-detail-hero{
+    width: 100%;
+    height: 15rem;
+    @include sm{
+        height: 10rem;
+    }
+}
+.keyword-section {
+    display: flex;
+    gap: 40px;
+    padding-top: 9rem;
+    height: 76rem;
+    @include sm{
+        height: 100%;
+        padding-bottom: 6.4rem;
+        padding-top: 6.4rem;
+        .container{
+            margin-inline:1.5rem;
+        }
+    }
+    .block{
+        display: flex;
+        gap: 4rem;
+        @include sm{
+            flex-direction: column;
+        }
+    }
+    .keyword-content {
+        flex: 1;
+        max-width: 59.7%;
+        @include sm{
+            max-width: 100%;
+        }
+        .heading-1 {
+            margin-bottom: 5rem;
+            @include mini{
+                margin-bottom: 3.2rem;
+            }
+        }
+
+        .description {
+            margin-bottom: 4.4rem;
+            p{
+                margin-bottom: 2rem;
+                &:last-of-type{
+                    margin-bottom: 0;
+                }
+            }
+        }
+
+        .glossary-btn {
+            background-color: #00A3FF;
+            color: white;
+            border: none;
+            padding: 1.1rem 2.5rem;
+            cursor: pointer;
+            font-size: 1.4rem;
+            line-height: 1.9rem;
+            color: #ffffff;
+            @include extrabold;
+            transition: background-color 0.3s ease;
+            border-radius: 3rem;
+            &:hover {
+                background-color: darken(#00A3FF, 10%);
+            }
+        }
+    }
+
+    .related-keywords {
+        width: 30.8%;
+        margin-top: 8.8rem;
+        margin-left: auto;
+        @include sm{
+            width: 100%;
+            margin-top: 4.2rem;
+        }
+        .related-title {
+            font-size: 14px;
+            font-weight: 600;
+            color: #333;
+            padding-bottom: 1rem;
+            margin-bottom: 3.4rem;
+            border-bottom: .1rem solid #000000;
+        }
+
+        .keyword-list {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            margin-left: -1rem;
+            .keyword-item {
+                padding: 1rem;
+                border-radius: 1rem;
+                color: #000000;
+                cursor: pointer;
+                transition: all 0.3s ease;
+                font-size: 1.6rem;
+                line-height: 2.2rem;
+                width: max-content;
+                @include medium;
+                &:hover {
+                    background-color: #00AEEF;
+                    color: white;
+                }
+
+                &.active {
+                    background-color: #00AEEF;
+                    color: white;
+                }
+            }
+        }
+    }
+}

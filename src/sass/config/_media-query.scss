@@ -90,7 +90,7 @@
 @mixin smaller-than-xl {
   // 1439px ve aşağısı
   @media (max-width: ($screen-xl - 1px)) {
-    @content;
+    @content; 
   }
 }
 
@@ -115,7 +115,7 @@
 }
 
 @mixin bigger-than-xxl {
-  // 1440px ve yukarısı
+  // 1920px ve yukarısı
   @media (min-width: $screen-xxl) {
     @content;
   }
