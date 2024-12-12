@@ -1,5 +1,6 @@
 .video-section{
     width: 100%;
+    display: flex !important;
     .container{
         @include sm{
             margin-left: 3rem;
