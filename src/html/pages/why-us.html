@@ -2,6 +2,45 @@
 {% extends "./layout/layout-general.html" %}
 {% block title %}Front end Starter Kit{% endblock %}
 {%block bodyClass %}body-home{% endblock %} {% block content %}
+<section class="form-modal">
+    <div class="modal-box">
+        <div class="modal-body" id="waitBody">
+            <div class="icon">
+                <img src="./img/icon/wait.svg" alt="">
+            </div>
+            <div class="title">
+                <h1>Gönderiliyor...</h1>
+            </div>
+            <div class="subtitle">
+                <h2>Lütfen bekleyin!</h2>
+            </div>
+        </div>
+        <div class="modal-body " id="successBody">
+            <div class="icon">
+                <img src="./img/icon/success.svg" alt="">
+            </div>
+            <div class="title">
+                <h1>Teşekkürler!</h1>
+            </div>
+            <div class="subtitle">
+                <h2>Form başarı ile gönderildi. En kısa sürede sizinle iletişime geçilecektir.</h2>
+            </div>
+            <button class="btn form-button close">Tamam</button>
+        </div>
+        <div class="modal-body" id="errorBody">
+            <div class="icon">
+                <img src="./img/icon/error.svg" alt="">
+            </div>
+            <div class="title">
+                <h1>Hata</h1>
+            </div>
+            <div class="subtitle">
+                <h2>Lütfen daha sonra tekrar deneyiniz.</h2>
+            </div>
+            <button class="btn form-button close">Tamam</button>
+        </div>
+    </div>
+</section>
 <section class="why-us hero" id="whyUsHero">
     <div class="container">
         <div class="breadcrumb">
@@ -709,30 +748,30 @@
                     <p>Formu doldurun, sizinle iletişime geçelim! BT operasyonlarınız için başarının altyapısını birlikte kuralım.</p>
                 </div>
             </div>
-            <form class="row g-3 needs-validation" novalidate>
-                <div class="col-md-6 position-relative form-input">
+            <form class="row g-3 needs-validation" novalidate >
+                <div class="col-md-6 position-relative form-input form-item">
                   <input type="text" class="form-control" id="validationTooltip01" placeholder="*Adınız" required>
                 </div>
-                <div class="col-md-6 position-relative form-input">
+                <div class="col-md-6 position-relative form-input form-item">
                   <input type="text" class="form-control" id="validationTooltip02" placeholder="*Soyadınız" required>
                 </div>
-                <div class="col-md-6 position-relative form-input">
+                <div class="col-md-6 position-relative form-input form-item">
                     <input type="text" class="form-control" id="validationTooltip03" placeholder="*Firmanızın Adı" required>
                   </div>
-                  <div class="col-md-6 position-relative form-input">
+                  <div class="col-md-6 position-relative form-input form-item">
                     <input type="text" class="form-control" id="validationTooltip04" placeholder="*Ünvanınız" required>
+                    <div class="invalid-tooltip">
+                        Lütfen boş bırakmayınız!
+                      </div>
                   </div>
-                  <div class="col-md-6 position-relative form-input">
+                  <div class="col-md-6 position-relative form-input form-item">
                     <input type="tel" class="form-control" id="validationTooltip05" placeholder="+90 (5_ _) _ _ _  _ _  _ _" required>
-                  </div>
-                  <div class="col-md-6 position-relative form-input">
+                </div>
+                  <div class="col-md-6 position-relative form-input form-item">
                     <input type="email" class="form-control" id="validationTooltip06" placeholder="*E-Postanız" required>
-                  </div>
-                <div class="col-md-12 position-relative form-textarea">
+                </div>
+                <div class="col-md-12 position-relative form-textarea form-item">
                   <textarea type="text" class="form-control"  maxlength="250"  placeholder="Mesajınızı bu alana yazabilirsiniz" id="validationTooltip07" required></textarea>
-                  <div class="invalid-tooltip">
-                    Lütfen boş bırakmayınız!
-                  </div>
                 </div>
                 <div class="form-check" id="kvkk">
                     <div class="custom-box">

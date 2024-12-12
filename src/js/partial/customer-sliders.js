@@ -73,7 +73,7 @@ const slider4 = new Swiper(".mySwiper-bottom-right", {
     },
 });
 
-const customerSlider = document.querySelector('.customer-experiences');
+const customerSlider = document.querySelector('.customer-sliders');
 if(customerSlider){
   
   const nextButton1 = document.querySelector('.swiper-button-next-customer-1');

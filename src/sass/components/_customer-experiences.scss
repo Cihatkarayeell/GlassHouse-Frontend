@@ -556,6 +556,9 @@
             }
         }
         .mySwiper-bottom-right{
+            @include mini{
+                display: none;
+            }
             .swiper-slide{
                 display: flex;
                 align-items: center;

@@ -13,6 +13,7 @@
     flex-direction: column;
     max-width: 100% !important;
     transition: box-shadow 400ms ease, transform 400ms ease;
+    height: 38.3rem;
     @include md{
         padding: 4rem 2rem 3rem 2rem;
     }

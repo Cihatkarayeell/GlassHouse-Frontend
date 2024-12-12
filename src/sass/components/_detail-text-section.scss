@@ -35,12 +35,12 @@
         display: flex;
         flex-direction: column;
         margin-left: 3.2rem;
-        scroll-padding: 20rem;
         @include sm{
             margin-left: 1.5rem;
         }
         .title{
             margin-bottom: 2rem;
+            scroll-margin: 15rem;
             h3{
                 font-size: 1.8rem;
                 line-height: 2.4rem;

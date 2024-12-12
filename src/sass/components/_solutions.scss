@@ -43,6 +43,7 @@
         }
         .services-card{
             cursor: grab;
+            max-width: 32.7rem !important;
         }
         &.disabled{
             height: 0;

@@ -14,11 +14,38 @@ if (announcementModal){
       modal.classList.add('active'); // Modalı aktif yap
     });
   });
-  
-  
-  
-  // Close butonuna tıklanırsa modalı kapat
-  closeModalButton.addEventListener('click', () => {
-    modal.classList.remove('active');
-  });
+      // Modal dışına tıklandığında kapat
+      modal.addEventListener('click', (e) => {
+          if (e.target === modal) {
+            console.log('lskjfblsjdfkb')
+              modal.classList.remove('active');
+          }
+      });
+
+    // ESC tuşu ile kapat
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && modal.classList.contains('active')) {
+            modal.classList.remove('active');
+        }
+    });
+
+    // Modal açıldığında body scroll'unu engelle
+    const toggleBodyScroll = (isModalOpen) => {
+        document.body.style.overflow = isModalOpen ? 'hidden' : '';
+    };
+
+    announcementLinks.forEach(link => {
+        link.addEventListener('click', (event) => {
+            event.preventDefault();
+            modal.classList.add('active');
+            toggleBodyScroll(true);
+        });
+    });
+
+    closeModalButton.addEventListener('click', () => {
+        modal.classList.remove('active');
+        toggleBodyScroll(false);
+    });
+
 }
+

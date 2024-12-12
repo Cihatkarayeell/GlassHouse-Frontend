@@ -29,17 +29,36 @@
         color: #000000;
         margin-bottom: 2rem;
     }
+    .table-wrapper {
+        width: 100%;
+        @include sm{
+            overflow-x: auto;
+            -webkit-overflow-scrolling: touch; /* iOS için daha iyi scroll */
+            scrollbar-width: none;
+            -ms-overflow-style: none;
+        }
+    }
+
     .table{
         width: 100%;
         border-radius: 1rem;
         overflow: hidden;
         background-color: #F2F4F6;
         margin-bottom: 0;
+        min-width: 70rem;
+        .table-body{
+            @include sm{
+                min-width: 60rem;
+                overflow-x: scroll;
+            }
+        }
         .table-header{
             display: flex;
             align-items: center;
             justify-content: space-between;
             height: 3.6rem;
+            width: 100%;
+            max-width: 100%;
             .tr{
                 padding: 0 2rem;
                 width: 100%;
@@ -73,18 +92,19 @@
 
             }
         }
-        .table-body{
+        .table-content{
             width: 100%;
             .tr{
                 width: 100%;
                 display: flex;
                 align-items: flex-start;
                 justify-content: space-between;
-                padding: 0 2rem;
+                padding: 1rem 2rem;
                 .td{
                     width: calc(100% / 4);
                     font-size: 1.4rem;
-                    line-height: 2.2rem;
+                    line-height: 1.6rem;
+                    padding: 0;
                     color: #000000;
                     @include font;
                     background-color: transparent;
@@ -228,21 +248,5 @@
         ul{
             padding-left: 2.3rem;
         }
-    }
-}
-.scroll{
-
-    width: 80rem;
-    /* overflow-x: scroll; */
-    height: 10rem;
-    background: blue;
-    padding: 4rem;
-
-    .text{
-        width: 100%;
-        overflow-x: scroll;
-        height: 100%;
-        background: red;
-    
     }
 }

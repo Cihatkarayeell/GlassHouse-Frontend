@@ -312,11 +312,11 @@ if(headerLanguage){
 
 
 
-const customerSliders = document.querySelector('.customer-experiences');
-if(customerSliders){
+const customerSliderMoving = document.querySelector('.customer-sliders');
+if(customerSliderMoving){
     // Taşınacak slider ve hedef container
-    const slider1 = document.querySelector('.customer-experiences .customer-sliders .mySwiper-bottom-left');
-    const sliderMove = document.querySelector('.customer-experiences .customer-sliders .right');
+    const slider1 = document.querySelector('.customer-sliders .mySwiper-bottom-left');
+    const sliderMove = document.querySelector('.customer-sliders .right');
     
     // Slider'ın orijinal parent elementini saklayalım
     const originalParent = slider1.parentElement;

@@ -2,9 +2,48 @@
 {% extends "./layout/layout-general.html" %}
 {% block title %}Front end Starter Kit{% endblock %}
 {%block bodyClass %}body-home{% endblock %} {% block content %}
+<section class="form-modal">
+    <div class="modal-box">
+        <div class="modal-body" id="waitBody">
+            <div class="icon">
+                <img src="./img/icon/wait.svg" alt="">
+            </div>
+            <div class="title">
+                <h1>Gönderiliyor...</h1>
+            </div>
+            <div class="subtitle">
+                <h2>Lütfen bekleyin!</h2>
+            </div>
+        </div>
+        <div class="modal-body " id="successBody">
+            <div class="icon">
+                <img src="./img/icon/success.svg" alt="">
+            </div>
+            <div class="title">
+                <h1>Teşekkürler!</h1>
+            </div>
+            <div class="subtitle">
+                <h2>Form başarı ile gönderildi. En kısa sürede sizinle iletişime geçilecektir.</h2>
+            </div>
+            <button class="btn form-button close">Tamam</button>
+        </div>
+        <div class="modal-body" id="errorBody">
+            <div class="icon">
+                <img src="./img/icon/error.svg" alt="">
+            </div>
+            <div class="title">
+                <h1>Hata</h1>
+            </div>
+            <div class="subtitle">
+                <h2>Lütfen daha sonra tekrar deneyiniz.</h2>
+            </div>
+            <button class="btn form-button close">Tamam</button>
+        </div>
+    </div>
+</section>
 <section class="services-main-category-hero">
     <div class="backdrop" style="background: url(./img/background/services-main-hero.png);background-position: center;background-size: cover;">
-        <div class="container">
+        <div class="container position-relative">
             <div class="breadcrumb">
                 <div class="breadcrumb-item">
                     <a href="index.html">Ana Sayfa</a>
@@ -32,9 +71,9 @@
                     <path d="M0.606952 11.2514C0.726636 11.1318 0.888874 11.0647 1.05803 11.0647C1.22718 11.0647 1.38942 11.1318 1.50911 11.2514L8.0795 17.8207L8.0795 0.638314C8.0795 0.469023 8.14675 0.306665 8.26646 0.186958C8.38617 0.0672501 8.54853 -7.38851e-07 8.71782 -7.24051e-07C8.88711 -7.09251e-07 9.04947 0.0672502 9.16918 0.186958C9.28888 0.306665 9.35613 0.469023 9.35613 0.638315L9.35613 17.8207L15.9265 11.2514C16.0475 11.1386 16.2076 11.0772 16.3729 11.0802C16.5383 11.0831 16.6961 11.1501 16.813 11.267C16.93 11.384 16.997 11.5418 16.9999 11.7071C17.0028 11.8725 16.9414 12.0325 16.8287 12.1535L9.16889 19.8133C9.04921 19.9329 8.88697 20 8.71782 20C8.54866 20 8.38642 19.9329 8.26674 19.8133L0.606951 12.1535C0.487416 12.0338 0.420274 11.8716 0.420274 11.7025C0.420274 11.5333 0.487416 11.3711 0.606952 11.2514Z" fill="white"/>
                 </svg>                    
             </div>
-        </div>
-        <div class="profile-img">
-            <img src="./img/card/main-category-profile.png" alt="">
+            <div class="profile-img">
+                <img src="./img/card/main-category-profile.png" alt="">
+            </div>
         </div>
     </div>
 </section>
@@ -93,9 +132,6 @@
 <section class="advantages" id="advantagesVideo">
     <div class="container h-100">
         <div class="d-flex w-100 h-100 justify-content-between position-relative block">
-            <div class="header">
-
-            </div>
             <div class="advantages-layout">
                 <div class="item">
                     <div class="icon">
@@ -435,30 +471,30 @@
                     <p>Formu doldurun, sizinle iletişime geçelim! BT operasyonlarınız için başarının altyapısını birlikte kuralım.</p>
                 </div>
             </div>
-            <form class="row g-3 needs-validation" novalidate>
-                <div class="col-md-6 position-relative form-input">
+            <form class="row g-3 needs-validation" novalidate >
+                <div class="col-md-6 position-relative form-input form-item">
                   <input type="text" class="form-control" id="validationTooltip01" placeholder="*Adınız" required>
                 </div>
-                <div class="col-md-6 position-relative form-input">
+                <div class="col-md-6 position-relative form-input form-item">
                   <input type="text" class="form-control" id="validationTooltip02" placeholder="*Soyadınız" required>
                 </div>
-                <div class="col-md-6 position-relative form-input">
+                <div class="col-md-6 position-relative form-input form-item">
                     <input type="text" class="form-control" id="validationTooltip03" placeholder="*Firmanızın Adı" required>
                   </div>
-                  <div class="col-md-6 position-relative form-input">
+                  <div class="col-md-6 position-relative form-input form-item">
                     <input type="text" class="form-control" id="validationTooltip04" placeholder="*Ünvanınız" required>
+                    <div class="invalid-tooltip">
+                        Lütfen boş bırakmayınız!
+                      </div>
                   </div>
-                  <div class="col-md-6 position-relative form-input">
+                  <div class="col-md-6 position-relative form-input form-item">
                     <input type="tel" class="form-control" id="validationTooltip05" placeholder="+90 (5_ _) _ _ _  _ _  _ _" required>
-                  </div>
-                  <div class="col-md-6 position-relative form-input">
+                </div>
+                  <div class="col-md-6 position-relative form-input form-item">
                     <input type="email" class="form-control" id="validationTooltip06" placeholder="*E-Postanız" required>
-                  </div>
-                <div class="col-md-12 position-relative form-textarea">
+                </div>
+                <div class="col-md-12 position-relative form-textarea form-item">
                   <textarea type="text" class="form-control"  maxlength="250"  placeholder="Mesajınızı bu alana yazabilirsiniz" id="validationTooltip07" required></textarea>
-                  <div class="invalid-tooltip">
-                    Lütfen boş bırakmayınız!
-                  </div>
                 </div>
                 <div class="form-check" id="kvkk">
                     <div class="custom-box">
