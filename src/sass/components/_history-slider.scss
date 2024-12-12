@@ -75,7 +75,8 @@
                 background-color: #D7D7D7;
                 position: absolute;
                 bottom: -5.1rem;
-                left: -50%;
+                left: 50%;
+                transform: translateX(-50%);
             }
         }
     }
