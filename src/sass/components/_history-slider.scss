@@ -35,6 +35,7 @@
                 left: 11.8rem;
                 bottom: -5.8rem;
                 transition: all 400ms ease;
+                z-index: 3;
                 @include md{
                     left: 0;
                 }
