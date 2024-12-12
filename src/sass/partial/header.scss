@@ -265,6 +265,16 @@
 					opacity: 0;
 					visibility: hidden;
 				}
+				&:focus{
+					border: none;
+					outline: none;
+				}
+				&:active{
+					border: none;
+					outline: none;
+					box-shadow: none;
+					background-color: transparent;
+				}
 			}
 		}
 		.language,

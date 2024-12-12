@@ -46,6 +46,7 @@ document.addEventListener('DOMContentLoaded', () => {
 	@@include('partial/announcements-modal.js')
 	@@include('partial/letters-btn.js')
 	@@include('partial/data-centre.js')
+	@@include('partial/cookie-modal.js')
 	
 	/*@@include('partial/responsive-table.js') */
 });

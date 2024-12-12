@@ -1,0 +1,33 @@
+.chat-with-us{
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 0 1.7rem;
+    position: fixed;
+    bottom: 10rem;
+    right: 2.5rem;
+    z-index: 3;
+    .chat-button{
+        padding: 1rem 1.8rem;
+        border-radius: 2rem;
+        background-color: #fff;
+        display: flex;
+        align-items: center;
+        gap: 0 .8rem;
+        font-size: 1.6rem;
+        line-height: 2.2rem;
+        color: #000;
+        @include regular;
+        border: .1rem dashed #000;
+    }
+    .chat{
+        border-radius: 50%;
+        width: 6rem;
+        height: 6rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #fff;
+    }
+}

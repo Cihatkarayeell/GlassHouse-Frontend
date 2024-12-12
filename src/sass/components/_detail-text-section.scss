@@ -38,21 +38,21 @@
         @include sm{
             margin-left: 1.5rem;
         }
+        h3{
+            font-size: 1.8rem;
+            line-height: 2.4rem;
+            color: #000000;
+            @include extrabold;
+        }
+        h2{
+            font-size: 1.8rem;
+            line-height: 2.4rem;
+            color: #000000;
+            @include black;
+        }
         .title{
             margin-bottom: 2rem;
             scroll-margin: 15rem;
-            h3{
-                font-size: 1.8rem;
-                line-height: 2.4rem;
-                color: #000000;
-                @include extrabold;
-            }
-            h2{
-                font-size: 1.8rem;
-                line-height: 2.4rem;
-                color: #000000;
-                @include black;
-            }
             &.color-primary{
                 h3,h2{
                     color: #00AEEF;
@@ -68,17 +68,15 @@
                 margin-right: .5rem;
             }
         }
-        .desc{
+        p{
+            font-size: 1.5rem;
+            line-height: 2.2rem;
+            color: #000000;
+            @include regular;
             margin-bottom: 2rem;
-            p{
-                font-size: 1.5rem;
-                line-height: 2.2rem;
-                color: #000000;
-                @include regular;
-            }
-            strong{
-                @include extrabold;
-            }
+        }
+        strong{
+            @include extrabold;
         }
         ul{
             padding-left: 2.2rem;
@@ -148,6 +146,12 @@
         height: auto;
         top: 10rem;
         margin-bottom: 4rem;
+        h2{
+            font-size: 1.8rem;
+            line-height: 2.5rem;
+            color: #ffffff;
+            @include regular;
+        }
         ul{
             margin-bottom: 0;
             li{

@@ -1,7 +1,6 @@
 var swiper = new Swiper(".mySwiper-history", {
     slidesPerView: 1.6,
     spaceBetween: 30,
-    loop:true,
     speed:700,
     grabCursor:true,
     navigation: {

@@ -61,6 +61,7 @@
                 @include font;
                 color: #000000;
                 margin-top: 2.5rem;
+                @include line-clamp(1);
             }
             .link{
                 font-size: 1.6rem;

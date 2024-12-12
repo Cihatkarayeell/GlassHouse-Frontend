@@ -53,6 +53,7 @@
         border-radius: 6rem;
         padding: 1.2rem 7.2rem;
         margin-top: 5.8rem;
+        min-width: 84.2rem;
         @include md{
             background-color: transparent;
             width: 100%;
@@ -81,7 +82,7 @@
             line-height: 1.9rem;
             color: #000;
             @include font;
-            transition: all 400ms ease;
+            transition: background-color 400ms ease, color 400ms ease;
             @include md{
                 background-color: #ffffff;
                 min-width: 15rem;
@@ -101,7 +102,6 @@
             &.active{
                 color: #ffffff;
                 background-color: #00AEEF;
-                @include extrabold;
             }
             &:hover{
                 color: #ffffff;
