@@ -1,6 +1,9 @@
 .open-positions{
     width: 100%;
     padding-top: 23.6rem;
+    @include mini{
+        padding-top: 7rem;
+    }
     .background-gradient{
         padding-top: 6.4rem;
         padding-bottom: 9.1rem;

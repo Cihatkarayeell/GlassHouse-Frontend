@@ -8,14 +8,14 @@
         position: sticky;
         top: 10rem;
         height: max-content;
+        @include mini{
+            display: none;
+        }
     }
     @include md{
         display: flex;
         flex-direction: column;
         align-items: center;
-        .alt-container{
-            margin-inline:0rem;
-        }
     }
     .block{
         padding-top: 6.4rem;
@@ -29,6 +29,9 @@
         display: flex;
         flex-direction: column;
         margin-left: 3.2rem;
+        @include mini{
+            margin-left: 0;
+        }
         h3{
             font-size: 1.8rem;
             line-height: 2.4rem;
@@ -49,7 +52,7 @@
                 }
             }
             display: flex;
-            align-items: center;
+            align-items: flex-start;
             span{
                 font-size: 1.8rem;
                 line-height: 2.4rem;
@@ -136,11 +139,18 @@
         height: auto;
         margin-bottom: 4rem;
         z-index: 1;
+        @include mini{
+            padding: 2rem;
+        }
         h2{
             font-size: 1.8rem;
             line-height: 2.5rem;
             color: #ffffff;
             @include regular;
+            @include mini{
+                font-size: 1.7rem;
+                line-height: 2.4rem;
+            }
         }
         ul{
             margin-bottom: 0;
@@ -161,10 +171,14 @@
                     color: #ffffff;
                     @include regular;
                     margin-right: .5rem;
+                    @include mini{
+                        font-size: 1.7rem;
+                        line-height: 2.4rem;
+                    }
                 }
                 a{
                     display: flex;
-                    align-items: center;
+                    align-items: flex-start;
                     justify-content: flex-start;
                 }
             }

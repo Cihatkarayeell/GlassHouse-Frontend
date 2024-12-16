@@ -1,12 +1,14 @@
 .tab-block{
     width: 100%;
     height: 100%;
-    
     .event-section{
         width: 100%;
         display: none;
         padding-top: 8.4rem;
         padding-bottom: 6.4rem;
+        .container{
+            margin-inline: 0;
+        }
         @include md{
             padding-top: 6.4rem;
         }
@@ -282,6 +284,9 @@
         display: none;
         padding-top: 8.4rem;
         padding-bottom: 6.4rem;
+        .container{
+            margin-inline: 0;
+        }
         @include md{
             padding-top: 6.4rem;
         }
@@ -557,6 +562,9 @@
         display: none;
         padding-top: 8.4rem;
         padding-bottom: 6.4rem;
+        .container{
+            margin-inline: 0;
+        }
         @include md{
             padding-top: 6.4rem;
         }
@@ -834,7 +842,9 @@
         @include md{
             padding-top: 6.4rem;
         }
-        
+        .container{
+            margin-inline: 0;
+        }
         &.active{
             display: block;
         }
@@ -1020,6 +1030,9 @@
         overflow: hidden;
         @include md{
             padding-top: 6.4rem;
+        }
+        .container{
+            margin-inline: 0;
         }
         .layout{
             display: flex;
@@ -1360,6 +1373,7 @@
         @include md{
             margin-bottom: 0rem;
             padding-top: 0;
+            gap: 3.2rem;
         }
         
         .wrap{

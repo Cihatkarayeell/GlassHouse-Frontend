@@ -16,11 +16,6 @@
                 margin-bottom: 2.8rem;
             }
         }
-        .container{
-            @include md{
-                margin: 0;
-            }
-        }
         .title{
             font-size: 3.2rem;
             line-height: 4.4rem;
@@ -31,7 +26,6 @@
                 text-align: center;
                 font-size: 2.8rem;
                 line-height: 3.8rem;
-                padding-inline: 3rem;
                 margin-bottom: 2.4rem;
             }
         }
@@ -50,8 +44,6 @@
             @include md{
                 max-width: 100%;
                 margin-top: 3.2rem;
-                margin-inline: 3rem;
-                width: auto;
             }
             .title{                
                 @include medium;
@@ -96,8 +88,6 @@
             @include md{
                 max-width: 100%;
                 margin-left: 0;
-                margin-inline: 1.5rem;
-                width: auto;
             }
             @include mini{
                 height: 28.4rem;
