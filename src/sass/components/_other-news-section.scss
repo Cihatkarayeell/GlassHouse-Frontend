@@ -10,12 +10,14 @@
     .heading-1{
         margin-bottom: 4.5rem;
         margin-inline: auto;
-        width: max-content;
+        width: 100%;
         text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
         @include md{
             margin-bottom: 2.4rem;
             width: 100%;
-            text-align: left;
         }
     }
     .btn-layout{

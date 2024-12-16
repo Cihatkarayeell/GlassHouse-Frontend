@@ -70,45 +70,37 @@ if (videoPlyBtn) {
 
 
 
-
 const playButton = document.querySelector('.videoPlayButton');
-if (playButton){
+if (playButton) {
+    const videoPlayButtons = document.querySelectorAll('.videoPlayButton');
+    const videoModal = document.getElementById('videoModal');
+    const videoIframe = document.getElementById('videoIframe');
+    const closeModal = document.getElementById('closeModal');
+    const modalContent = videoModal.querySelector('.modal-body');
 
-  const videoPlayButtons = document.querySelectorAll('.videoPlayButton');
-  const videoModal = document.getElementById('videoModal');
-  const videoIframe = document.getElementById('videoIframe');
-  const closeModal = document.getElementById('closeModal');
-  
-  // Play button click event
-  videoPlayButtons.forEach(button => {
-    button.addEventListener('click', () => {
-      event.preventDefault();
-      const videoSrc = button.getAttribute('data-video');
-      videoIframe.src = videoSrc; // Set iframe src to the video URL
-      videoModal.classList.add('active');
+    // Play button click event
+    videoPlayButtons.forEach(button => {
+        button.addEventListener('click', (event) => {
+            event.preventDefault();
+            const videoSrc = button.getAttribute('data-video');
+            videoIframe.src = videoSrc;
+            videoModal.classList.add('active');
+        });
     });
-  });
-  
-  
-  // Close modal on close button click
-  closeModal.addEventListener('click', closeModalModal);
-  
-  function closeModalModal() {
-    videoModal.classList.remove('active');
-    videoIframe.src = ''; // Stop the video
-  }
-  
-  // Modal dışına tıklama ile kapatma
-  videoModal.addEventListener('click', (event) => {
-    const modalContent = document.querySelector('.video-modal-content');
-    console.log("ksjkdfbvmsdfhjb")
-    
-    // Eğer tıklanan yer modal içerik elemanının dışında ise modal kapanır
-    if (!modalContent.contains(event.target)) {
-      closeModalModal();
+
+    // Close modal function
+    function closeModalModal() {
+        videoModal.classList.remove('active');
+        videoIframe.src = '';
     }
-  });
 
+    // Close button click event
+    closeModal.addEventListener('click', closeModalModal);
+
+    // Close on outside click
+    videoModal.addEventListener('click', (event) => {
+        if (!modalContent.contains(event.target) && event.target !== modalContent) {
+            closeModalModal();
+        }
+    });
 }
-
-

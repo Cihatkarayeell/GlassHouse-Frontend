@@ -1,7 +1,11 @@
+
 var swiper = new Swiper(".mySwiper-services", {
     slidesPerView: 'auto',
     spaceBetween: 16,
     speed:700,
+    centeredSlides: true,
+    loop: true,
+    loopedSlides: 24, 
     navigation: {
         nextEl: ".swiper-button-next-services",
         prevEl: ".swiper-button-prev-services",
@@ -44,11 +48,21 @@ var swiper = new Swiper(".mySwiper-services", {
             spaceBetween: 16,
           },
       },
+      on: {
+        init: function() {
+            // Swiper başlatıldığında ortala
+            this.snapGrid = [...this.slidesGrid];
+            this.slideTo(Math.floor(this.slides.length / 2), 0);
+        }
+    }
   });
   var swiper2 = new Swiper(".mySwiper-services-2", {
     slidesPerView: 4.2,
     spaceBetween: 16,
     speed:700,
+    centeredSlides: true,
+    loop: true,
+    loopedSlides: 24, 
     navigation: {
         nextEl: ".swiper-button-next-services",
         prevEl: ".swiper-button-prev-services",
@@ -91,11 +105,21 @@ var swiper = new Swiper(".mySwiper-services", {
             spaceBetween: 16,
           },
       },
+      on: {
+        init: function() {
+            // Swiper başlatıldığında ortala
+            this.snapGrid = [...this.slidesGrid];
+            this.slideTo(Math.floor(this.slides.length / 2), 0);
+        }
+    }
   });
   var swiper3 = new Swiper(".mySwiper-services-3", {
     slidesPerView: 4.2,
     spaceBetween: 16,
     speed:700,
+    centeredSlides: true,
+    loop: true,
+    loopedSlides: 24, 
     navigation: {
         nextEl: ".swiper-button-next-services",
         prevEl: ".swiper-button-prev-services",
@@ -138,11 +162,21 @@ var swiper = new Swiper(".mySwiper-services", {
             spaceBetween: 16,
           },
       },
+      on: {
+        init: function() {
+            // Swiper başlatıldığında ortala
+            this.snapGrid = [...this.slidesGrid];
+            this.slideTo(Math.floor(this.slides.length / 2), 0);
+        }
+    }
   });
   var swiper4 = new Swiper(".mySwiper-services-4", {
     slidesPerView: 4.2,
     spaceBetween: 16,
     speed:700,
+    centeredSlides: true,
+    loop: true,
+    loopedSlides: 24, 
     navigation: {
         nextEl: ".swiper-button-next-services",
         prevEl: ".swiper-button-prev-services",
@@ -185,13 +219,21 @@ var swiper = new Swiper(".mySwiper-services", {
             spaceBetween: 16,
           },
       },
+      on: {
+        init: function() {
+            // Swiper başlatıldığında ortala
+            this.snapGrid = [...this.slidesGrid];
+            this.slideTo(Math.floor(this.slides.length / 2), 0);
+        }
+    }
   });
   var swiper5 = new Swiper(".mySwiper-services-5", {
     slidesPerView: 4.2,
     spaceBetween: 16,
     speed:700,
-    centeredSlides:true,
-    loop:true,
+    centeredSlides: true,
+    loop: true,
+    loopedSlides: 24, 
     navigation: {
         nextEl: ".swiper-button-next-services",
         prevEl: ".swiper-button-prev-services",
@@ -234,11 +276,21 @@ var swiper = new Swiper(".mySwiper-services", {
             spaceBetween: 16,
           },
       },
+      on: {
+        init: function() {
+            // Swiper başlatıldığında ortala
+            this.snapGrid = [...this.slidesGrid];
+            this.slideTo(Math.floor(this.slides.length / 2), 0);
+        }
+    }
   });
   var swiper6 = new Swiper(".mySwiper-services-6", {
     slidesPerView: 4.2,
     spaceBetween: 16,
     speed:700,
+    centeredSlides: true,
+            loop: true,
+            loopedSlides: 24, 
     navigation: {
         nextEl: ".swiper-button-next-services",
         prevEl: ".swiper-button-prev-services",
@@ -281,11 +333,21 @@ var swiper = new Swiper(".mySwiper-services", {
             spaceBetween: 16,
           },
       },
+      on: {
+        init: function() {
+            // Swiper başlatıldığında ortala
+            this.snapGrid = [...this.slidesGrid];
+            this.slideTo(Math.floor(this.slides.length / 2), 0);
+        }
+    }
   });
   var swiper7 = new Swiper(".mySwiper-services-7", {
     slidesPerView: 4.2,
     spaceBetween: 16,
     speed:700,
+    centeredSlides: true,
+    loop: true,
+    loopedSlides: 24, 
     navigation: {
         nextEl: ".swiper-button-next-services",
         prevEl: ".swiper-button-prev-services",
@@ -328,11 +390,21 @@ var swiper = new Swiper(".mySwiper-services", {
             spaceBetween: 16,
           },
       },
+      on: {
+          init: function() {
+              // Swiper başlatıldığında ortala
+              this.snapGrid = [...this.slidesGrid];
+              this.slideTo(Math.floor(this.slides.length / 2), 0);
+          }
+      }
   });
   var swiper8 = new Swiper(".mySwiper-services-8", {
     slidesPerView: 4.2,
     spaceBetween: 16,
     speed:700,
+    centeredSlides: true,
+    loop: true,
+    loopedSlides: 24, 
     navigation: {
         nextEl: ".swiper-button-next-services",
         prevEl: ".swiper-button-prev-services",
@@ -375,6 +447,13 @@ var swiper = new Swiper(".mySwiper-services", {
             spaceBetween: 16,
           },
       },
+      on: {
+          init: function() {
+              // Swiper başlatıldığında ortala
+              this.snapGrid = [...this.slidesGrid];
+              this.slideTo(Math.floor(this.slides.length / 2), 0);
+          }
+      }
   });
 
 

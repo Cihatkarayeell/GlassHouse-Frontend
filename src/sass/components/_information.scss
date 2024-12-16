@@ -4,7 +4,11 @@
     padding-top: 8.2rem;
     padding-bottom: 10.4rem;
     overflow: hidden;
-    
+    @include md{
+        .container{
+            margin-inline:0;
+        }
+    }
     .mobile-block{
         flex-direction: column;
         align-items: center;
@@ -13,10 +17,13 @@
         display: none;
         @include md{
             display: flex;
+            margin-inline: 3rem;
+            width: auto;
         }
         .heading-1{
             margin-bottom: 2rem;
             @include font;
+            text-align: center;
         }
         .description{
             margin-bottom: 2.8rem;
@@ -50,6 +57,9 @@
             align-items: flex-start;
             @include lg{
                 max-width: 50rem;
+            }
+            @include md{
+                margin-left: 0;
             }
             .heading-1{
                 margin-bottom: 13.2rem;
@@ -241,6 +251,7 @@
                 overflow-x: auto;
                 scrollbar-width: none;
                 -ms-overflow-style: none;
+                padding-left: 3rem;
                 &::-webkit-scrollbar{
                     width: 0;
                     height: 0;
@@ -249,7 +260,9 @@
                 width: max-content;
                 max-width: 100%;
                 margin-left: 3rem;
-                @include mini{
+                max-width: 31.1rem;
+                        min-width: 31.1rem;
+                @include md{
                     margin-left: 0;
                 }
                     .card-img.blur{
@@ -314,7 +327,7 @@
                 .info-center-right{
                     width: max-content;
                     max-width: 100%;
-                    margin-left: 0;
+                    margin-left: 1.6rem;
                     .card-wrap{
                         display: flex;
                         flex-direction: row;
@@ -325,10 +338,13 @@
                             max-width: 31.1rem;
                             min-width: 31.1rem;                        
                             margin-left: 1.6rem;
+                            &:first-of-type{
+                                margin-left: 0;
+                            }
                             .card-img{
                                 min-height: 20rem;
                                 max-width: 100%;
-                                @include mini{
+                                @include md{
                                     height: 20rem;
                                 }
                             }

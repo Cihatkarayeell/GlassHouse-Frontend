@@ -3,10 +3,12 @@
 {% block title %}Front end Starter Kit{% endblock %}
 {%block bodyClass %}body-home{% endblock %} {% block content %}
 <div class="video-modal" id="videoModal">
-    <button class="close-button" id="closeModal">
-        <img src="./img/icon/close-button-kare.svg" alt="">
-    </button>
-    <iframe id="videoIframe" width="560" height="315" src="https://www.youtube.com/embed/2aceXxCCWlU?si=EX1oCmvQdBf_zje8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <div class="modal-body position-relative">
+        <button class="close-button" id="closeModal">
+            <img src="./img/icon/close-button-kare.svg" alt="">
+        </button>
+        <iframe id="videoIframe" width="560" height="315" src="https://www.youtube.com/embed/2aceXxCCWlU?si=EX1oCmvQdBf_zje8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
 </div>
 <section class="info-centre-hero background-gradient">
     <div class="container">

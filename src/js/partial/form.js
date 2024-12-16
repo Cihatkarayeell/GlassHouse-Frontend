@@ -21,7 +21,6 @@ if (form){
           });
       }
   }
-  
   // Kapatma butonuna tıklama eventi
   if (closeBtn) {
       closeBtn.addEventListener('click', closeModal);
@@ -70,7 +69,6 @@ if (form){
   
   // Sürekli input kontrolü
   const formItems = form.querySelectorAll('.form-item');
-  
   formItems.forEach(item => {
       const input = item.querySelector('input, textarea');
       const hasTooltip = item.querySelector('.invalid-tooltip');

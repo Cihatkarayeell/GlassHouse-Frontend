@@ -19,5 +19,4 @@ if( messageTextarea){
             currentCount.style.color = '#666';
         }
     });
-
 }

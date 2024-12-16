@@ -9,7 +9,8 @@
     right: 2.5rem;
     z-index: 3;
     @include sm{
-        display: none;
+        bottom: 1.5rem;
+        right: 1rem;
     }
     .chat-button{
         padding: 1rem 1.8rem;
@@ -26,6 +27,9 @@
         transition: background-color 400ms ease;
         &:hover{
             background-color: darken($color: #fff, $amount: 20);
+        }
+        @include sm{
+            display: none;
         }
     }
     .chat{

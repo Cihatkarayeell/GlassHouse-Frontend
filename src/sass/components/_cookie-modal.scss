@@ -14,9 +14,9 @@
         bottom: 3rem;
     }
     @include mini{
-        bottom: 3rem;
-        right: 3rem;
+        right: 1rem;
         left: auto;
+        bottom: 8rem;
     }
     &.active{
         opacity: 1;

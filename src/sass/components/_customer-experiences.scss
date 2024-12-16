@@ -308,13 +308,13 @@
             min-height: 39rem;
             position: relative;
             &:after{
-                content:url(/img/icon/double-mark.svg);
+                content:url(../img/icon/double-mark.svg);
                 position: absolute;
                 bottom: 1.3rem;
                 right: 0;
             }
             &:before{
-                content:url(/img/icon/double-mark.svg);
+                content:url(../img/icon/double-mark.svg);
                 position: absolute;
                 top: 2.9rem;
                 left: 0;
@@ -637,7 +637,7 @@
                     min-height: 36rem;
                 }
                 &:after{
-                    content:url(/img/icon/double-mark.svg);
+                    content:url(../img/icon/double-mark.svg);
                     position: absolute;
                     bottom: 1.3rem;
                     right: 0;
@@ -647,7 +647,7 @@
                     }
                 }
                 &:before{
-                    content:url(/img/icon/double-mark.svg);
+                    content:url(../img/icon/double-mark.svg);
                     position: absolute;
                     top: 2.9rem;
                     left: 0;
