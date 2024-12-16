@@ -11,17 +11,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    @include lg{
-        width: 60%;
-    }
-    @include md{
-        width: 65%;
-    }
-    @include sm{
-        width: calc(100% - 3rem);
-    }
     .modal-body{
-        width: 35%;
+        width: 51.5rem;
         border-radius: 2rem;
         position: relative;
         box-shadow: 0   0   2rem 0 rgb(0, 0, 0,.1);
@@ -29,6 +20,10 @@
         height: auto;
         padding: 6rem 3rem 4rem 4rem;
         background-color: #ffffff;
+        @include sm{
+            width: calc(100% - 3rem);
+            padding: 5rem 2rem 4rem 2rem ;
+        }
     }
     &.active{
         opacity: 1;

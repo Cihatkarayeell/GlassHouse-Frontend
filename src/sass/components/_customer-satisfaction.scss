@@ -4,11 +4,7 @@
     @include md{
         padding-bottom: 4.2rem;
     }
-    .container{
-        @include md{
-            margin-inline: 0;
-        }
-    }
+    
     .block{
         display: flex;
         align-items: flex-start;
@@ -31,10 +27,8 @@
             @include md{
                 margin-left: 0;
                 margin-top: 3.2rem;
-                margin-inline: 3rem;
             }
             @include sm{
-                margin-inline: 1.5rem;
                 width: auto;
             }
         }
@@ -42,7 +36,6 @@
             width: fit-content;
             padding-right: 4.6rem;
             @include md{
-                margin-inline: 3rem;
                 padding-right: 0;
             }
             .heading-1{

@@ -1,0 +1,143 @@
+{# prettier-ignore #}
+{% extends "./layout/layout-general.html" %}
+{% block title %}Front end Starter Kit{% endblock %}
+{%block bodyClass %}body-home{% endblock %} {% block content %}
+<section class="info-centre-hero background-gradient policy">
+    <div class="container">
+        <div class="breadcrumb">
+            <div class="breadcrumb-item">
+                <a href="index.html">Ana Sayfa</a>
+            </div>
+            <div class="chevron">
+                <svg width="10" height="16" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path opacity="0.5" d="M1.46143 2L7.92296 8L1.46143 14" stroke="white" stroke-width="2" stroke-linecap="square"/>
+                </svg>                                      
+            </div>
+            <div class="breadcrumb-item">
+                <a href="index.html">Yasal Bilgi</a>
+            </div>
+            <div class="chevron">
+                <svg width="10" height="16" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path opacity="0.5" d="M1.46143 2L7.92296 8L1.46143 14" stroke="white" stroke-width="2" stroke-linecap="square"/>
+                </svg>                                     
+            </div>
+            <div class="breadcrumb-item">
+                <a href="index.html">Çerez Politikası</a>
+            </div>
+        </div>
+        <div class="d-flex align-items-center flex-column block">
+            <div class="heading-type-one w-max">
+                <div class="icon">
+                    <img src="./img/icon/heading-icon.svg" alt="">
+                </div>
+                <h1>POLİTİKALAR</h1>
+            </div>
+            <div class="heading-1 color-body">
+                <h2>Politikalarımızı inceleyin.</h2>
+            </div>
+            <div class="description m-t-4">
+                <p>GlassHouse olarak, müşterilerimize sürekli olarak değer katmak ve onların bilgi birikimlerini artırmak için çeşitli kaynaklar sunuyoruz.</p>
+            </div>
+            <div class="hero-tab-box">
+                <div class="tab-wrap">
+                    <a href="cerez-politika.html" class="tab-item active" data-tab="cookie-policy">
+                        Çerez Politikası
+                    </a>
+                    <a href="kvkk-politika.html" class="tab-item" data-tab="kvkk">
+                        KVKK Aydınlatma Metni
+                    </a>
+                    <a href="bilgi-guvenligi-politika.html" class="tab-item" data-tab="information-policy">
+                        Bilgi Güvenliği Politikası
+                    </a>
+                    <a href="entegre-politika.html" class="tab-item" data-tab="integrated-policy">
+                        Entegre Politika
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="backdrop-svg">
+        <img src="./img/icon/GH.svg" alt="">
+    </div>
+</section>
+<div class="tab-block">
+    <div class="tab-section tab-item-block active" id="cookie-policy" data-tab="kvkk">
+        <div class="container">
+            <div class="tab-block">
+                <div class="title">
+                    <h1>GLASSHOUSE ÇEREZ POLİTİKASI</h1>
+                </div>
+                <div class="text-section">
+                    <div class="desc">
+                        <p> Çerez Politikamız, <a href="#">www.glasshouse.com.tr</a> ve <a href="#">www.glasshousetechnology.com</a> internet sitelerimizde sizlere daha kaliteli ve kişiselleştirilmiş hizmet sunabilmek amacıyla hazırlanmıştır. Çerez (cookie) kullanımımızın esasları ve çerez çeşitleri hakkında bilgilendirme içermektedir.</p>
+                    </div>
+                    <div class="sub-title">
+                        <h2>1. ÇEREZ (COOKIE) HAKKINDA</h2>
+                    </div>
+                    <div class="desc">
+                        <p>Çerez, ziyaret edilen bir web sayfası tarafından bilgisayarınızda depolanan bilgilerdir. Çerezler zararlı yazılımlar veya bilgisayarınıza zarar veren uygulamalar değildir. Aksine çerezler, ziyaret etmiş olduğunuz web sayfalarının bir önceki ziyaretinizce yapmış olduğunuz tercihlerin hatırlanmasını sağlamak amacıyla kullanılmakta bu sayede ikinci ve sonraki ziyaretlerde doğru yapılandırma ve doğru bilgilendirme ile daha kaliteli hizmet sunulmasını sağlamaktadır.
+                            Çerezlerin tarafımızca kullanımı, 6698 sayılı Kişisel Verilerin Korunması Kanunu (“KVKK”) başta olmak üzere tabii olduğumuz ilgili mevzuata uygun şekilde gerçekleştirilmektedir.</p>
+                    </div>
+                </div>
+                <div class="table-wrapper">
+                    <div class="table cookie">
+                        <div class="table-header background-gradient">
+                            <div class="tr">
+                                <div class="th">ID</div>
+                                <div class="th">Alan Adı</div>
+                                <div class="th">Saklama Süresi</div>
+                                <div class="th">Açıklama</div>
+                            </div>
+                        </div>
+                        <div class="table-content">
+                            <div class="tr">
+                                <div class="td">PHPSESSID</div>
+                                <div class="td">glasshouse.com.tr</div>
+                                <div class="td">Oturum Süresince</div>
+                                <div class="td">Bu çerez PHP uygulamalarına özgüdür. Çerez, web sitesinde kullanıcı oturumunu yönetmek amacıyla bir kullanıcının benzersiz oturum kimliğini saklamak ve tanımlamak için kullanılır. Tanımlama bilgisi bir oturum tanımlama bilgisidir ve tüm tarayıcı pencereleri kapatıldığında silinir.</div>
+                            </div>
+                            <div class="tr background-body">
+                                <div class="td">PHPSESSID</div>
+                                <div class="td">glasshouse.com.tr</div>
+                                <div class="td">Oturum Süresince</div>
+                                <div class="td">Bu çerez PHP uygulamalarına özgüdür. Çerez, web sitesinde kullanıcı oturumunu yönetmek amacıyla bir kullanıcının benzersiz oturum kimliğini saklamak ve tanımlamak için kullanılır. Tanımlama bilgisi bir oturum tanımlama bilgisidir ve tüm tarayıcı pencereleri kapatıldığında silinir.</div>
+                            </div>
+                            <div class="tr">
+                                <div class="td">PHPSESSID</div>
+                                <div class="td">glasshouse.com.tr</div>
+                                <div class="td">Oturum Süresince</div>
+                                <div class="td">Bu çerez PHP uygulamalarına özgüdür. Çerez, web sitesinde kullanıcı oturumunu yönetmek amacıyla bir kullanıcının benzersiz oturum kimliğini saklamak ve tanımlamak için kullanılır. Tanımlama bilgisi bir oturum tanımlama bilgisidir ve tüm tarayıcı pencereleri kapatıldığında silinir.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-section">
+                    <div class="sub-title">
+                        <h2>5. ÇEREZLERİN YÖNETİMİ</h2>
+                    </div>
+                    <div class="desc">
+                        <p>Dilediğiniz zaman izninize tabi olan çerezlerin kullanılmamasını sağlayabilirsiniz. Bunun için aşağıda belirtilen iletişim adresleri vasıtasıyla tarafımız ile iletişime geçebilir veya web sayfasına girişte açılan çerez butonunda belirterek tercihinizi belirleyebilirsiniz. Alternatif olarak, web tarayıcıları tarayıcı ayarları aracılığıyla çoğu çerezin bir miktar kontrolüne izin vermektedir. Hangi çerezlerin ayarlandığını görmek dahil olmak üzere çerezler hakkında daha fazla bilgi edinmek için www.aboutcookies.org veya www.allaboutcookies.org adresini ziyaret edebilirsiniz. Çerezleri nasıl sileceğinize yol göstermesi amacıyla tarayıcıların kullanım detaylarının bulunduğu açıklamaları aşağıdaki listede bulabilirsiniz, bu sayfalardan tercihlerinizi yönetebilirsiniz.</p>
+                    </div>
+                    <ul class="ul blue">
+                        <li>
+                            <a href="#">Internet Explorer için Çerez Ayarları</a>
+                        </li>
+                        <li>
+                            <a href="#">Firefox için Çerez Ayarları</a>
+                        </li>
+                        <li>
+                            <a href="#">Chrome için Çerez Ayarları</a>
+                        </li>
+                        <li>
+                            <a href="#">Safari için Çerez Ayarları</a>
+                        </li>
+                    </ul>
+                    <div class="desc">
+                        <p>Google Analytics tarafından izlenmekten vazgeçmek için <a href="#">http://tools.google.com/dlpage/gaoptout</a> adresini ziyaret edebilirsiniz.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

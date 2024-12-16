@@ -74,7 +74,6 @@
             }
             @include sm{
                 padding: 1.5rem;
-                padding-left: 3rem;
             }
             .icon{
                 min-width:2.4rem;
@@ -128,8 +127,12 @@
                 line-height: 1.9rem;
                 color: #ffffff;
                 @include extrabold;
+                transition: all 400ms ease;
                 @include mini{
                     padding: .5rem 1.2rem;
+                }
+                &:hover{
+                    background: darken($color: #00AEEF, $amount: 10);
                 }
             }
         }
@@ -139,11 +142,7 @@
     width: 100%;
     padding-top: 8.4rem;
     padding-bottom: 15rem;
-    @include md{
-        .container{
-            margin-inline:1.5rem;
-        }
-    }
+    
     @include mini{
         padding-top:4.2rem;
         padding-bottom: 6.4rem;

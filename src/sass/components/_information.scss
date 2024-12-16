@@ -4,11 +4,6 @@
     padding-top: 8.2rem;
     padding-bottom: 10.4rem;
     overflow: hidden;
-    @include md{
-        .container{
-            margin-inline:0
-        }
-    }
     @include mini{
         padding-top: 0;
     }
@@ -157,8 +152,12 @@
                 margin-bottom: 6.3rem;
                 color: #ffffff;
                 padding: 1.1rem 2.5rem;
+                transition: background-color 400ms ease;
                 @include md{
                     display: none;
+                }
+                &:hover{
+                    background-color: darken($color: #00AEEF, $amount: 10);
                 }
             }
             .card-wrap{
@@ -224,9 +223,15 @@
                     }
                     &:first-of-type{
                         height: 39.6%;
+                        @include mini{
+                            height: 100%;
+                        }
                     }
                     &:last-of-type{
                         height: 52.8%;
+                        @include mini{
+                            height: 100%;
+                        }
                     }
                 }
             }
@@ -283,6 +288,9 @@
                                     padding-top: 2rem;
                                     color: #000000;
                                     margin-bottom: 0;
+                                    @include mini{
+                                        display: none;
+                                    }
                                 }
                                 .card-link{
                                     padding-top: 1.5rem;
@@ -296,6 +304,9 @@
                                     }
                                 }
                             }
+                        }
+                        @include mini{
+                            height: 100%;
                         }
                     }
                 }
@@ -316,6 +327,9 @@
                             .card-img{
                                 min-height: 20rem;
                                 max-width: 100%;
+                                @include mini{
+                                    height: 20rem;
+                                }
                             }
                             .card-text{
                                 max-width: 100%;
@@ -335,6 +349,9 @@
                                 padding-top: 2rem;
                                 color: #000000;
                                 margin-bottom: 0;
+                                @include mini{
+                                    display: none;
+                                }
                             }
                             .card-link{
                                 padding-top: 1.5rem;

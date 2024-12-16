@@ -8,9 +8,7 @@
         position: sticky;
         top: 10rem;
         height: max-content;
-
     }
-    
     @include md{
         display: flex;
         flex-direction: column;
@@ -23,11 +21,7 @@
         padding-top: 6.4rem;
         width: 100%;
         @include md{
-            margin-inline: 3rem;
             width: auto;
-        }
-        @include sm{
-            margin-inline: 1.5rem;
         }
     }
     .text-block{
@@ -35,9 +29,6 @@
         display: flex;
         flex-direction: column;
         margin-left: 3.2rem;
-        @include sm{
-            margin-left: 1.5rem;
-        }
         h3{
             font-size: 1.8rem;
             line-height: 2.4rem;
@@ -52,7 +43,6 @@
         }
         .title{
             margin-bottom: 2rem;
-            scroll-margin: 15rem;
             &.color-primary{
                 h3,h2{
                     color: #00AEEF;
@@ -88,6 +78,7 @@
                 color: #000000;
                 @include regular;
                 margin-bottom: 2rem;
+                position: relative;
                 &:last-of-type{
                     margin-bottom: 0;
                 }
@@ -98,6 +89,7 @@
                     line-height: 2.2rem;
                     @include regular;
                 }
+                
             }
         }
         .img{
@@ -123,7 +115,6 @@
         width: auto;
         @include md{
             margin-left: 0;
-            margin-inline: 1.5rem;
             height: 100%;
             padding: 5rem;
         }
@@ -142,10 +133,9 @@
         border-radius: 1rem;
         overflow: hidden;
         padding: 3rem;
-        position: sticky;
         height: auto;
-        top: 10rem;
         margin-bottom: 4rem;
+        z-index: 1;
         h2{
             font-size: 1.8rem;
             line-height: 2.5rem;
@@ -154,15 +144,28 @@
         }
         ul{
             margin-bottom: 0;
+            padding-left: 0;
             li{
-                list-style-type: decimal;
                 font-size: 1.8rem;
                 line-height: 2.5rem;
                 color: #ffffff;
                 @include regular;
                 margin-bottom: .3rem;
+                list-style-type: none;
                 &:last-of-type{
                     margin-bottom: 0;
+                }
+                span{
+                    font-size: 1.8rem;
+                    line-height: 2.5rem;
+                    color: #ffffff;
+                    @include regular;
+                    margin-right: .5rem;
+                }
+                a{
+                    display: flex;
+                    align-items: center;
+                    justify-content: flex-start;
                 }
             }
         }

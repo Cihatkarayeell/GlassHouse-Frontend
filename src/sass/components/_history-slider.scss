@@ -22,6 +22,17 @@
     .swiper-wrapper{
         padding-bottom: 5.8rem;
         align-items: stretch;
+        position: relative;
+        &::before{
+            content: "";
+            width: 10000vh;
+            height: .1rem;
+            background-color: #D7D7D7;
+            position: absolute;
+            bottom: .7rem;
+            left: 50%;
+            transform: translateX(-50%);
+        }
         .swiper-slide{
             position: relative;
             height: auto;
@@ -33,11 +44,22 @@
                 border-radius: 50%;
                 position: absolute;
                 left: 11.8rem;
-                bottom: -5.8rem;
+                bottom: -5.75rem;
                 transition: all 400ms ease;
                 z-index: 3;
                 @include md{
                     left: 0;
+                }
+            }
+            &:hover{
+                &:after{
+                    background-color: #00AEEF;
+                }
+                .detail-img-card{
+                    .card-img{
+                        opacity: 1;
+                        filter: grayscale(0);
+                    }
                 }
             }
             .detail-img-card{
@@ -58,27 +80,7 @@
                     }
                 }
             }
-            &:hover{
-                &:after{
-                    background-color: #00AEEF;
-                }
-                .detail-img-card{
-                    .card-img{
-                        opacity: 1;
-                        filter: grayscale(0);
-                    }
-                }
-            }
-            &::before{
-                content: "";
-                width: 1000rem;
-                height: .1rem;
-                background-color: #D7D7D7;
-                position: absolute;
-                bottom: -5.1rem;
-                left: 50%;
-                transform: translateX(-50%);
-            }
+            
         }
     }
     .detail-img-card{
@@ -105,7 +107,11 @@
             img{
                 width: 100%;
                 height: 100%;
+                border-radius: 1rem;
                 object-fit: cover;
+                @include mini{
+                    width: auto;
+                }
             }
         }
         .text{
@@ -121,7 +127,7 @@
                 margin-bottom: 2rem
             }
             .title{
-                @include font;
+                @include extrabold;
                 font-size: 1.5rem;
                 line-height: 2rem;
                 margin-bottom: 2rem;

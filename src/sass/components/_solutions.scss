@@ -60,8 +60,12 @@
         line-height: 1.9rem;
         @include font;
         color: #ffffff;
+        transition: all 400ms ease;
         &.disabled{
             display: none;
+        }
+        &:hover{
+            background: darken($color: #00AEEF, $amount: 10);
         }
     }
 

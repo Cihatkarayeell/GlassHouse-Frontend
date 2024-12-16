@@ -26,7 +26,6 @@
         margin-top: 8.4rem;
         width: 100%;
         @include md{
-            margin-inline: 3rem;
             width: auto;
             margin-top: 6.4rem;
             padding-bottom: 3.6rem;
@@ -43,11 +42,6 @@
             text-align: center;
         }
     }
-    @include md{
-        .container{
-            margin-inline: 0;
-        }
-    }
     .hero-tab-box{
         background-color: #ffffff;
         border-radius: 6rem;
@@ -59,6 +53,7 @@
             width: 100%;
             padding: 0;
             margin-top: 3.2rem;
+            min-width: 100%;
         }
         .tab-wrap{
             gap: 0 3rem;
@@ -81,6 +76,7 @@
             font-size: 1.4rem;
             line-height: 1.9rem;
             color: #000;
+            text-align: center;
             @include font;
             transition: background-color 400ms ease, color 400ms ease;
             @include md{
@@ -88,20 +84,22 @@
                 min-width: 15rem;
                 padding-inline: 1rem;
                 width: 100%;
+                min-width: max-content;
             }
             @include sm{
                 font-size: 1.6rem;
                 line-height: 2.2rem;
                 width: auto;
-                min-width: 24rem;
+                min-width: 15rem;
             }
             @include mini{
-                width: 100%;
+                width: auto;
                 
             }
             &.active{
                 color: #ffffff;
                 background-color: #00AEEF;
+                @include extrabold;
             }
             &:hover{
                 color: #ffffff;
@@ -115,9 +113,13 @@
             max-width: 69rem;
             text-align: center;
         }
-        
         .hero-tab-box{
             margin-top: 4.2rem;
+            .tab-item{
+                @include sm{
+                    min-width: 21rem;
+                }
+            }
         }
     }
 }

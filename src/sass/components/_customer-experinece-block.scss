@@ -2,11 +2,6 @@
     width: 100%;
     padding-top: 6rem;
     padding-bottom: 6.2rem;
-    @include sm{
-        .container{
-            margin-inline: 1.5rem;
-        }
-    }
     .filter-box{
         width: 70rem;
         border-radius: 6rem;
@@ -27,7 +22,6 @@
         }
         @include mini{
             flex-direction: column;
-            padding-inline: 2rem;
         }
         .dropdown.filter{
             width: 20.6rem;
@@ -35,7 +29,7 @@
                 width: 100%;
             }
             @include mini{
-                width: 50%;
+                width: 100%;
             }
             button{
                 min-width: 20.6rem;

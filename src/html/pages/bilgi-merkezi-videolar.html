@@ -1,0 +1,230 @@
+{# prettier-ignore #}
+{% extends "./layout/layout-general.html" %}
+{% block title %}Front end Starter Kit{% endblock %}
+{%block bodyClass %}body-home{% endblock %} {% block content %}
+<div class="video-modal" id="videoModal">
+    <button class="close-button" id="closeModal">
+        <img src="./img/icon/close-button-kare.svg" alt="">
+    </button>
+    <iframe id="videoIframe" width="560" height="315" src="https://www.youtube.com/embed/2aceXxCCWlU?si=EX1oCmvQdBf_zje8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
+<section class="info-centre-hero background-gradient">
+    <div class="container">
+        <div class="breadcrumb">
+            <div class="breadcrumb-item">
+                <a href="index.html">Ana Sayfa</a>
+            </div>
+            <div class="chevron">
+                <svg width="10" height="16" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path opacity="0.5" d="M1.46143 2L7.92296 8L1.46143 14" stroke="white" stroke-width="2" stroke-linecap="square"/>
+                </svg>                                      
+            </div>
+            <div class="breadcrumb-item">
+                <a href="index.html">Bilgi Merkezi</a>
+            </div>
+            <div class="chevron">
+                <svg width="10" height="16" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path opacity="0.5" d="M1.46143 2L7.92296 8L1.46143 14" stroke="white" stroke-width="2" stroke-linecap="square"/>
+                </svg>                                     
+            </div>
+            <div class="breadcrumb-item">
+                <a href="index.html">Videolar</a>
+            </div>
+        </div>
+        <div class="d-flex align-items-center flex-column block">
+            <div class="heading-type-one w-max">
+                <div class="icon">
+                    <img src="./img/icon/heading-icon.svg" alt="">
+                </div>
+                <h1>BİLGİ MERKEZİ</h1>
+            </div>
+            <div class="description">
+                <p>En son haberler, blog yazıları, etkinlik duyuruları ve bilgi dokümanlarına erişmek için hemen göz atın.</p>
+            </div>
+            <div class="hero-tab-box">
+                <div class="tab-wrap">
+                    <a href="bilgi-merkezi-haberler.html" class="tab-item" data-tab="news">
+                        Haberler
+                    </a>
+                    <a href="bilgi-merkezi-etkinlik.html" class="tab-item " data-tab="events">
+                        Etkinlikler
+                    </a>
+                    <a href="bilgi-merkezi-videolar.html" class="tab-item active" data-tab="videos">
+                        Videolar
+                    </a>
+                    <a href="bilgi-merkezi-blog.html" class="tab-item" data-tab="blog">
+                        Blog
+                    </a>
+                    <a href="bilgi-merkezi-dokuman.html" class="tab-item" data-tab="documents">
+                        Dökümanlar
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="backdrop-svg">
+        <img src="./img/icon/GH.svg" alt="">
+    </div>
+</section>
+<section class="tab-block">
+    <div class="container">
+        <div class="position-relative w-100">
+            <section class="videos-section tab-item-block position-relative active" id="videos" data-tab="videos">
+                <div class="container">
+                    <div class="video-tabs">
+                        <div class="video-scroll">
+                            <button class="tab-item tabVideoButton active" data-tab="all">
+                                Tümü
+                            </button>
+                            <button class="tab-item tabVideoButton" data-tab="tv">
+                                TV
+                            </button>
+                            <button class="tab-item tabVideoButton" data-tab="corporate">
+                                Kurumsal Videolar
+                            </button>
+                            <button class="tab-item tabVideoButton" data-tab="events">
+                                Etkinlik Videoları
+                            </button>
+                        </div>
+                    </div>
+                    <div class="layout">
+                        <div class="wrap more-wrap">
+                            <a href="#" class="video-card active" data-category="all">
+                                <div class="img">
+                                    <img src="./img/card/video-img.png" alt="">
+                                </div>
+                                <button class="play-button videoPlayButton" data-video="https://www.youtube.com/embed/j9dChCprzKw?si=ZNaodBxAKzyUgi73">
+                                    <img src="./img/icon/youtube.svg" alt="">
+                                </button>
+                            </a>
+                            <a href="#" class="video-card active" data-category="all">
+                                <div class="img">
+                                    <img src="./img/card/video-img.png" alt="">
+                                </div>
+                                <button class="play-button videoPlayButton" data-video="https://www.youtube.com/embed/2aceXxCCWlU?si=EX1oCmvQdBf_zje8">
+                                    <img src="./img/icon/youtube.svg" alt="">
+                                </button>
+                            </a>
+                            <a href="#" class="video-card active" data-category="all">
+                                <div class="img">
+                                    <img src="./img/card/video-img.png" alt="">
+                                </div>
+                                <button class="play-button videoPlayButton" data-video="https://www.youtube.com/embed/2aceXxCCWlU?si=EX1oCmvQdBf_zje8">
+                                    <img src="./img/icon/youtube.svg" alt="">
+                                </button>
+                            </a>
+                        </div>
+                        <div class="wrap more-wrap">
+                            <a href="#" class="video-card active" data-category="tv">
+                                <div class="img">
+                                    <img src="./img/card/video-img.png" alt="">
+                                </div>
+                                <button class="play-button videoPlayButton" data-video="https://www.youtube.com/embed/2aceXxCCWlU?si=EX1oCmvQdBf_zje8">
+                                    <img src="./img/icon/youtube.svg" alt="">
+                                </button>
+                            </a>
+                            <a href="#" class="video-card active" data-category="tv">
+                                <div class="img">
+                                    <img src="./img/card/video-img.png" alt="">
+                                </div>
+                                <button class="play-button videoPlayButton" data-video="https://www.youtube.com/embed/j9dChCprzKw?si=ZNaodBxAKzyUgi73">
+                                    <img src="./img/icon/youtube.svg" alt="">
+                                </button>
+                            </a>
+                            <a href="#" class="video-card active" data-category="tv">
+                                <div class="img">
+                                    <img src="./img/card/video-img.png" alt="">
+                                </div>
+                                <button class="play-button videoPlayButton" data-video="https://www.youtube.com/embed/j9dChCprzKw?si=ZNaodBxAKzyUgi73">
+                                    <img src="./img/icon/youtube.svg" alt="">
+                                </button>
+                            </a>
+                        </div>
+                        <div class="wrap more-wrap">
+                            <a href="#" class="video-card active" data-category="corporate">
+                                <div class="img">
+                                    <img src="./img/card/video-img.png" alt="">
+                                </div>
+                                <button class="play-button videoPlayButton" data-video="https://www.youtube.com/embed/j9dChCprzKw?si=ZNaodBxAKzyUgi73">
+                                    <img src="./img/icon/youtube.svg" alt="">
+                                </button>
+                            </a>
+                            <a href="#" class="video-card active" data-category="corporate">
+                                <div class="img">
+                                    <img src="./img/card/video-img.png" alt="">
+                                </div>
+                                <button class="play-button videoPlayButton" data-video="https://www.youtube.com/embed/j9dChCprzKw?si=ZNaodBxAKzyUgi73">
+                                    <img src="./img/icon/youtube.svg" alt="">
+                                </button>
+                            </a>
+                            <a href="#" class="video-card active" data-category="corporate">
+                                <div class="img">
+                                    <img src="./img/card/video-img.png" alt="">
+                                </div>
+                                <button class="play-button videoPlayButton" data-video="https://www.youtube.com/embed/j9dChCprzKw?si=ZNaodBxAKzyUgi73">
+                                    <img src="./img/icon/youtube.svg" alt="">
+                                </button>
+                            </a>
+                        </div>
+                        <div class="wrap more-wrap">
+                            <a href="#" class="video-card active" data-category="events">
+                                <div class="img">
+                                    <img src="./img/card/video-img.png" alt="">
+                                </div>
+                                <button class="play-button videoPlayButton" data-video="https://www.youtube.com/embed/j9dChCprzKw?si=ZNaodBxAKzyUgi73">
+                                    <img src="./img/icon/youtube.svg" alt="">
+                                </button>
+                            </a>
+                            <a href="#" class="video-card active" data-category="events">
+                                <div class="img">
+                                    <img src="./img/card/video-img.png" alt="">
+                                </div>
+                                <button class="play-button videoPlayButton" data-video="https://www.youtube.com/embed/2aceXxCCWlU?si=EX1oCmvQdBf_zje8">
+                                    <img src="./img/icon/youtube.svg" alt="">
+                                </button>
+                            </a>
+                            <a href="#" class="video-card active" data-category="events">
+                                <div class="img">
+                                    <img src="./img/card/video-img.png" alt="">
+                                </div>
+                                <button class="play-button videoPlayButton" data-video="https://www.youtube.com/embed/2aceXxCCWlU?si=EX1oCmvQdBf_zje8">
+                                    <img src="./img/icon/youtube.svg" alt="">
+                                </button>
+                            </a>
+                        </div>
+                        <div class="wrap more-wrap disabled">
+                            <a href="#" class="video-card active" data-category="all">
+                                <div class="img">
+                                    <img src="./img/card/video-img.png" alt="">
+                                </div>
+                                <button class="play-button videoPlayButton" data-video="https://www.youtube.com/embed/2aceXxCCWlU?si=EX1oCmvQdBf_zje8">
+                                    <img src="./img/icon/youtube.svg" alt="">
+                                </button>
+                            </a>
+                            <a href="#" class="video-card active" data-category="events">
+                                <div class="img">
+                                    <img src="./img/card/video-img.png" alt="">
+                                </div>
+                                <button class="play-button videoPlayButton" data-video="https://www.youtube.com/embed/2aceXxCCWlU?si=EX1oCmvQdBf_zje8">
+                                    <img src="./img/icon/youtube.svg" alt="">
+                                </button>
+                            </a>
+                            <a href="#" class="video-card active" data-category="events">
+                                <div class="img">
+                                    <img src="./img/card/video-img.png" alt="">
+                                </div>
+                                <button class="play-button videoPlayButton" data-video="https://www.youtube.com/embed/2aceXxCCWlU?si=EX1oCmvQdBf_zje8">
+                                    <img src="./img/icon/youtube.svg" alt="">
+                                </button>
+                            </a>
+                        </div>
+                        <button class="more-button" id="moreButtonVideo">
+                            Daha Fazla Göster
+                        </button>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+</section>
+{% endblock %}

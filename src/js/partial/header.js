@@ -27,6 +27,14 @@ document.addEventListener('DOMContentLoaded', function() {
     const accordionHeaders = document.querySelectorAll('.accordion-header');
     accordionHeaders.forEach(header => {
         header.addEventListener('click', function() {
+            accordionHeaders.forEach(otherHeader => {
+                if (otherHeader !== this) {
+                    const otherContent = otherHeader.nextElementSibling;
+                    const otherToggleBtn = otherHeader.querySelector('.toggle-btn');
+                    otherContent?.classList.remove('active');
+                    otherToggleBtn?.classList.remove('active');
+                }
+            });
             toggleAccordion(this);
         });
     });
@@ -45,7 +53,18 @@ document.addEventListener('DOMContentLoaded', function() {
         const toggleBtn = header.querySelector('.toggle-btn');
         const parent = header.parentElement;
         
-        
+        const siblingItems = parent.parentElement.querySelectorAll('.sub-accordion-item');
+        siblingItems.forEach(item => {
+            if (item !== parent) {
+                const itemContent = item.querySelector('.sub-accordion-content');
+                const itemBtn = item.querySelector('.sub-toggle-btn');
+                if (itemContent) {
+                    itemContent.style.maxHeight = null;
+                    itemContent.classList.remove('active');
+                }
+                itemBtn?.classList.remove('active');
+            }
+        });
         
         content.classList.toggle('active');
         if (toggleBtn) {

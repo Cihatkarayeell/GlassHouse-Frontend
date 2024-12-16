@@ -1,8 +1,6 @@
 var swiper = new Swiper(".mySwiper-services", {
-    slidesPerView: 4.2,
+    slidesPerView: 'auto',
     spaceBetween: 16,
-    loop:true,
-    grabCursor: true,
     speed:700,
     navigation: {
         nextEl: ".swiper-button-next-services",
@@ -47,12 +45,9 @@ var swiper = new Swiper(".mySwiper-services", {
           },
       },
   });
-
-  var swiper = new Swiper(".mySwiper-services-2", {
+  var swiper2 = new Swiper(".mySwiper-services-2", {
     slidesPerView: 4.2,
     spaceBetween: 16,
-    grabCursor: true,
-    loop:true,
     speed:700,
     navigation: {
         nextEl: ".swiper-button-next-services",
@@ -97,11 +92,9 @@ var swiper = new Swiper(".mySwiper-services", {
           },
       },
   });
-  var swiper = new Swiper(".mySwiper-services-3", {
+  var swiper3 = new Swiper(".mySwiper-services-3", {
     slidesPerView: 4.2,
     spaceBetween: 16,
-    grabCursor: true,
-    loop:true,
     speed:700,
     navigation: {
         nextEl: ".swiper-button-next-services",
@@ -146,11 +139,9 @@ var swiper = new Swiper(".mySwiper-services", {
           },
       },
   });
-  var swiper = new Swiper(".mySwiper-services-4", {
+  var swiper4 = new Swiper(".mySwiper-services-4", {
     slidesPerView: 4.2,
     spaceBetween: 16,
-    grabCursor: true,
-    loop:true,
     speed:700,
     navigation: {
         nextEl: ".swiper-button-next-services",
@@ -195,11 +186,58 @@ var swiper = new Swiper(".mySwiper-services", {
           },
       },
   });
-  var swiper = new Swiper(".mySwiper-services-5", {
+  var swiper5 = new Swiper(".mySwiper-services-5", {
     slidesPerView: 4.2,
     spaceBetween: 16,
-    grabCursor: true,
+    speed:700,
+    centeredSlides:true,
     loop:true,
+    navigation: {
+        nextEl: ".swiper-button-next-services",
+        prevEl: ".swiper-button-prev-services",
+      },
+      breakpoints: {
+        340: {
+          slidesPerView: 1.2,
+          spaceBetween: 20,
+        },
+        440: {
+          slidesPerView: 1.2,
+          spaceBetween: 20,
+        },
+        540: {
+          slidesPerView: 1.6,
+          spaceBetween: 20,
+        },
+        640: {
+          slidesPerView: 2.1,
+          spaceBetween: 20,
+        },
+        768: {
+          slidesPerView: 2.4,
+          spaceBetween: 16,
+        },
+        1024: {
+          slidesPerView: 3.4,
+          spaceBetween: 16,
+        },
+        1100: {
+          slidesPerView: 4.2,
+          spaceBetween: 16,
+        },
+        1440: {
+            slidesPerView: 5.3,
+            spaceBetween: 16,
+          },
+        1640: {
+            slidesPerView: 5.4,
+            spaceBetween: 16,
+          },
+      },
+  });
+  var swiper6 = new Swiper(".mySwiper-services-6", {
+    slidesPerView: 4.2,
+    spaceBetween: 16,
     speed:700,
     navigation: {
         nextEl: ".swiper-button-next-services",
@@ -244,11 +282,9 @@ var swiper = new Swiper(".mySwiper-services", {
           },
       },
   });
-  var swiper = new Swiper(".mySwiper-services-6", {
+  var swiper7 = new Swiper(".mySwiper-services-7", {
     slidesPerView: 4.2,
     spaceBetween: 16,
-    grabCursor: true,
-    loop:true,
     speed:700,
     navigation: {
         nextEl: ".swiper-button-next-services",
@@ -293,60 +329,9 @@ var swiper = new Swiper(".mySwiper-services", {
           },
       },
   });
-  var swiper = new Swiper(".mySwiper-services-7", {
+  var swiper8 = new Swiper(".mySwiper-services-8", {
     slidesPerView: 4.2,
     spaceBetween: 16,
-    grabCursor: true,
-    loop:true,
-    speed:700,
-    navigation: {
-        nextEl: ".swiper-button-next-services",
-        prevEl: ".swiper-button-prev-services",
-      },
-      breakpoints: {
-        340: {
-          slidesPerView: 1.2,
-          spaceBetween: 20,
-        },
-        440: {
-          slidesPerView: 1.2,
-          spaceBetween: 20,
-        },
-        540: {
-          slidesPerView: 1.6,
-          spaceBetween: 20,
-        },
-        640: {
-          slidesPerView: 2.1,
-          spaceBetween: 20,
-        },
-        768: {
-          slidesPerView: 2.4,
-          spaceBetween: 16,
-        },
-        1024: {
-          slidesPerView: 3.4,
-          spaceBetween: 16,
-        },
-        1100: {
-          slidesPerView: 4.2,
-          spaceBetween: 16,
-        },
-        1440: {
-            slidesPerView: 5.3,
-            spaceBetween: 16,
-          },
-        1640: {
-            slidesPerView: 5.4,
-            spaceBetween: 16,
-          },
-      },
-  });
-  var swiper = new Swiper(".mySwiper-services-8", {
-    slidesPerView: 4.2,
-    spaceBetween: 16,
-    grabCursor: true,
-    loop:true,
     speed:700,
     navigation: {
         nextEl: ".swiper-button-next-services",

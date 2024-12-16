@@ -40,12 +40,6 @@
     }
 }
 .data-centre-box{
-    @include md{
-        .container{
-            margin-inline: 0;
-        }
-    }
-    margin-inline:1.5rem;
     .data-centre-box-wrap{
         width: 100%;
         display: flex;

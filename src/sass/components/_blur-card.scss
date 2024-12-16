@@ -1,6 +1,7 @@
 .blur-card{
     position: absolute;
     backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px); /* Safari */
     border-radius: 1.5rem;
     padding: 4rem;
     width: 40rem;

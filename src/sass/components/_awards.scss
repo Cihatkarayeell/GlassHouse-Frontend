@@ -30,35 +30,31 @@
             }
             .swiper-wrapper{
                 min-height: 30.8rem;
-                padding-left: 8rem;
                 @include md{
                     min-height: auto;
                     align-items: stretch;
-                    padding-left: 0;
                 }
             }
         }
         .swiper-slide{
-            margin-left: -5%;
-            margin-right: -5%;
-            filter: grayscale(0);
+            filter: grayscale(1);
+            opacity: .5;
             min-height: 12rem;
             transition: all 400ms ease;
             position: relative;
             @include md{
-                margin-left: 0;
+                margin-left: 0 !important;
                 margin-right: 0;
                 height: auto;
-                filter: grayscale(1);
-                opacity: .5;
+            }
+            .awards-card-container{
+                display: flex;
             }
             .awards-card{
-                opacity: .5;
-                opacity: 1;
                 transition: all 400ms ease;
             }
             &:first-child{
-                margin-left: 0;
+                margin-left: 0 !important;
                 &::before{
                     content: "";
                     position: absolute;
@@ -73,7 +69,6 @@
             &:nth-child(odd){
                 margin-bottom: auto;
                 position: relative;
-                justify-content: flex-end;
                 display: flex;
                 .awards-card{
                     align-items: flex-end;

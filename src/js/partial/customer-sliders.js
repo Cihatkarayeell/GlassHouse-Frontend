@@ -1,3 +1,6 @@
+const customerSlider = document.querySelector('.customer-sliders');
+if(customerSlider){
+  
 let isSliding = false;
 
 // Ana slider tanımlamaları
@@ -28,7 +31,7 @@ const slider3 = new Swiper(".mySwiper-top-right", {
 });
 
 const slider4 = new Swiper(".mySwiper-bottom-right", {
-    slidesPerView: 6,
+    slidesPerView: 8,
     spaceBetween: 0,
     loop: true,
     speed: 700,
@@ -73,9 +76,6 @@ const slider4 = new Swiper(".mySwiper-bottom-right", {
     },
 });
 
-const customerSlider = document.querySelector('.customer-sliders');
-if(customerSlider){
-  
   const nextButton1 = document.querySelector('.swiper-button-next-customer-1');
   const prevButton1 = document.querySelector('.swiper-button-prev-customer-2');
   const nextButton2 = document.querySelector('.swiper-button-next-customer-3');

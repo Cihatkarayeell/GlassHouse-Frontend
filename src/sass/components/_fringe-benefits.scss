@@ -11,9 +11,6 @@
         line-height: 4.6rem;
     }
     @include md{
-        .container{
-            margin-inline: 1.5rem;
-        }
         .block{
             flex-direction: column;
             .img{

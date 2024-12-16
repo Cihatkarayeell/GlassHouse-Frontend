@@ -360,3 +360,31 @@ $indent-step: 0.5;
   overflow-y: auto;
 }
 
+.heading-type-one{
+  font-size: 1.6rem;
+  line-height: 2.2rem;
+  color: #ffffff;
+  @include extrabold;
+  position: relative;
+  height: 4.6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .icon{
+    margin-right: -2rem;
+    margin-bottom: -.6rem;
+    img{
+      display: flex;
+    }
+  }
+}
+.btn-type-one{
+  padding: 1.4rem 2rem;
+  border-radius: 2.5rem;
+  font-size: 1.4rem;
+  line-height: 1.9rem;
+  @include extrabold;
+  &.background-body{
+      color: var(--color-primary);
+  }
+}

@@ -4,6 +4,9 @@
     padding-top: 7.7rem;
     padding-bottom: 7.7rem;
     margin-top: -.1rem;
+    &.p-b-64{
+        padding-bottom: 6.4rem;
+    }
     @include md{
         padding-top: 3.2rem;
         padding-top: 3rem;
@@ -94,6 +97,7 @@
             .form-textarea{
                 margin-bottom: 2.4rem;
                 max-width: 40.6rem;
+                position: relative;
                 @include md{
                     max-width:calc(50% - 1.6rem);
                     width: 100%;
@@ -136,6 +140,20 @@
                 textarea{
                     height: 7.2rem;
                     resize: none;
+                }
+                .character-counter{
+                    position: absolute;
+                    bottom: .7rem;
+                    right: 1rem;
+                    display: flex;
+                    align-items: center;
+                    gap: 0 .5rem;
+                    span{
+                        font-size: 1.2rem;
+                        color: #A8B2BE;
+                        line-height: 1.6rem;
+                        @include medium;
+                    }
                 }
             }
             .form-textarea{
@@ -224,9 +242,13 @@
                 color: #ffffff;
                 @include extrabold;
                 border: none;
+                transition: background 400ms ease;
                 &:active{
                     background-color: #00AEEF;
                     color: #ffffff;
+                }
+                &:hover{
+                    background: darken($color: #00AEEF, $amount: 10);
                 }
                 @include mini{
                     width: 100%;
@@ -257,7 +279,6 @@
                 }
             }
         }
-        
     }
     &.background-gradient{
         background: linear-gradient(90deg, #592E6D 0%, #249FDD 100%);

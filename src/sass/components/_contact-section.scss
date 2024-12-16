@@ -2,11 +2,6 @@
     width: 100%;
     background-color: #fff;
     height: 100%;
-    @include md{
-        .container{
-            margin-inline:1.5rem
-        }
-    }
     .block{
         width: 100%;
         padding-top: 7.6rem;
@@ -54,12 +49,29 @@
             @include md{
                 width: 100%;
             }
+            @include sm{
+                padding: 3rem 2rem 3rem 2rem;
+            }
             form.row .form-input{
                 width: 100%;
                 max-width: 100%;
             }
             button.btn{
                 margin-inline:auto;
+            }
+            .title{
+                font-size: 1.8rem;
+                line-height: 2.4rem;
+                color: #000000;
+                @include medium;
+                margin-bottom: 2rem;
+            }
+            .subtitle{
+                font-size: 1.4rem;
+                line-height: 2.2rem;
+                color: #000000;
+                @include regular;
+                margin-bottom: 1.7rem;
             }
         }
         .right-block{
@@ -160,7 +172,11 @@
                 font-size: 1.4rem;
                 line-height: 2.2rem;
                 @include medium;
+                transition: all 400ms ease;
                 color: #ffffff;
+                &:hover{
+                    background: darken($color: #00AEEF, $amount: 10);
+                }
             }
         }
     }

@@ -186,11 +186,11 @@ if(advantagesVideo){
 }
 
 
-const servicesDetail = document.querySelector('#servicesDetailHero');
+const servicesDetail = document.querySelector('.services-detail-hero');
 if(servicesDetail){
   // Taşınacak element ve hedef container'lar
-  const centreElement = document.querySelector('#servicesDetailHero .img');
-  const header = document.querySelector('#servicesDetailHero .mobile-img');
+  const centreElement = document.querySelector('.services-detail-hero .img');
+  const header = document.querySelector('.services-detail-hero .mobile-img');
   
   // Taşıma işlemini yapan fonksiyon
   function handleImgPlacement() {
@@ -309,8 +309,6 @@ if(headerLanguage){
   // Ekran boyutu değişimlerini dinle
   window.addEventListener('resize', handleImgPlacement);
 }
-
-
 
 const customerSliderMoving = document.querySelector('.customer-sliders');
 if(customerSliderMoving){

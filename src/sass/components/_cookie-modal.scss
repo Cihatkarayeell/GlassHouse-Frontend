@@ -9,6 +9,15 @@
     visibility: hidden;
     transform: translateY(2rem);
     transition: transform 400ms ease, opacity 400ms ease, visibility 400ms ease;
+    @include sm{
+        left: 3rem;
+        bottom: 3rem;
+    }
+    @include mini{
+        bottom: 3rem;
+        right: 3rem;
+        left: auto;
+    }
     &.active{
         opacity: 1;
         visibility: visible;

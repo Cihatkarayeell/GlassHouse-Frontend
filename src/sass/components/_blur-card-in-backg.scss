@@ -16,6 +16,20 @@
                 transform: translateX(-50%);
                 width:calc(100% - 3rem);
             }
+            @include mini{
+                padding: 2rem;
+                .title{
+                    font-size: 1.8rem;
+                    line-height: 2.2rem;
+                }
+                .desc{
+                    font-size: 1.4rem;
+                    line-height: 2rem;
+                }
+                .link{
+                    font-size: 1.3rem;
+                }
+            }
         }
     }
 }

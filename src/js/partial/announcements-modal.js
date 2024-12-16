@@ -29,10 +29,7 @@ if (announcementModal){
         }
     });
 
-    // Modal açıldığında body scroll'unu engelle
-    const toggleBodyScroll = (isModalOpen) => {
-        document.body.style.overflow = isModalOpen ? 'hidden' : '';
-    };
+ 
 
     announcementLinks.forEach(link => {
         link.addEventListener('click', (event) => {

@@ -8,7 +8,7 @@ var swiper = new Swiper(".mySwiper-history", {
         prevEl: ".swiper-button-prev-history",
       },
       breakpoints: {
-        380: {
+        350: {
           slidesPerView: 1.1,
           spaceBetween: 16,
         },

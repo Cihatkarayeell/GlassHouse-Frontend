@@ -1,0 +1,213 @@
+{# prettier-ignore #}
+{% extends "./layout/layout-general.html" %}
+{% block title %}Front end Starter Kit{% endblock %}
+{%block bodyClass %}body-home{% endblock %} {% block content %}
+<div class="video-modal" id="videoModal">
+    <button class="close-button" id="closeModal">
+        <img src="./img/icon/close-button-kare.svg" alt="">
+    </button>
+    <iframe id="videoIframe" width="560" height="315" src="https://www.youtube.com/embed/2aceXxCCWlU?si=EX1oCmvQdBf_zje8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
+<section class="info-centre-hero background-gradient">
+    <div class="container">
+        <div class="breadcrumb">
+            <div class="breadcrumb-item">
+                <a href="index.html">Ana Sayfa</a>
+            </div>
+            <div class="chevron">
+                <svg width="10" height="16" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path opacity="0.5" d="M1.46143 2L7.92296 8L1.46143 14" stroke="white" stroke-width="2" stroke-linecap="square"/>
+                </svg>                                      
+            </div>
+            <div class="breadcrumb-item">
+                <a href="index.html">Bilgi Merkezi</a>
+            </div>
+            <div class="chevron">
+                <svg width="10" height="16" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path opacity="0.5" d="M1.46143 2L7.92296 8L1.46143 14" stroke="white" stroke-width="2" stroke-linecap="square"/>
+                </svg>                                     
+            </div>
+            <div class="breadcrumb-item">
+                <a href="index.html">Blog</a>
+            </div>
+        </div>
+        <div class="d-flex align-items-center flex-column block">
+            <div class="heading-type-one w-max">
+                <div class="icon">
+                    <img src="./img/icon/heading-icon.svg" alt="">
+                </div>
+                <h1>BİLGİ MERKEZİ</h1>
+            </div>
+            <div class="description">
+                <p>En son haberler, blog yazıları, etkinlik duyuruları ve bilgi dokümanlarına erişmek için hemen göz atın.</p>
+            </div>
+            <div class="hero-tab-box">
+                <div class="tab-wrap">
+                    <a href="bilgi-merkezi-haberler.html" class="tab-item" data-tab="news">
+                        Haberler
+                    </a>
+                    <a href="bilgi-merkezi-etkinlik.html" class="tab-item " data-tab="events">
+                        Etkinlikler
+                    </a>
+                    <a href="bilgi-merkezi-videolar.html" class="tab-item " data-tab="videos">
+                        Videolar
+                    </a>
+                    <a href="bilgi-merkezi-blog.html" class="tab-item active" data-tab="blog">
+                        Blog
+                    </a>
+                    <a href="bilgi-merkezi-dokuman.html" class="tab-item" data-tab="documents">
+                        Dökümanlar
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="backdrop-svg">
+        <img src="./img/icon/GH.svg" alt="">
+    </div>
+</section>
+<section class="tab-block">
+    <div class="container">
+        <div class="position-relative w-100">
+            <section class="blog-section tab-item-block active" id="blogs" data-tab="blog">
+                <div class="container">
+                    <div class="layout">
+                        <div class="wrap">
+                            <a href="#" class="blog-card blur">
+                                <div class="img">
+                                    <img src="./img/card/blog1.png" alt="">
+                                </div>
+                                <div class="blur-text">
+                                    <div class="title">
+                                        <h3>BT Altyapı Hizmetlerinde Ülkemizdeki Regülasyon ve Maddelerden Hangileri Sizi İlgilendiriyor?</h3>
+                                    </div>
+                                    <div class="desc">
+                                        <p>Günümüzde bankacılıktan sağlık sektörüne pek çok iş süreci, BT altyapı hizmet ve çözümleri ile hızlı ve pratik bir şekilde gerçekleştirilir. Ancak söz konusu hassas ve değerli verilerin toplanması, depolanması ve işlenmesi olduğunda, BT altyapılarının</p>
+                                    </div>
+                                </div>
+                            </a>
+                            <div class="d-flex flex-column block">
+                                <a href="#" class="blog-card-horizontal">
+                                    <div class="img">
+                                        <img src="./img/card/blog2.png" alt="">
+                                    </div>
+                                    <div class="text">
+                                        <div class="title">
+                                            <h3>BT Altyapı Modernizasyonunda Regülasyon Uyumu</h3>
+                                        </div>
+                                        <div class="desc">
+                                            <p>Dijital dönüşüm ile şirketlerin var olan BT altyapıları, bulut teknolojileri başta olmak üzere teknolojideki son gelişmelerden</p>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="#" class="blog-card-horizontal">
+                                    <div class="img">
+                                        <img src="./img/card/blog2.png" alt="">
+                                    </div>
+                                    <div class="text">
+                                        <div class="title">
+                                            <h3>BT Altyapı Modernizasyonunda Regülasyon Uyumu</h3>
+                                        </div>
+                                        <div class="desc">
+                                            <p>Dijital dönüşüm ile şirketlerin var olan BT altyapıları, bulut teknolojileri başta olmak üzere teknolojideki son gelişmelerden</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="blog-card-wrap">
+                            <div class="more-wrap">
+                                <a href="#" class="blog-card-horizontal">
+                                    <div class="img">
+                                        <img src="./img/card/blog2.png" alt="">
+                                    </div>
+                                    <div class="text">
+                                        <div class="title">
+                                            <h3>BT Altyapı Modernizasyonunda Regülasyon Uyumu</h3>
+                                        </div>
+                                        <div class="desc">
+                                            <p>Dijital dönüşüm ile şirketlerin var olan BT altyapıları, bulut teknolojileri başta olmak üzere teknolojideki son gelişmelerden</p>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="#" class="blog-card-horizontal">
+                                    <div class="img">
+                                        <img src="./img/card/blog2.png" alt="">
+                                    </div>
+                                    <div class="text">
+                                        <div class="title">
+                                            <h3>BT Altyapı Modernizasyonunda Regülasyon Uyumu</h3>
+                                        </div>
+                                        <div class="desc">
+                                            <p>Dijital dönüşüm ile şirketlerin var olan BT altyapıları, bulut teknolojileri başta olmak üzere teknolojideki son gelişmelerden</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="more-wrap">
+                                <a href="#" class="blog-card-horizontal">
+                                    <div class="img">
+                                        <img src="./img/card/blog2.png" alt="">
+                                    </div>
+                                    <div class="text">
+                                        <div class="title">
+                                            <h3>BT Altyapı Modernizasyonunda Regülasyon Uyumu</h3>
+                                        </div>
+                                        <div class="desc">
+                                            <p>Dijital dönüşüm ile şirketlerin var olan BT altyapıları, bulut teknolojileri başta olmak üzere teknolojideki son gelişmelerden</p>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="#" class="blog-card-horizontal">
+                                    <div class="img">
+                                        <img src="./img/card/blog2.png" alt="">
+                                    </div>
+                                    <div class="text">
+                                        <div class="title">
+                                            <h3>BT Altyapı Modernizasyonunda Regülasyon Uyumu</h3>
+                                        </div>
+                                        <div class="desc">
+                                            <p>Dijital dönüşüm ile şirketlerin var olan BT altyapıları, bulut teknolojileri başta olmak üzere teknolojideki son gelişmelerden</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="more-wrap disabled">
+                                <a href="#" class="blog-card-horizontal">
+                                    <div class="img">
+                                        <img src="./img/card/blog2.png" alt="">
+                                    </div>
+                                    <div class="text">
+                                        <div class="title">
+                                            <h3>BT Altyapı Modernizasyonunda Regülasyon Uyumu</h3>
+                                        </div>
+                                        <div class="desc">
+                                            <p>Dijital dönüşüm ile şirketlerin var olan BT altyapıları, bulut teknolojileri başta olmak üzere teknolojideki son gelişmelerden</p>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="#" class="blog-card-horizontal">
+                                    <div class="img">
+                                        <img src="./img/card/blog2.png" alt="">
+                                    </div>
+                                    <div class="text">
+                                        <div class="title">
+                                            <h3>BT Altyapı Modernizasyonunda Regülasyon Uyumu</h3>
+                                        </div>
+                                        <div class="desc">
+                                            <p>Dijital dönüşüm ile şirketlerin var olan BT altyapıları, bulut teknolojileri başta olmak üzere teknolojideki son gelişmelerden</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <button class="more-button" id="moreButtonBlog">
+                            Daha Fazla Göster
+                        </button>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+</section>
+{% endblock %}

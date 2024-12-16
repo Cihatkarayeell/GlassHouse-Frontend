@@ -23,7 +23,7 @@
         align-items: center;
         justify-content: center;
         max-width: 20rem;
-        width: calc(100% / 4);
+        width: max-content;
         @include sm{
             width: calc(100% / 2);
             justify-content: space-between;

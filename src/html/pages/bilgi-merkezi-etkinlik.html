@@ -1,0 +1,284 @@
+{# prettier-ignore #}
+{% extends "./layout/layout-general.html" %}
+{% block title %}Front end Starter Kit{% endblock %}
+{%block bodyClass %}body-home{% endblock %} {% block content %}
+<div class="video-modal" id="videoModal">
+    <button class="close-button" id="closeModal">
+        <img src="./img/icon/close-button-kare.svg" alt="">
+    </button>
+    <iframe id="videoIframe" width="560" height="315" src="https://www.youtube.com/embed/2aceXxCCWlU?si=EX1oCmvQdBf_zje8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
+<section class="info-centre-hero background-gradient">
+    <div class="container">
+        <div class="breadcrumb">
+            <div class="breadcrumb-item">
+                <a href="index.html">Ana Sayfa</a>
+            </div>
+            <div class="chevron">
+                <svg width="10" height="16" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path opacity="0.5" d="M1.46143 2L7.92296 8L1.46143 14" stroke="white" stroke-width="2" stroke-linecap="square"/>
+                </svg>                                      
+            </div>
+            <div class="breadcrumb-item">
+                <a href="index.html">Bilgi Merkezi</a>
+            </div>
+            <div class="chevron">
+                <svg width="10" height="16" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path opacity="0.5" d="M1.46143 2L7.92296 8L1.46143 14" stroke="white" stroke-width="2" stroke-linecap="square"/>
+                </svg>                                     
+            </div>
+            <div class="breadcrumb-item">
+                <a href="index.html">Etkinlikler</a>
+            </div>
+        </div>
+        <div class="d-flex align-items-center flex-column block">
+            <div class="heading-type-one w-max">
+                <div class="icon">
+                    <img src="./img/icon/heading-icon.svg" alt="">
+                </div>
+                <h1>BİLGİ MERKEZİ</h1>
+            </div>
+            <div class="description">
+                <p>En son haberler, blog yazıları, etkinlik duyuruları ve bilgi dokümanlarına erişmek için hemen göz atın.</p>
+            </div>
+            <div class="hero-tab-box">
+                <div class="tab-wrap">
+                    <a href="bilgi-merkezi-haberler.html" class="tab-item" data-tab="news">
+                        Haberler
+                    </a>
+                    <a href="bilgi-merkezi-etkinlik.html" class="tab-item active" data-tab="events">
+                        Etkinlikler
+                    </a>
+                    <a href="bilgi-merkezi-videolar.html" class="tab-item " data-tab="videos">
+                        Videolar
+                    </a>
+                    <a href="bilgi-merkezi-blog.html" class="tab-item " data-tab="blog">
+                        Blog
+                    </a>
+                    <a href="bilgi-merkezi-dokuman.html" class="tab-item" data-tab="documents">
+                        Dökümanlar
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="backdrop-svg">
+        <img src="./img/icon/GH.svg" alt="">
+    </div>
+</section>
+<section class="tab-block">
+    <div class="container">
+        <div class="position-relative w-100">
+            <section class="event-section tab-item-block active" id="event" data-tab="events">
+                <div class="container">
+                    <div class="layout">
+                        <div class="wrap more-wrap">
+                            <a href="#" class="info-centre-card">
+                                <div class="img">
+                                    <img src="./img/card/news-1.png" alt="">
+                                </div>
+                                <div class="text">
+                                    <div class="date">
+                                        <span>Haz 26, 2024</span>
+                                    </div>
+                                    <div class="title">
+                                        <h3>Yeni Dönem Başlıyor: GlassHouse, e& enterprise Ailesinde</h3>
+                                    </div>
+                                    <div class="desc">
+                                        <p>e& enterprise, GlassHouse'u 60 milyon dolara satın alarak küresel erişimini genişletti. Türkiye, grubun faaliyet gösterdiği 33. ülke oldu. GlassHouse, e& ...</p>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="#" class="info-centre-card">
+                                <div class="img">
+                                    <img src="./img/card/news-2.png" alt="">
+                                </div>
+                                <div class="text">
+                                    <div class="date">
+                                        <span>Haz 26, 2024</span>
+                                    </div>
+                                    <div class="title">
+                                        <h3>Yeni Dönem Başlıyor: GlassHouse, e& enterprise Ailesinde</h3>
+                                    </div>
+                                    <div class="desc">
+                                        <p>e& enterprise, GlassHouse'u 60 milyon dolara satın alarak küresel erişimini genişletti. Türkiye, grubun faaliyet gösterdiği 33. ülke oldu. GlassHouse, e& ...</p>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="#" class="info-centre-card">
+                                <div class="img">
+                                    <img src="./img/card/news-3.png" alt="">
+                                </div>
+                                <div class="text">
+                                    <div class="date">
+                                        <span>Haz 26, 2024</span>
+                                    </div>
+                                    <div class="title">
+                                        <h3>Yeni Dönem Başlıyor: GlassHouse, e& enterprise Ailesinde</h3>
+                                    </div>
+                                    <div class="desc">
+                                        <p>e& enterprise, GlassHouse'u 60 milyon dolara satın alarak küresel erişimini genişletti. Türkiye, grubun faaliyet gösterdiği 33. ülke oldu. GlassHouse, e& ...</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="wrap more-wrap">
+                            <a href="#" class="info-centre-card">
+                                <div class="img">
+                                    <img src="./img/card/news-1.png" alt="">
+                                </div>
+                                <div class="text">
+                                    <div class="date">
+                                        <span>Haz 26, 2024</span>
+                                    </div>
+                                    <div class="title">
+                                        <h3>Yeni Dönem Başlıyor: GlassHouse, e& enterprise Ailesinde</h3>
+                                    </div>
+                                    <div class="desc">
+                                        <p>e& enterprise, GlassHouse'u 60 milyon dolara satın alarak küresel erişimini genişletti. Türkiye, grubun faaliyet gösterdiği 33. ülke oldu. GlassHouse, e& ...</p>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="#" class="info-centre-card">
+                                <div class="img">
+                                    <img src="./img/card/news-2.png" alt="">
+                                </div>
+                                <div class="text">
+                                    <div class="date">
+                                        <span>Haz 26, 2024</span>
+                                    </div>
+                                    <div class="title">
+                                        <h3>Yeni Dönem Başlıyor: GlassHouse, e& enterprise Ailesinde</h3>
+                                    </div>
+                                    <div class="desc">
+                                        <p>e& enterprise, GlassHouse'u 60 milyon dolara satın alarak küresel erişimini genişletti. Türkiye, grubun faaliyet gösterdiği 33. ülke oldu. GlassHouse, e& ...</p>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="#" class="info-centre-card">
+                                <div class="img">
+                                    <img src="./img/card/news-3.png" alt="">
+                                </div>
+                                <div class="text">
+                                    <div class="date">
+                                        <span>Haz 26, 2024</span>
+                                    </div>
+                                    <div class="title">
+                                        <h3>Yeni Dönem Başlıyor: GlassHouse, e& enterprise Ailesinde</h3>
+                                    </div>
+                                    <div class="desc">
+                                        <p>e& enterprise, GlassHouse'u 60 milyon dolara satın alarak küresel erişimini genişletti. Türkiye, grubun faaliyet gösterdiği 33. ülke oldu. GlassHouse, e& ...</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="wrap more-wrap disabled">
+                            <a href="#" class="info-centre-card">
+                                <div class="img">
+                                    <img src="./img/card/news-1.png" alt="">
+                                </div>
+                                <div class="text">
+                                    <div class="date">
+                                        <span>Haz 26, 2024</span>
+                                    </div>
+                                    <div class="title">
+                                        <h3>Yeni Dönem Başlıyor: GlassHouse, e& enterprise Ailesinde</h3>
+                                    </div>
+                                    <div class="desc">
+                                        <p>e& enterprise, GlassHouse'u 60 milyon dolara satın alarak küresel erişimini genişletti. Türkiye, grubun faaliyet gösterdiği 33. ülke oldu. GlassHouse, e& ...</p>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="#" class="info-centre-card">
+                                <div class="img">
+                                    <img src="./img/card/news-2.png" alt="">
+                                </div>
+                                <div class="text">
+                                    <div class="date">
+                                        <span>Haz 26, 2024</span>
+                                    </div>
+                                    <div class="title">
+                                        <h3>Yeni Dönem Başlıyor: GlassHouse, e& enterprise Ailesinde</h3>
+                                    </div>
+                                    <div class="desc">
+                                        <p>e& enterprise, GlassHouse'u 60 milyon dolara satın alarak küresel erişimini genişletti. Türkiye, grubun faaliyet gösterdiği 33. ülke oldu. GlassHouse, e& ...</p>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="#" class="info-centre-card">
+                                <div class="img">
+                                    <img src="./img/card/news-3.png" alt="">
+                                </div>
+                                <div class="text">
+                                    <div class="date">
+                                        <span>Haz 26, 2024</span>
+                                    </div>
+                                    <div class="title">
+                                        <h3>Yeni Dönem Başlıyor: GlassHouse, e& enterprise Ailesinde</h3>
+                                    </div>
+                                    <div class="desc">
+                                        <p>e& enterprise, GlassHouse'u 60 milyon dolara satın alarak küresel erişimini genişletti. Türkiye, grubun faaliyet gösterdiği 33. ülke oldu. GlassHouse, e& ...</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="wrap more-wrap disabled">
+                            <a href="#" class="info-centre-card">
+                                <div class="img">
+                                    <img src="./img/card/news-1.png" alt="">
+                                </div>
+                                <div class="text">
+                                    <div class="date">
+                                        <span>Haz 26, 2024</span>
+                                    </div>
+                                    <div class="title">
+                                        <h3>Yeni Dönem Başlıyor: GlassHouse, e& enterprise Ailesinde</h3>
+                                    </div>
+                                    <div class="desc">
+                                        <p>e& enterprise, GlassHouse'u 60 milyon dolara satın alarak küresel erişimini genişletti. Türkiye, grubun faaliyet gösterdiği 33. ülke oldu. GlassHouse, e& ...</p>
+                                    </div>
+                                </div>
+                            </a>
+                            <a  href="#" class="info-centre-card">
+                                <div class="img">
+                                    <img src="./img/card/news-2.png" alt="">
+                                </div>
+                                <div class="text">
+                                    <div class="date">
+                                        <span>Haz 26, 2024</span>
+                                    </div>
+                                    <div class="title">
+                                        <h3>Yeni Dönem Başlıyor: GlassHouse, e& enterprise Ailesinde</h3>
+                                    </div>
+                                    <div class="desc">
+                                        <p>e& enterprise, GlassHouse'u 60 milyon dolara satın alarak küresel erişimini genişletti. Türkiye, grubun faaliyet gösterdiği 33. ülke oldu. GlassHouse, e& ...</p>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="#" class="info-centre-card">
+                                <div class="img">
+                                    <img src="./img/card/news-3.png" alt="">
+                                </div>
+                                <div class="text">
+                                    <div class="date">
+                                        <span>Haz 26, 2024</span>
+                                    </div>
+                                    <div class="title">
+                                        <h3>Yeni Dönem Başlıyor: GlassHouse, e& enterprise Ailesinde</h3>
+                                    </div>
+                                    <div class="desc">
+                                        <p>e& enterprise, GlassHouse'u 60 milyon dolara satın alarak küresel erişimini genişletti. Türkiye, grubun faaliyet gösterdiği 33. ülke oldu. GlassHouse, e& ...</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <button class="more-button" id="moreButtonEvent">
+                            Daha Fazla Göster
+                        </button>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+</section>
+{% endblock %}

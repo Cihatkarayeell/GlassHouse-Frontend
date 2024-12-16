@@ -2,29 +2,20 @@
     width: 100%;
     height: 159.5rem;
     z-index: 1;
+    margin-top: -3rem;
     @include lg{
         min-height: 100%;
-        height: 220.8rem;
-    }
-    @include md{
-        min-height: 222rem;
+        height: 100%;
     }
     @include mini{
-        min-height: 205rem;
         height: 100%;
-        .container{
-            margin-inline:0;
-        }
     }
     .backdrop{
         width: 100%;
         height: 159.5rem;
-        position: absolute;
-        left: 50%;
-        transform: translateX(-50%);
         @include lg{
             min-height: 100%;
-            height: 220.8rem;
+            height: 100%;
         }
     }
     .container{
@@ -43,6 +34,10 @@
         }
         .btn-type-one{
             margin-top: 2.8rem;
+            transition: background-color 400ms ease;
+            &:hover{
+                background-color: darken($color: #ffffff, $amount: 20);
+            }
         }
         .heading-1 {
             margin-top: 4.2rem;
@@ -55,15 +50,13 @@
     .references{
         width: 100%;
         margin-top: auto;
-        margin-bottom: 14.5rem;
+        margin-bottom: 14rem;
         @include lg{
             margin-top: 5rem;
         }
         @include md{
             margin-top: 0;
-        }
-        @include mini{
-            padding-inline:3rem;
+            margin-bottom: 5rem;
         }
         .heading-type-one{
             margin-bottom: 4.2rem;
@@ -430,10 +423,14 @@
             width: 100%;
             margin-top: 2rem;
         }
+        @include sm{
+            margin-left: 0;
+            min-width: 100%;
+        }
         @include mini{
             position: relative;
             min-width: 100%;
-            margin-left: 0;
+            
         }
         .mySwiper-top-right{
             height: 41.8rem;
@@ -447,11 +444,14 @@
                 justify-content: center;
                 height: 41.8rem;
                 overflow: hidden;
+                padding-bottom: 2rem;
+                padding-top: 2rem;
                 @include md{
                     height: 29rem;
                 }
                 @include mini{
                     height: 20rem;
+                    padding-bottom: 0;
                 }
                 .profile-img{
                     border-radius: 50%;
@@ -469,15 +469,26 @@
                         max-width: 12rem;
                         max-height: 12rem;
                     }
+                    &:hover{
+                        img{
+                            &:last-of-type{
+                                transform: rotate(6deg) translate(-62%, -41%);
+                                @include md{
+                                    transform: translate(-58%, -47%);
+                                };
+                            }
+                        }
+                    }
                     img{
+                        transition: transform 400ms ease;
                         &:last-of-type{
                             position: absolute;
                             left: 50%;
                             top: 50%;
-                            width: 45rem;
-                            height: 42rem;
+                            width: 42rem;
+                            height: 40rem;
                             transition: transform 400ms ease;
-                            transform: translate(-56%, -48%);
+                            transform: translate(-58%, -47%);
                             max-width: 45rem;
                             @include lg{
                                 width: 44rem;
@@ -525,6 +536,9 @@
                 top: 0;
                 z-index: 3;
                 background: linear-gradient(270deg, rgba(78, 105, 166, 0) 0%, #4E69A6 100%);
+                @include md{
+                    display: none;
+                }
             }
             &:before{
                 content: "";
@@ -535,6 +549,9 @@
                 top: 0;
                 z-index: 3;
                 background: linear-gradient(90deg, rgba(78, 105, 166, 0) 0%, #4A71AE 100%);
+                @include md{
+                    display: none;
+                }
             }
             .swiper-button-next-customer-3{
                 position: absolute;
@@ -602,6 +619,7 @@
                 }
             }
             .swiper-slide-active{
+                z-index: 2;
                 .profile-section{
                     filter: grayscale(0);
                     border-width: .4rem;
@@ -639,6 +657,7 @@
                     }
                     @include mini{
                         left: 1.5rem;
+                        top: 0;
                     }
                 }
                 .swiper-slide{
@@ -671,6 +690,9 @@
                     padding-right: 3rem;
                     @include md{
                         padding-top: 5.5rem;
+                    }
+                    @include mini{
+                        padding-top: 4rem;
                     }
                     .desc{
                         font-size: 2rem;
@@ -779,33 +801,5 @@
     }
     50% {
       transform: translateY(1rem); /* Yavaşça aşağı hareket */
-    }
-}
-.heading-type-one{
-    font-size: 1.6rem;
-    line-height: 2.2rem;
-    color: #ffffff;
-    @include extrabold;
-    position: relative;
-    height: 4.6rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-left: 2.8rem;
-    &:before{
-        content: url(/img/icon/heading-icon.svg);
-        position: absolute;
-        left: -2.8rem;
-        top: .4rem;
-    }
-}
-.btn-type-one{
-    padding: 1.4rem 2rem;
-    border-radius: 2.5rem;
-    font-size: 1.4rem;
-    line-height: 1.9rem;
-    @include extrabold;
-    &.background-body{
-        color: var(--color-primary);
     }
 }

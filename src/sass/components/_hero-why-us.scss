@@ -17,14 +17,6 @@
         .heading-type-one{
             color: #000000;
             width: max-content;
-            @include md{
-                margin-inline: 5.8rem;
-            }
-        }
-        .container{
-            @include md{
-                margin-inline:0;
-            }
         }
         .hero-block{
             display: flex;
@@ -51,14 +43,9 @@
                         margin-bottom: 3.2rem;
                         font-size: 3.6rem;
                         line-height: 4.2rem;
-                        margin-inline: 3rem;
                     }
                 }
                 .mobile-img{
-                    @include md{
-                        margin-inline: 1.5rem;
-                        width: auto;
-                    }
                     img{
                         height: 100%;
                     }

@@ -14,11 +14,6 @@
             padding-bottom: 2.7rem;
         }
     }
-    @include md{
-        .container{
-            margin-inline: 0;
-        }
-    }
     .text{
         width: 50%;
         display: flex;
@@ -26,9 +21,7 @@
         @include md{
             max-width: 100%;
             width: 100%;
-            .heading-1{
-                margin-inline: 3rem;
-            }
+            
         }
         .detail-info{
             margin-top: 2.8rem;
@@ -86,7 +79,6 @@
                 overflow: hidden;
                 box-shadow: 0 0 1.5rem 0 rgb(0, 0, 0, .2);
                 margin-top: 2rem;
-                margin-inline: 1.5rem;
                 img{
                     display: flex;
                     width: 100%;
@@ -115,5 +107,13 @@
     .customer-sliders{
         margin-top: 6rem;
         margin-inline:auto;
+        .bottom-slider-block{
+            &:after{
+                display: none;
+            }
+            &:before{
+                display: none;
+            }
+        }
     }
 }

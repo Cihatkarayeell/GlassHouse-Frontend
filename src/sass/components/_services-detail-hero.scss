@@ -18,6 +18,20 @@
             color: #000000;
         }
     }
+    &.detail-two{
+        .text{
+            .title-box{
+                background-color: #52B6D2;
+            }
+            .link{
+                background-color: #3271B2;
+                transition: all 400ms ease;
+                &:hover{
+                    background: darken($color: #3271B2, $amount: 10);
+                }
+            }
+        }
+    }
     .text{
         max-width: 62.4rem;
         width: 50%;
@@ -43,8 +57,8 @@
         }
         .heading-1{
             margin-top: 3.7rem;
+            @include black;
             @include md{
-                @include black;
                 margin-inline: 3rem;
                 margin-top: 2.4rem;
             }
@@ -75,6 +89,10 @@
             @include extrabold;
             width: max-content;
             margin-top: 2.8rem;
+            transition: all 400ms ease;
+                &:hover{
+                    background: darken($color: #9747FF, $amount: 10);
+                }
             @include md{                
                 margin-inline: 3rem;
                 margin-top: 3rem;

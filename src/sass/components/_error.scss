@@ -52,6 +52,10 @@
             @include extrabold;
             margin-top: 3.4rem;
             background-color: #00AEEF;
+            transition: all 400ms ease;
+            &:hover{
+                background: darken($color: #00AEEF, $amount: 10);
+            }
         }
     }
     .backdrop-svg{

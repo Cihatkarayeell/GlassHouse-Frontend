@@ -8,6 +8,9 @@
     bottom: 10rem;
     right: 2.5rem;
     z-index: 3;
+    @include sm{
+        display: none;
+    }
     .chat-button{
         padding: 1rem 1.8rem;
         border-radius: 2rem;
@@ -20,6 +23,10 @@
         color: #000;
         @include regular;
         border: .1rem dashed #000;
+        transition: background-color 400ms ease;
+        &:hover{
+            background-color: darken($color: #fff, $amount: 20);
+        }
     }
     .chat{
         border-radius: 50%;
@@ -28,6 +35,10 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        background-color: #fff;
+        background-color: #F0EAED;
+        transition: transform 400ms ease;
+        &:hover{
+            transform: scale(1.1);
+        }
     }
 }

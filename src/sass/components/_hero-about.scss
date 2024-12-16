@@ -35,12 +35,15 @@
             @include regular;
             color: #ffffff;
             max-width: 50.5rem;
-            margin-top: 30.4rem;
+            margin-top: 26.8rem;
+            @include sm{
+                display: none;
+            }
         }
         .blur-card{
             inset: unset;
             position: absolute;
-            bottom: 9.2rem;
+            bottom: 12.2rem;
             right: 0;
             backdrop-filter: blur(15px);
             border-radius: 1.5rem;
@@ -55,8 +58,16 @@
                 justify-content: flex-start;
                 padding: 2.7rem 3rem 5.7rem 3rem;
                 left: 50%;
-                bottom: 10.3rem;
+                bottom: 12.3rem;
                 transform: translateX(-50%);
+            }
+            @include mini{
+                width: 100%;
+                bottom: 10rem;
+                left: 0;
+                right: 0;
+                transform: none;
+                backdrop-filter: blur(10px);
             }
             .desc{
                 font-size: 1.5rem;
