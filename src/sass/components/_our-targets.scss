@@ -63,7 +63,7 @@
         gap: 0 3rem;
         overflow: hidden;
         margin-bottom: 8.6rem;
-        .marguee{
+        .marquee{
             height: 100%;
             animation-name: marqueeImgAnimation;
             animation-play-state: running;
@@ -80,23 +80,21 @@
             @include bigger-than-xxl{
                 animation-duration: 70s;
             }
-        }
-        .reference-item {
-            flex-shrink: 0;
-            margin-right: 20px; /* Resimler arası boşluk */
-            filter: grayscale(1);
-            transition: filter 400ms ease;
-            width: max-content;
-            height: 4rem;
-            @include bigger-than-xxl{
-                margin-right: 5rem;
-            }
-            *{
-                height: 100%;
-                object-fit: cover;
-            }
-            &:hover{
-                filter: grayscale(0);
+            .reference-item {
+                flex-shrink: 0;
+                margin-right: 20px; /* Resimler arası boşluk */
+                transition: filter 400ms ease;
+                width: 13rem;
+                height: 13rem;
+                @include bigger-than-xxl{
+                    margin-right: 5rem;
+                }
+                *{
+                    height: auto;
+                    object-fit: cover;
+                    width: auto;
+                }
+               
             }
         }
         

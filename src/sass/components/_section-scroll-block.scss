@@ -427,6 +427,7 @@
 .features-scroll-section{
     width: 100%;
     padding-top: 9.4rem;
+    overflow-x: hidden;
     @include md{
         padding-top: 6.4rem;
         .container{
@@ -434,11 +435,6 @@
             display: flex;
             align-items: center;
             flex-direction: column;
-        }
-    }
-    .heading-type-one{
-        @include md{
-            margin-left:5.8rem;
         }
     }
     .heading-1{
@@ -545,7 +541,7 @@
             padding-top: 4.2rem;
         }
         @include md{
-            margin-inline:1.5rem;
+            padding-inline:3rem;
         }
         .swiper-wrapper{
             align-items: stretch;
@@ -573,9 +569,6 @@
     padding-top: 11.6rem;
     @include md{
         padding-top: 6.4rem;
-        .container{
-            margin-inline:0;
-        }
     }
     &.services-detail{
         padding-top: 9.8rem;
@@ -598,7 +591,6 @@
             margin-top: 4.2rem;
             flex-direction: column;
             height: 100%;
-            margin-inline:1.5rem;
             width: auto;
         }
         .img{
@@ -697,6 +689,7 @@
         align-items: center;
         justify-content: center;
         padding: 4rem 0;
+        width: 100%;
         @include md{
             margin-top: 2rem;
         }
@@ -712,7 +705,7 @@
             padding: 0;
             display: flex;
             gap: 0 5rem;
-            animation-duration: 70s;
+            animation-duration: 50s;
             animation-direction: normal;
             width: 100%;
             position: relative;
@@ -722,23 +715,27 @@
             @include bigger-than-xxl{
                 animation-duration: 70s;
             }
-        }
-        .reference-item {
-            flex-shrink: 0;
-            margin-right: 20px; /* Resimler arası boşluk */
-            filter: grayscale(1);
-            transition: filter 400ms ease;
-            width: max-content;
-            height: 4rem;
-            @include bigger-than-xxl{
-                margin-right: 5rem;
+            @include mini{
+                animation-duration: 90s;
+                gap: 0 2rem;
             }
-            *{
-                height: 100%;
-                object-fit: cover;
-            }
-            &:hover{
-                filter: grayscale(0);
+            .reference-item {
+                flex-shrink: 0;
+                filter: grayscale(1);
+                transition: filter 400ms ease;
+                width: 15rem;
+                height: 4rem;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                
+                *{
+                    height: 100%;
+                    object-fit: cover;
+                }
+                &:hover{
+                    filter: grayscale(0);
+                }
             }
         }
     }
@@ -757,6 +754,6 @@
     }
     
     100% {
-        transform: translateX(-50%);
+        transform: translateX(-100%);
     }
 }

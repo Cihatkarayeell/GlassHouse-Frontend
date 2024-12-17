@@ -6,7 +6,7 @@ function Marquee(selector, speed) {
     const originalContent = container.innerHTML;
     
     // 4 kez klonlama
-    for(let i = 0; i < 8; i++) {
+    for(let i = 0; i < 4; i++) {
         container.insertAdjacentHTML('beforeend', originalContent);
     }
 
@@ -46,7 +46,6 @@ function Marquee(selector, speed) {
             animate();
         }
     });
-    
     // Mouse üzerine geldiğinde dur
     container.addEventListener('mouseenter', () => {
         cancelAnimationFrame(animationFrameId);
@@ -75,22 +74,21 @@ function Marquee(selector, speed) {
     });
     
     // Animasyonu başlat
-    animate();
+    // animate();
     
-    return {
-        stop: () => {
-            if (animationFrameId) {
-                cancelAnimationFrame(animationFrameId);
-            }
-        },
-        start: () => {
-            animate();
-        }
-    };
+    // return {
+    //     stop: () => {
+    //         if (animationFrameId) {
+    //             cancelAnimationFrame(animationFrameId);
+    //         }
+    //     },
+    //     start: () => {
+    //         animate();
+    //     }
+    // };
 }
 
 // Sayfa yüklendiğinde başlat
 window.addEventListener('load', () => {
-    const marquee = Marquee('.marguee', 0.2);
-    console.log(marquee);
+    const marquee = Marquee('.marguee', 0.5);
 });
